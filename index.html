@@ -4,10 +4,442 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.7.3/tailwind.min.css">
 </head>
 <body>
-  <h1 class="text-8xl font-bold underline">
-    Hello world!
-  </h1>
+ 
+<nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+  <div class="container flex flex-wrap items-center justify-between mx-auto">
+  <a href="https://flowbite.com/" class="flex items-center">
+
+      <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Dtu Alum</span>
+  </a>
+  <div class="flex md:order-2">
+      <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button>
+      <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+    </button>
+  </div>
+  <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+    <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <li>
+        <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+<section>
+
+  <div x-data="{swiper: null}"
+    x-init="swiper = new Swiper($refs.container, {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 0,
+     autoplay: {
+      delay: 9000,
+    },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          1024: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+        },
+      })"
+    class="relative w-12/12 mx-auto flex flex-row"
+  >
+    <div class="absolute inset-y-0 left-0 z-10 flex items-center">
+      <button @click="swiper.slidePrev()" 
+              class="bg-white m-2  flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">
+        <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left w-6 h-6"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+      </button>
+    </div>
+  
+    <div class="swiper-container" x-ref="container">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide ">
+          <div class="flex flex-col rounded shadow overflow-hidden">
+            <div class="flex-shrink-0">
+              <img class="h-[70vh] w-full object-cover" src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="">
+            </div>
+          </div>
+        </div>
+                
+        <div class="swiper-slide ">
+          <div class="flex flex-col rounded shadow overflow-hidden">
+            <div class="flex-shrink-0">
+              <img class="h-[70vh] w-full object-cover" src="https://images.unsplash.com/photo-1598951092651-653c21f5d0b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" alt="">
+            </div>
+          </div>
+        </div>
+        
+        <div class="swiper-slide ">
+          <div class="flex flex-col rounded shadow overflow-hidden">
+            <div class="flex-shrink-0">
+              <img class="h-[70vh] w-full object-cover" src="https://images.unsplash.com/photo-1598946423291-ce029c687a42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="absolute inset-y-0 m-2 right-0 z-10 flex items-center">
+      <button @click="swiper.slideNext()" 
+              class="bg-white flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">
+        <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right w-6 h-6"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+      </button>
+    </div>
+  </div>
+</section>
+<section>
+  <div x-data="{swiper: null}"
+  x-init="swiper = new Swiper($refs.container, {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+   autoplay: {
+    delay: 1000,
+
+  },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 0,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+      },
+    })"
+  class="relative w-12/12 mx-auto my-10 flex flex-row"
+>
+  <div class="absolute inset-y-0 left-0 z-10 flex items-center">
+    <button @click="swiper.slidePrev()" 
+            class="bg-white m-2  flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">
+      <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left w-6 h-6"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+    </button>
+  </div>
+
+  <div class="swiper-container" x-ref="container">
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide  ">
+        <div class="flex flex-col rounded shadow overflow-hidden">
+          <div class="flex-shrink-0">
+            <img class="h-[50vh] w-full object-cover" src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="">
+          </div>
+        </div>
+      </div>
+              
+      <div class="swiper-slide ">
+        <div class="flex flex-col rounded shadow overflow-hidden">
+          <div class="flex-shrink-0">
+            <img class="h-[50vh] w-full object-cover" src="https://images.unsplash.com/photo-1598951092651-653c21f5d0b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" alt="">
+          </div>
+        </div>
+      </div>
+      
+      <div class="swiper-slide ">
+        <div class="flex flex-col rounded shadow overflow-hidden">
+          <div class="flex-shrink-0">
+            <img class="h-[50vh] w-full object-cover" src="https://images.unsplash.com/photo-1598946423291-ce029c687a42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="absolute inset-y-0 m-2 right-0 z-10 flex items-center">
+    <button @click="swiper.slideNext()" 
+            class="bg-white flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">
+      <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right w-6 h-6"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+    </button>
+  </div>
+</div>
+</section>
+<section>
+  <div class="px-20">
+    <h3 class="text-4xl text-center font-medium">Lorem ipsum dolor sit amet.</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id doloremque voluptas quaerat placeat nobis? Quos eum exercitationem architecto sit ducimus maxime minima culpa accusantium explicabo. Cum rerum nostrum impedit esse vel, necessitatibus tempora suscipit sequi! Veritatis maiores exercitationem, nemo distinctio iure, cumque rerum at doloribus reiciendis molestiae unde laborum ipsum!</p>
+  </div>
+</section>
+
+
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -m-4">
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
+            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            <div class="flex items-center flex-wrap ">
+              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/721x401" alt="blog">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
+            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            <div class="flex items-center flex-wrap">
+              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/722x402" alt="blog">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
+            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            <div class="flex items-center flex-wrap ">
+              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="text-gray-600 body-font">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+      <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
+    </div>
+    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
+        <br class="hidden lg:inline-block">readymade gluten
+      </h1>
+      <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
+      <div class="flex justify-center">
+        <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+        <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -m-4 text-center">
+      <div class="p-4 sm:w-1/4 w-1/2">
+        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">2.7K</h2>
+        <p class="leading-relaxed">Users</p>
+      </div>
+      <div class="p-4 sm:w-1/4 w-1/2">
+        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">1.8K</h2>
+        <p class="leading-relaxed">Subscribes</p>
+      </div>
+      <div class="p-4 sm:w-1/4 w-1/2">
+        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">35</h2>
+        <p class="leading-relaxed">Downloads</p>
+      </div>
+      <div class="p-4 sm:w-1/4 w-1/2">
+        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">4</h2>
+        <p class="leading-relaxed">Products</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap md:text-left text-center order-first">
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SUBSCRIBE</h2>
+        <div class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
+          <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+            <label for="footer-field" class="leading-7 text-sm text-gray-600">Placeholder</label>
+            <input type="text" id="footer-field" name="footer-field" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+          <button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
+        </div>
+        <p class="text-gray-500 text-sm mt-2 md:text-left text-center">Bitters chicharrones fanny pack
+          <br class="lg:block hidden">waistcoat green juice
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray-100">
+    <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">Tailblocks</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2020 Tailblocks —
+        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@knyttneve</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="/script.js"></script>
+<script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+
 </body>
 </html>
