@@ -4,17 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-     tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brownish: '#65350f',
-          }
-        }
-      }
-    }
-  </script>
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.7.3/tailwind.min.css">
@@ -31,13 +21,15 @@ letter-spacing: 0.5px;
 #news_news{
   display: none;
 }
+.swiper-slide:hover .craus-text{
+  display: block;
+}
 
 </style>
 <script>
 function show(x) {
  x.children[2].style.display = "block";
 //  x.children[1].style.color = "white";
-
 }
 function hide(x) {
  x.children[2].style.display = "none";
@@ -48,17 +40,17 @@ function hide(x) {
 
      document.getElementById('news_news').style.display = "none";
     document.getElementById('donation_news').style.display = "block";
-    document.getElementById('donation_button').style.backgroundColor = "black";
-    document.getElementById('donation_button').style.color = "white";
-        document.getElementById('news_button').style.backgroundColor = "white";
-    document.getElementById('news_button').style.color = "black";
+    document.getElementById('donation_button').style.backgroundColor = "white";
+    document.getElementById('donation_button').style.color = "black";
+        document.getElementById('news_button').style.backgroundColor = "black";
+    document.getElementById('news_button').style.color = "white";
   }else if(x==='news'){
     document.getElementById('news_news').style.display = "block";
     document.getElementById('donation_news').style.display = "none";
-      document.getElementById('news_button').style.backgroundColor = "black";
-    document.getElementById('news_button').style.color = "white";
-      document.getElementById('donation_button').style.backgroundColor = "white";
-    document.getElementById('donation_button').style.color = "black";
+      document.getElementById('news_button').style.backgroundColor = "white";
+    document.getElementById('news_button').style.color = "black";
+      document.getElementById('donation_button').style.backgroundColor = "black";
+    document.getElementById('donation_button').style.color = "white";
   }
  }
 
@@ -69,21 +61,21 @@ function hide(x) {
 
 <body>
  
-<nav class="bg-white border-gray-200 px-2 lg:px-4 py-2.5 rounded bg-gray-900">
+<nav class="bg-white border-gray-200 px-2 lg:px-4 py-2.5 bg-gray-900">
   <div class="container flex flex-wrap items-center justify-between mx-auto">
   <a href="/" class="flex items-center">
 
-      <span class="self-center text-2xl lg:text-3xl font-semibold whitespace-nowrap dark:text-white">Dtu Alum</span>
+      <span class="self-center text-2xl lg:text-3xl font-semibold whitespace-nowrap ">Dtu Alum</span>
   </a>
   <div class="flex md:order-2">
-      <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Donate</button>
-      <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
+      <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 ">Donate</button>
+      <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-cta" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
         <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
     </button>
   </div>
   <div class="items-center absolute z-20 top-10 md:top-0  md:relative justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
-    <ul class="flex flex-col lg:p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 sm:text-base md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 lg:text-xl leading-8 font-semibold text-gray-500">
+    <ul class="flex flex-col lg:p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 sm:text-base md:font-medium md:border-0 md:bg-white  lg:text-xl leading-8 font-semibold text-gray-500">
        
             <li>
                 <a href="#" class="mr-4 md:hidden hover:underline md:mr-3 ">Home</a>
@@ -145,22 +137,22 @@ function hide(x) {
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide ">
-          <div class="flex flex-col relative  shadow overflow-hidden">
+          <div class="flex flex-col relative  shadow overflow-hidden" onmouseenter="show(this)" onmouseleave="hide(this)">
             <div class="flex-shrink-0">
               <img class="h-[50vh] md:h-[70vh] w-full object-cover" src="https://dcedtualumni.org/images/AlumniMeet2020/slider-images/silver-jubilee-slide3.jpg" alt="">
             </div>
-<div class=" relative text-center lg:text-left pt-5 pb-10 lg:p-0  text-black lg:absolute  lg:top-10 lg:left-10 text-[20px] sm:text-[30px] lg:text-[50px] lg:text-white w-full px-5 sm:px-10 lg:p-0 lg:max-w-[500px] text">
+<div class=" relative text-center lg:text-left pt-5 pb-10 lg:p-0  text-black lg:hidden ease-in-out duration-300 lg:absolute craus-text  lg:top-10 lg:left-10 text-[20px] sm:text-[30px] lg:text-[50px] lg:text-white w-full px-5 sm:px-10 lg:p-0 lg:max-w-[500px] text">
 Annual Association Meet 2022 for the batch of 1996-2000 will be held on 27th and 28th August 2022 at the campus.
 </div>
           </div>
         </div>
                 
         <div class="swiper-slide ">
-          <div class="flex relative flex-col  shadow overflow-hidden">
+          <div class="flex relative flex-col  shadow overflow-hidden" onmouseenter="show(this)" onmouseleave="hide(this)">
             <div class="flex-shrink-0">
               <img class="h-[50vh] md:h-[70vh] w-full object-cover" src="https://dcedtualumni.org/images/AlumniMeet2020/slider-images/Golden-jubilee-slide2.jpg" alt="">
             </div>
-            <div class=" relative text-center lg:text-left pt-5 pb-10 lg:p-0  text-black lg:absolute  lg:top-10 lg:left-10 text-[20px] sm:text-[30px] lg:text-[50px] lg:text-white w-full px-5 sm:px-10 lg:p-0 lg:max-w-[500px] text">
+            <div class=" relative text-center lg:text-left pt-5 pb-10 lg:p-0 lg:hidden  text-black lg:absolute craus-text  lg:top-10 lg:left-10 text-[20px] sm:text-[30px] lg:text-[50px] lg:text-white w-full px-5 sm:px-10 lg:p-0 lg:max-w-[500px] text">
 Annual Association Meet 2022 for the batch of 1996-2000 will be held on 27th and 28th August 2022 at the campus.
 </div>
           </div>
@@ -188,10 +180,10 @@ Annual Association Meet 2022 for the batch of 1996-2000 will be held on 27th and
   <div class="z-20 md:absolute top-20  right-12 md:w-[28%] md:max-h-[500px] md:max-w-[500px] bg-black bg-opacity-50 text-white py-5 md:rounded-md">
 
 <div class="inline-flex w-4/5 mx-[10%]  rounded-md shadow-sm">
-  <p  class="cursor-pointer px-4 py-2 text-sm w-1/2 font-medium text-center text-white bg-black  rounded-l-lg focus:z-10" onclick="news('donation')" id="donation_button">
+  <p  class="cursor-pointer px-4 py-2 text-sm w-1/2 font-medium text-center text-black  bg-white  rounded-l-lg hover:ring-2 focus:z-10" onclick="news('donation')" id="donation_button">
     Donation
   </p>
-  <p class="cursor-pointer px-4 py-2 text-sm font-medium text-black w-1/2 text-center bg-white  rounded-r-md focus:z-10   " onclick="news('news')" id="news_button">
+  <p class="cursor-pointer px-4 py-2 text-sm font-medium text-white w-1/2 text-center bg-black  rounded-r-md hover:ring-2 focus:z-10   " onclick="news('news')" id="news_button">
     News
   </p>
 </div>
@@ -257,10 +249,10 @@ Annual Association Meet 2022 for the batch of 1996-2000 will be held on 27th and
           <div class="flex-shrink-0 relative alumni" onmouseover="show(this)" onmouseleave="hide(this)" onclick="show(this)">
             <img class="h-[50vh] w-full object-cover" src="https://images.squarespace-cdn.com/content/v1/5cdcc14ad86cc91b80cdbf65/1558486905146-N2NCK3RXK9ZJ1PLRMEDN/Raj+Headshot+2-2019.jpg?format=750w" alt="">
 <div class="absolute bottom-0 p-6  z-50 alumni-content text-white">
-<p class="text-3xl font-semibold">Raj soin</p>
+<p class="text-xl md:text-2xl  lg:text-3xl font-semibold">Raj soin</p>
 <p >Class 1969</p>
 </div>
-            <div class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-xl  ">
+            <div class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl  ">
 Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now chairman and CEO of Soin LLC at Ohio in the US, donated the amount Rs 5 crore for the construction of a multipurpose hall at his alma mater Delhi Technological University
             </div>
           </div>
@@ -271,10 +263,10 @@ Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now cha
           <div class="flex-shrink-0 relative alumni" onmouseover="show(this)" onmouseleave="hide(this)" onclick="show(this)">
             <img class="h-[50vh] w-full object-cover" src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcT8xQMR7KOxGyMcjeRxEf-c9yDrR2Jr5EEseSg_0xKodBeUhxhqqtSgaztN5gQZ90y-Dy6uz9C2FRgn3zs" alt="">
 <div class="absolute bottom-0 p-6  z-50 alumni-content text-white">
-<p class="text-3xl font-semibold">Raj soin</p>
+<p class="text-xl md:text-2xl  lg:text-3xl font-semibold">Raj soin</p>
 <p >Class 1965</p>
 </div>
-            <div class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-xl  ">
+            <div class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl  ">
 Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now chairman and CEO of Soin LLC at Ohio in the US, donated the amount Rs 5 crore for the construction of a multipurpose hall at his alma mater Delhi Technological University
             </div>
           </div>
@@ -285,10 +277,10 @@ Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now cha
           <div class="flex-shrink-0 relative alumni" onmouseover="show(this)" onmouseleave="hide(this)" onclick="show(this)">
             <img class="h-[50vh] w-full object-cover" src="https://images.squarespace-cdn.com/content/v1/5cdcc14ad86cc91b80cdbf65/1558486905146-N2NCK3RXK9ZJ1PLRMEDN/Raj+Headshot+2-2019.jpg?format=750w" alt="">
 <div class="absolute bottom-0 p-6  z-50 alumni-content text-white">
-<p class="text-3xl font-semibold">Raj soin</p>
+<p class="text-xl md:text-2xl  lg:text-3xl font-semibold">Raj soin</p>
 <p >Class 1967</p>
 </div>
-            <div class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-xl  ">
+            <div class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl   ">
 Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now chairman and CEO of Soin LLC at Ohio in the US, donated the amount Rs 5 crore for the construction of a multipurpose hall at his alma mater Delhi Technological University
             </div>
           </div>
@@ -299,10 +291,10 @@ Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now cha
           <div class="flex-shrink-0 relative alumni" onmouseover="show(this)" onmouseleave="hide(this)" onclick="show(this)">
             <img class="h-[50vh] w-full object-cover" src="https://images.squarespace-cdn.com/content/v1/5cdcc14ad86cc91b80cdbf65/1558486905146-N2NCK3RXK9ZJ1PLRMEDN/Raj+Headshot+2-2019.jpg?format=750w" alt="">
 <div class="absolute bottom-0 p-6  z-50 alumni-content text-white">
-<p class="text-3xl font-semibold">Raj soin</p>
+<p class="text-xl md:text-2xl  lg:text-3xl font-semibold">Raj soin</p>
 <p >Class 1968</p>
 </div>
-            <div class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-xl  ">
+            <div class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl   ">
 Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now chairman and CEO of Soin LLC at Ohio in the US, donated the amount Rs 5 crore for the construction of a multipurpose hall at his alma mater Delhi Technological University
             </div>
           </div>
@@ -345,7 +337,7 @@ Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now cha
         <div class="w-4/5 inline-block mx-auto">
           <div class="h-full overflow-hidden">
             <img class=" h-48 md:h-36 lg:h-48  w-full object-cover object-center" src="public/img/connect.jpg" alt="joinus">
-              <div class="bg-brownish mx-4 relative bottom-6">
+              <div class="bg-[#65350f] mx-4 relative bottom-6">
                 <span class="hidden sm:hidden md:hidden lg:block material-symbols-outlined  lg:absolute text-3xl lg:top-5 lg:left-4 text-white">
                   handshake
                   </span>
@@ -368,7 +360,7 @@ Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now cha
         <div class="w-4/5 inline-block mx-auto">
           <div class="h-full overflow-hidden">
             <img class=" h-48 md:h-36 lg:h-48  w-full object-cover object-center" src="public/img/donation.jpg" alt="donate">
-              <div class="bg-brownish mx-4 relative bottom-6">
+              <div class="bg-[#65350f] mx-4 relative bottom-6">
                 <span class="hidden sm:hidden md:hidden lg:block material-symbols-outlined  lg:absolute text-3xl lg:top-5 lg:left-4 text-white">
                   volunteer_activism
                   </span>
@@ -391,7 +383,7 @@ Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now cha
         <div class="w-4/5 inline-block mx-auto">
           <div class="h-full overflow-hidden">
             <img class=" h-48 md:h-36 lg:h-48  w-full object-cover object-center" src="public/img/mentor.jpg" alt="mentor">
-              <div class="bg-brownish mx-4 relative bottom-6">
+              <div class="bg-[#65350f] mx-4 relative bottom-6">
                 <span class="hidden sm:hidden md:hidden lg:block material-symbols-outlined  lg:absolute text-3xl lg:top-5 lg:left-4 text-white">
                   wb_incandescent
                   </span>
@@ -435,56 +427,35 @@ Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now cha
     </div>
   </div>
 </section>
-<section class="bg-white dark:bg-gray-900">
+<section class="bg-white ">
   <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-      <dl class="grid max-w-screen-lg gap-8 mx-auto text-gray-900 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 dark:text-white">
+      <dl class="grid max-w-screen-lg gap-8 mx-auto text-gray-900 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 ">
           <div class="flex flex-col items-center justify-center">
               <dt class="mb-2 text-3xl md:text-4xl font-extrabold">60K+</dt>
-              <dd class="font-light text-gray-500 dark:text-gray-400">Alumni</dd>
+              <dd class="font-light text-gray-500 ">Alumni</dd>
           </div>
           <div class="flex flex-col items-center justify-center">
               <dt class="mb-2 text-3xl md:text-4xl font-extrabold">2k+</dt>
-              <dd class="font-light text-gray-500 dark:text-gray-400">contributors</dd>
+              <dd class="font-light text-gray-500 ">contributors</dd>
           </div>
           <div class="flex flex-col items-center justify-center">
               <dt class="mb-2 text-3xl md:text-4xl font-extrabold">50cr+</dt>
-              <dd class="font-light text-gray-500 dark:text-gray-400">donations recieved</dd>
+              <dd class="font-light text-gray-500 ">donations recieved</dd>
           </div>
           <div class="flex flex-col items-center justify-center">
               <dt class="mb-2 text-3xl md:text-4xl font-extrabold">100Cr+</dt>
-              <dd class="font-light text-gray-500 dark:text-gray-400">Donation pledge</dd>
+              <dd class="font-light text-gray-500 ">Donation pledge</dd>
           </div>
       </dl>
   </div>
 </section>
-<!-- <section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-wrap -m-4 text-center">
-      <div class="p-4 sm:w-1/4 w-1/2">
-        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">2.7K</h2>
-        <p class="leading-relaxed">Users</p>
-      </div>
-      <div class="p-4 sm:w-1/4 w-1/2">
-        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">1.8K</h2>
-        <p class="leading-relaxed">Subscribes</p>
-      </div>
-      <div class="p-4 sm:w-1/4 w-1/2">
-        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">35</h2>
-        <p class="leading-relaxed">Downloads</p>
-      </div>
-      <div class="p-4 sm:w-1/4 w-1/2">
-        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">4</h2>
-        <p class="leading-relaxed">Products</p>
-      </div>
-    </div>
-  </div>
-</section> -->
+
 
 <footer class="p-4 bg-gray-200  rounded-lg shadow  md:py-6 md:pb-20 border" id="contact">
   
     <div class="flex flex-col-reverse md:flex-row sm:items-center sm:justify-between lg:mx-20">
     <div>
-        <ul class="flex text-center md:text-left  flex-wrap md:grid md::grid-cols-1 items-center my-6 text-xl leading-8 font-semibold text-gray-500 sm:mb-0 dark:text-gray-400">
+        <ul class="flex text-center md:text-left  flex-wrap md:grid md::grid-cols-1 items-center my-6 text-xl leading-8 font-semibold text-gray-500 sm:mb-0 ">
             <li>
                 <a href="#" class="mr-4 hover:underline md:mr-6 ">Donate</a>
             </li>
@@ -511,29 +482,29 @@ Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now cha
         </ul>
        
         </div>
-        <div class="bg-white rounded-lg md:w-1/2 lg:w-max shadow-lg dark:bg-gray-900">
+        <div class="bg-white rounded-lg md:w-1/2 lg:w-max shadow-lg ">
   <div class="py-3 lg:py-5 px-4 w-full lg:w-[600px]">
-      <h2 class="mb-2 text-4xl w-full tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
+      <h2 class="mb-2 text-4xl w-full tracking-tight font-extrabold text-center text-gray-900 ">Contact Us</h2>
      <form action="#" class="space-y-3">
           <div>
-              <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
-              <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+              <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Your email</label>
+              <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5    " placeholder="name@flowbite.com" required>
           </div>
           <div>
-              <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
-              <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+              <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 ">Subject</label>
+              <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500    " placeholder="Let us know how we can help you" required>
           </div>
           <div class="sm:col-span-2">
-              <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-              <textarea id="message" rows="3" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+              <label for="message" class="block mb-2 text-sm font-medium text-gray-900 ">Your message</label>
+              <textarea id="message" rows="3" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500   " placeholder="Leave a comment..."></textarea>
           </div>
-          <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-gray-700 sm:w-fit  focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+          <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-gray-700 sm:w-fit  focus:ring-4 focus:outline-none focus:ring-primary-300 ">Send message</button>
       </form>
   </div>
 </div>
     </div>
      <div>
-            <p class="text-sm text-center my-2 text-gray-500 dark:text-gray-400">© 2023 All rights reserved.</p>
+            <p class="text-sm text-center my-2 text-gray-500 ">© 2023 All rights reserved.</p>
         </div>
 </footer>
 
