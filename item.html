@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.7.3/tailwind.min.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+  .alumni-text{
+  display: none;
+  font-family: 'Tilt Neon', cursive;
+letter-spacing: 0.5px;
+  }
+  .text{
+    font-family: 'Tilt Neon', cursive;
+  }
+#news_news{
+  display: none;
+}
+</style>
+<script>
+function show(x) {
+ x.children[2].style.display = "block";
+//  x.children[1].style.color = "white";
+
+}
+function hide(x) {
+ x.children[2].style.display = "none";
+  // x.children[1].style.color = "black";
+}
+ function news(x) {
+  if (x==='donation') {
+
+     document.getElementById('news_news').style.display = "none";
+    document.getElementById('donation_news').style.display = "block";
+    document.getElementById('donation_button').style.backgroundColor = "black";
+    document.getElementById('donation_button').style.color = "white";
+        document.getElementById('news_button').style.backgroundColor = "white";
+    document.getElementById('news_button').style.color = "black";
+  }else if(x==='news'){
+    document.getElementById('news_news').style.display = "block";
+    document.getElementById('donation_news').style.display = "none";
+      document.getElementById('news_button').style.backgroundColor = "black";
+    document.getElementById('news_button').style.color = "white";
+      document.getElementById('donation_button').style.backgroundColor = "white";
+    document.getElementById('donation_button').style.color = "black";
+  }
+ }
+
+
+ let data = [
+  {
+    "name": "Raj Soin",
+    "image": "http://media.bizj.us/view/img/2565681/soin-raj-photo-2-6-20-12*1200xx3473-1954-0-409.jpg",
+    "batch": "1969",
+    "class": "B.Tech",
+    "branch": "Mechanical Engineering",
+    "text": "Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now chairman and CEO of Soin LLC at Ohio in the US, donated the amount Rs 5 crore for the construction of a multipurpose hall at his alma mater Delhi Technological University."
+  },
+  {
+    "name": "Vinod Dham",
+    "image": "http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcT8xQMR7KOxGyMcjeRxEf-c9yDrR2Jr5EEseSg_0xKodBeUhxhqqtSgaztN5gQZ90y-Dy6uz9C2FRgn3zs",
+    "batch": "1971",
+    "class": "B.Tech",
+    "branch": "Electrical Engineering",
+    "text": "Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now chairman and CEO of Soin LLC at Ohio in the US, donated the amount Rs 5 crore for the construction of a multipurpose hall at his alma mater Delhi Technological University."
+  },
+  {
+    "name": "Raj Soin",
+    "image": "http://media.bizj.us/view/img/2565681/soin-raj-photo-2-6-20-12*1200xx3473-1954-0-409.jpg",
+    "batch": "1969",
+    "class": "B.Tech",
+    "branch": "Mechanical Engineering",
+    "text": "Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now chairman and CEO of Soin LLC at Ohio in the US, donated the amount Rs 5 crore for the construction of a multipurpose hall at his alma mater Delhi Technological University."
+  },
+  {
+    "name": "Vinod Dham",
+    "image": "https://images.yourstory.com/cs/images/people/013-1597139274636.jfif",
+    "batch": "1971",
+    "class": "B.Tech",
+    "branch": "Electrical Engineering",
+    "text": "Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now chairman and CEO of Soin LLC at Ohio in the US, donated the amount Rs 5 crore for the construction of a multipurpose hall at his alma mater Delhi Technological University."
+  },
+  {
+    "name": "Raj Soin",
+    "image": "http://media.bizj.us/view/img/2565681/soin-raj-photo-2-6-20-12*1200xx3473-1954-0-409.jpg",
+    "batch": "1969",
+    "class": "B.Tech",
+    "branch": "Mechanical Engineering",
+    "text": "Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now chairman and CEO of Soin LLC at Ohio in the US, donated the amount Rs 5 crore for the construction of a multipurpose hall at his alma mater Delhi Technological University."
+  },
+  {
+    "name": "Vinod Dham",
+    "image": "https://images.yourstory.com/cs/images/people/013-1597139274636.jfif",
+    "batch": "1971",
+    "class": "B.Tech",
+    "branch": "Electrical Engineering",
+    "text": "Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now chairman and CEO of Soin LLC at Ohio in the US, donated the amount Rs 5 crore for the construction of a multipurpose hall at his alma mater Delhi Technological University."
+  }
+]
+console.log(data)
+let alum = `<div></div>`;
+for(let item of data ){
+alum +=`
+     <div class="swiper-slide  ">
+        <div class="flex flex-col rounded shadow overflow-hidden">
+          <div class="flex-shrink-0 relative alumni" onmouseover="show(this)" onmouseleave="hide(this)" onclick="show(this)">
+            <img class="h-[50vh] w-full object-cover" src="${item.image}" alt="">
+<div class="absolute bottom-0 p-6  z-50 alumni-content text-white">
+<p class="text-3xl font-semibold">${item.name}</p>
+<p >Class ${item.batch}</p>
+</div>
+            <div class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-xl  ">
+${item.text}    </div>
+          </div>
+        </div>
+      </div>
+`
+  
+}
+console.log(alum)
+document.getElementById("alumnicarousel").innerHTML =`<div></div>
+     <div class="swiper-slide  ">
+        <div class="flex flex-col rounded shadow overflow-hidden">
+          <div class="flex-shrink-0 relative alumni" onmouseover="show(this)" onmouseleave="hide(this)" onclick="show(this)">
+            <img class="h-[50vh] w-full object-cover" src="http://media.bizj.us/view/img/2565681/soin-raj-photo-2-6-20-12*1200xx3473-1954-0-409.jpg" alt="">
+<div class="absolute bottom-0 p-6  z-50 alumni-content text-white">
+<p class="text-3xl font-semibold">Raj Soin</p>
+<p >Class 1969</p>
+</div>
+            <div class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-xl  ">
+Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now chairman and CEO of Soin LLC at Ohio in the US, donated the amount Rs 5 crore for the construction of a multipurpose hall at his alma mater Delhi Technological University.    </div>
+          </div>
+        </div>
+      </div>
+
+     <div class="swiper-slide  ">
+        <div class="flex flex-col rounded shadow overflow-hidden">
+          <div class="flex-shrink-0 relative alumni" onmouseover="show(this)" onmouseleave="hide(this)" onclick="show(this)">
+            <img class="h-[50vh] w-full object-cover" src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcT8xQMR7KOxGyMcjeRxEf-c9yDrR2Jr5EEseSg_0xKodBeUhxhqqtSgaztN5gQZ90y-Dy6uz9C2FRgn3zs" alt="">
+<div class="absolute bottom-0 p-6  z-50 alumni-content text-white">
+<p class="text-3xl font-semibold">Vinod Dham</p>
+<p >Class 1971</p>
+</div>
+            <div class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-xl  ">
+Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now chairman and CEO of Soin LLC at Ohio in the US, donated the amount Rs 5 crore for the construction of a multipurpose hall at his alma mater Delhi Technological University.    </div>
+          </div>
+        </div>
+      </div>
+
+     <div class="swiper-slide  ">
+        <div class="flex flex-col rounded shadow overflow-hidden">
+          <div class="flex-shrink-0 relative alumni" onmouseover="show(this)" onmouseleave="hide(this)" onclick="show(this)">
+            <img class="h-[50vh] w-full object-cover" src="http://media.bizj.us/view/img/2565681/soin-raj-photo-2-6-20-12*1200xx3473-1954-0-409.jpg" alt="">
+<div class="absolute bottom-0 p-6  z-50 alumni-content text-white">
+<p class="text-3xl font-semibold">Raj Soin</p>
+<p >Class 1969</p>
+</div>
+            <div class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-xl  ">
+Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now chairman and CEO of Soin LLC at Ohio in the US, donated the amount Rs 5 crore for the construction of a multipurpose hall at his alma mater Delhi Technological University.    </div>
+          </div>
+        </div>
+      </div>
+
+     <div class="swiper-slide  ">
+        <div class="flex flex-col rounded shadow overflow-hidden">
+          <div class="flex-shrink-0 relative alumni" onmouseover="show(this)" onmouseleave="hide(this)" onclick="show(this)">
+            <img class="h-[50vh] w-full object-cover" src="https://images.yourstory.com/cs/images/people/013-1597139274636.jfif" alt="">
+<div class="absolute bottom-0 p-6  z-50 alumni-content text-white">
+<p class="text-3xl font-semibold">Vinod Dham</p>
+<p >Class 1971</p>
+</div>
+            <div class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-xl  ">
+Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now chairman and CEO of Soin LLC at Ohio in the US, donated the amount Rs 5 crore for the construction of a multipurpose hall at his alma mater Delhi Technological University.    </div>
+          </div>
+        </div>
+      </div>
+
+     <div class="swiper-slide  ">
+        <div class="flex flex-col rounded shadow overflow-hidden">
+          <div class="flex-shrink-0 relative alumni" onmouseover="show(this)" onmouseleave="hide(this)" onclick="show(this)">
+            <img class="h-[50vh] w-full object-cover" src="http://media.bizj.us/view/img/2565681/soin-raj-photo-2-6-20-12*1200xx3473-1954-0-409.jpg" alt="">
+<div class="absolute bottom-0 p-6  z-50 alumni-content text-white">
+<p class="text-3xl font-semibold">Raj Soin</p>
+<p >Class 1969</p>
+</div>
+            <div class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-xl  ">
+Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now chairman and CEO of Soin LLC at Ohio in the US, donated the amount Rs 5 crore for the construction of a multipurpose hall at his alma mater Delhi Technological University.    </div>
+          </div>
+        </div>
+      </div>
+
+     <div class="swiper-slide  ">
+        <div class="flex flex-col rounded shadow overflow-hidden">
+          <div class="flex-shrink-0 relative alumni" onmouseover="show(this)" onmouseleave="hide(this)" onclick="show(this)">
+            <img class="h-[50vh] w-full object-cover" src="https://images.yourstory.com/cs/images/people/013-1597139274636.jfif" alt="">
+<div class="absolute bottom-0 p-6  z-50 alumni-content text-white">
+<p class="text-3xl font-semibold">Vinod Dham</p>
+<p >Class 1971</p>
+</div>
+            <div class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-xl  ">
+Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now chairman and CEO of Soin LLC at Ohio in the US, donated the amount Rs 5 crore for the construction of a multipurpose hall at his alma mater Delhi Technological University.    </div>
+          </div>
+        </div>
+      </div>`;
+
+
+</script>
+</head> 
+<body>
+    
+
+
+<div x-data="{swiper: null}"
+  x-init="swiper = new Swiper($refs.container, {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+   pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+   autoplay: {
+      delay: 2000,
+    },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+      },
+    })"
+  class="relative w-12/12 mx-auto my-10 px-10"
+>
+<p class="text-3xl font-bold py-2">Noted Alumni</p>
+
+  <div class="swiper-container" x-ref="container">
+    <div class="swiper-wrapper" id="alumnicarousel">
+      <!-- Slides -->
+     
+      
+      
+ 
+    </div>
+  </div>
+<div class="swiper-pagination absolute -bottom-6 flex gap-1 "></div>
+ <div class="absolute  -bottom-15 right-16 z-10 flex items-center" >
+    <button @click="swiper.slidePrev()" 
+            class="bg-white m-2  flex justify-center items-center w-10 h-10 rounded-full shadow shadow-lg focus:outline-none">
+      <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left w-6 h-6"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+    </button>
+  </div>
+  <div class="absolute  m-2 -bottom-15 right-5 z-10 flex items-center">
+    <button @click="swiper.slideNext()" 
+            class="bg-white flex justify-center items-center w-10 h-10 rounded-full shadow shadow-lg focus:outline-none">
+      <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right w-6 h-6"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+    </button>
+  </div>
+</div>
+<script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+</body>
+</html>

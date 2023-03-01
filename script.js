@@ -109,7 +109,7 @@ fetch("/data/news.json").then(response => response.json())
             alum += ` <div class="swiper-slide  ">
         <div class="flex flex-col rounded shadow overflow-hidden">
           <div class="flex-shrink-0 relative alumni" onmouseover="show(this)" onmouseleave="hide(this)" onclick="show(this)">
-            <img class="h-[50vh] w-full object-cover" src="https://images.squarespace-cdn.com/content/v1/5cdcc14ad86cc91b80cdbf65/1558486905146-N2NCK3RXK9ZJ1PLRMEDN/Raj+Headshot+2-2019.jpg?format=750w" alt="">
+            <img class="h-[50vh] w-full object-cover" src="https://images.squarespace-cdn.com/content/v1/5cdcc14ad86cc91b80cdbf65/1558486905146-N2NCK3RXK9ZJ1PLRMEDN/Raj+Headshot+2-2019.jpg?format=750w" referrerpolicy="no-referrer" alt="">
 <div class="absolute bottom-0 p-6  z-50 alumni-content text-white">
 <p class="text-3xl font-semibold">Raj soin</p>
 <p >Class 1969</p>
