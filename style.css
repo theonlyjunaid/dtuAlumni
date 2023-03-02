@@ -1,0 +1,23 @@
+   @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+    .alumni-text {
+      display: none;
+      font-family: 'Tilt Neon', cursive;
+      letter-spacing: 0.5px;
+    }
+
+    * {
+      font-family: 'Tilt Neon', cursive;
+    }
+
+    #news_news {
+      display: none;
+    }
+
+    #past_events{
+    display: none;
+  }
+
+    .swiper-slide:hover .craus-text {
+      display: block;
+    }
