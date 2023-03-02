@@ -27,6 +27,10 @@
       display: none;
     }
 
+    #past_events{
+    display: none;
+  }
+
     .swiper-slide:hover .craus-text {
       display: block;
     }
@@ -58,6 +62,25 @@
         document.getElementById('donation_button').style.color = "white";
       }
     }
+
+    function events(x) {
+    if (x==='upcoming') {
+  
+       document.getElementById('past_events').style.display = "none";
+      document.getElementById('upcoming_events').style.display = "block";
+      document.getElementById('upcoming_button').style.backgroundColor = "black";
+      document.getElementById('upcoming_button').style.color = "white";
+          document.getElementById('past_button').style.backgroundColor = "white";
+      document.getElementById('past_button').style.color = "black";
+    }else if(x==='past'){
+      document.getElementById('past_events').style.display = "block";
+      document.getElementById('upcoming_events').style.display = "none";
+        document.getElementById('past_button').style.backgroundColor = "black";
+      document.getElementById('past_button').style.color = "white";
+        document.getElementById('upcoming_button').style.backgroundColor = "white";
+      document.getElementById('upcoming_button').style.color = "black";
+    }
+   }
 
 
 
@@ -383,11 +406,8 @@
   </section>
   <section>
     <div class="px-20   py-10">
-      <h3 class="text-4xl text-center font-medium">Lorem ipsum dolor sit amet.</h3>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id doloremque voluptas quaerat placeat nobis? Quos
-        eum exercitationem architecto sit ducimus maxime minima culpa accusantium explicabo. Cum rerum nostrum impedit
-        esse vel, necessitatibus tempora suscipit sequi! Veritatis maiores exercitationem, nemo distinctio iure, cumque
-        rerum at doloribus reiciendis molestiae unde laborum ipsum!</p>
+      <h3 class="text-4xl text-center font-medium">Welcome back to the place where your dreams began and your future took shape - your alma mater.</h3>
+      <!-- <p>Education is not just about acquiring knowledge, it's about transforming oneself and leaving an indelible mark on the world. As alumni, we carry the legacy of our university and have the power to make a positive impact in every sphere of our lives.</p> -->
     </div>
   </section>
 
@@ -421,7 +441,7 @@
 
                 <h1 class="title-font text-white text-2xl p-5 text-center font-medium mb-3">Donate</h1>
               </div>
-              <p class="leading-relaxed mb-3">support your Alma mater to make a huge and lasting impact and leave behind
+              <p class="leading-relaxed mb-3">Support your alma mater to make a huge and lasting impact and leave behind
                 a legacy</p>
 
             </div>
@@ -450,30 +470,115 @@
 
 
 
-
-
-  <section class="text-gray-600 body-font">
-    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-        <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
-      </div>
-      <div
-        class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
-          <br class="hidden lg:inline-block">readymade gluten
-        </h1>
-        <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant
-          cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic
-          tumeric truffaut hexagon try-hard chambray.</p>
-        <div class="flex justify-center">
-          <button
-            class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-          <button
-            class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+  <p class="text-3xl font-bold py-2 lg:mx-10 lg:px-5 lg:text-left text-center">Events</p>
+  <section class="text-gray-600 body-font lg:flex relative">
+  <!-- events carousel -->
+  <div x-data="{swiper: null}"
+  x-init="swiper = new Swiper($refs.container, {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+        pagination: {
+  el: '.swiper-pagination-1',
+  clickable: true,
+  },
+   autoplay: {
+    delay: 9000,
+  },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        1024: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+      },
+    })"
+  class="relative overflow-hidden w-12/12 lg:w-4/12 mx-auto flex flex-row"
+  > 
+  
+  <div class="swiper-container" x-ref="container">
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide ">
+        <div class="flex relative flex-col  shadow overflow-hidden" onmouseenter="show(this)"
+        onmouseleave="hide(this)">
+          <div class="flex-shrink-0">
+            <img class="h-[50vh] md:h-[70vh] w-full object-cover" src="https://dcedtualumni.org/images/AlumniMeet2020/slider-images/silver-jubilee-slide3.jpg" alt="">
+          </div>
+  <div class=" relative text-center lg:text-left pt-5 pb-10 lg:p-0  text-black lg:absolute  lg:top-10 lg:left-10 text-[20px] sm:text-[30px] lg:text-[50px] lg:text-white w-full px-5 sm:px-10 lg:p-0 lg:max-w-[500px] text">
+  Annual Association Meet 2022 for the batch of 1996-2000 will be held on 27th and 28th August 2022 at the campus.
+  </div>
         </div>
       </div>
+              
+      <div class="swiper-slide ">
+        <div class="flex relative flex-col  shadow overflow-hidden" onmouseenter="show(this)"
+        onmouseleave="hide(this)">
+          <div class="flex-shrink-0">
+            <img class="h-[50vh] md:h-[70vh] w-full object-cover" src="https://dcedtualumni.org/images/AlumniMeet2020/slider-images/Golden-jubilee-slide2.jpg" alt="">
+          </div>
+          <div class=" relative text-center lg:text-left pt-5 pb-10 lg:p-0  text-black lg:absolute  lg:top-10 lg:left-10 text-[20px] sm:text-[30px] lg:text-[50px] lg:text-white w-full px-5 sm:px-10 lg:p-0 lg:max-w-[500px] text">
+  Annual Association Meet 2022 for the batch of 1996-2000 will be held on 27th and 28th August 2022 at the campus.
+  </div>
+        </div>
+      </div>               
     </div>
+  </div>
+  
+  
+  <div class="absolute  md:m-2 md:left-4 bottom-2 z-10 w-full justify-center md:w-max flex items-center">
+    <button @click="swiper.slidePrev()" 
+           class="bg-white m-2 hidden  md:flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">
+     <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left w-6 h-6"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+   </button>
+    <div class="swiper-pagination-1   flex md:bg-black md:bg-opacity-25 p-2 px-3 rounded-full gap-2 z-10 "></div>
+    <button @click="swiper.slideNext()" 
+            class="bg-white hidden md:flex m-2 justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">
+      <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right w-6 h-6"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+    </button>
+  </div>
+  </div>
+  
+  <!-- events list -->
+    <div class="mx-auto w-12/12 lg:w-6/12 bg-gray-300 text-white py-5 md:rounded-md">
+  
+      <div class="inline-flex w-4/5 mx-[10%]  rounded-md shadow-sm">
+        <p  class="cursor-pointer px-4 py-2 text-sm w-1/2 font-medium text-center text-white bg-black  rounded-l-lg focus:z-10" onclick="events('upcoming')" id="upcoming_button">
+          Upcoming
+        </p>
+        <p class="cursor-pointer px-4 py-2 text-sm font-medium text-black w-1/2 text-center bg-white  rounded-r-md focus:z-10   " onclick="events('past')" id="past_button">
+          Past
+        </p>
+      </div>
+      
+      <ul class="w-4/5 mx-[10%] my-1 max-h-[300px] overflow-y-scroll" id="upcoming_events">
+        <li>
+          <a href="#" class="block px-4 py-2 text-sm font-[600] text-black hover:bg-gray-600 rounded-lg hover:bg-opacity-50 hover:text-white ease-in-out duration-300 truncate"> Reunion of Batch of 1995
+            <p class="text-black font-[350]">2.3.2023</p>
+          </a>
+        </li>
+      </ul>
+      <ul class="w-4/5 mx-[10%] my-1 max-h-[300px] overflow-y-scroll" id="past_events">
+        <li>
+          <a href="#" class="block px-4 py-2 text-sm font-[600] text-black hover:bg-gray-600 rounded-lg hover:bg-opacity-50 hover:text-white ease-in-out duration-300 truncate">Raj Soin Hall inaugration by Raj Soin
+            <p class="text-black font-[350]">20.3.2023</p>
+          </a>
+        </li>
+      </ul>
+      
+        </div>
   </section>
+
+
+
+ 
   <section class="bg-white ">
     <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
       <dl class="grid max-w-screen-lg gap-8 mx-auto text-gray-900 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 ">
