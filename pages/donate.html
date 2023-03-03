@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.7.3/tailwind.min.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+  <nav class="bg-white border-gray-200 px-2 lg:px-4 py-2.5 bg-gray-900">
+    <div class="container flex flex-wrap items-center justify-between mx-auto">
+      <a href="../index.html" class="flex items-center">
+
+        <span class="self-center text-2xl lg:text-3xl font-semibold whitespace-nowrap ">Dtu Alum</span>
+      </a>
+      <div class="flex md:order-2">
+       <a href="./donate.html"><button type="button"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 ">Donate</button></a>
+        <button data-collapse-toggle="navbar-cta" type="button"
+          class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+          aria-controls="navbar-cta" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+      <div
+        class="items-center absolute z-20 top-10 md:top-0  md:relative justify-between hidden w-full md:flex md:w-auto md:order-1"
+        id="navbar-cta">
+        <ul
+          class="flex flex-col lg:p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 sm:text-base md:font-medium md:border-0 md:bg-white  lg:text-xl leading-8 font-semibold text-gray-600">
+
+          <li>
+            <a href="/" class="mr-4 md:hidden hover:underline md:mr-3 ">Home</a>
+          </li>
+          <li>
+            <a href="#notedAlumni" class="mr-4 hover:underline md:mr-3">Noted Alumni</a>
+          </li>
+          <li>
+            <a href="#About" class="mr-4 hover:underline md:mr-3">About</a>
+          </li>
+          <li>
+            <a href="#Services" class="mr-4 hover:underline md:mr-3">Services</a>
+          </li>
+          <li>
+            <a href="#Events" class="mr-4 hover:underline md:mr-3">Events</a>
+          </li>
+
+          <li>
+            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full mr-4 rounded md:mr-3 md:border-0 md:p-0 md:w-auto active:border-0 hover:underline">Donations <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                <ul class="py-2 text-sm dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                  <li>
+                    <a href="./donorsWall.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Donors Wall</a>
+                  </li>
+                  <li>
+                    <a href="./donate.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Why Donate?</a>
+                  </li>
+                  <li>
+                    <a href="./donate.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Donate Now</a>
+                  </li>
+                </ul>
+                <div class="py-1">
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign out</a>
+                </div>
+            </div>
+        </li>
+
+          <li>
+            <a href="#contact" class="mr-4 hover:underline md:mr-3 ">Contact us</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="w-full h-56 ">
+    <img
+      src="../public/img/donateWide.jpg"
+      class="object-fill w-full h-full hidden lg:block"
+      alt="Image alt text"
+    />
+    <img
+      src="../public/img/donate.jpg"
+      class="object-fill w-full h-full lg:hidden"
+      alt="Image alt text"
+    />
+    <!-- <div class="absolute left-1/2 right-1/2 top-1/4 w-full">
+            <h3 class="">why donate</h3>
+    </div> -->
+  </div>
+  
+  <container id="whyDonate" class="flex-col m-8">
+
+    <p class="text-3xl font-bold py-2 text-center">Your Donation Will Help Provide...</p>
+    <div class="w-9/12 mx-auto">
+        <div class="flex flex-col md:w-full md:flex-row md:h-48">
+            <div class="w-3/6 my-4 content-center md:w-3/12 bg-gray-200 mx-auto flex-col text-center">
+                      <h3 class="pt-2 font-bold text-2xl">Scholarships</h3>
+                      <p class="text-gray-800 m-1 leading-4 tracking-tight">financial aid for meritorious students</p>
+            </div>
+            <div class="w-3/6 my-4 md:w-3/12 bg-gray-200 mx-auto flex-col text-center">
+                <h3 class="pt-2 font-bold text-2xl">Infrastructure</h3>
+                <p class="text-gray-800 m-1 leading-4 tracking-tight">establishment of modern laboratories and research infrasructure</p>
+            </div>
+            <div class="w-3/6 my-4 md:w-3/12 bg-gray-200 mx-auto flex-col text-center">
+                <h3 class="pt-2 font-bold text-2xl">Reseach Funding</h3>
+                <p class="text-gray-800 m-1 leading-4 tracking-tight">funding research projects, innovation, patents</p>
+            </div>
+              
+        </div>
+    
+        <div class="flex flex-col md:w-full md:flex-row md:h-48">
+            <div class="w-3/6 my-4 md:w-5/12 bg-gray-200 mx-auto flex-col text-center">
+              <h3 class="pt-2 font-bold text-2xl">Provide Scholarships</h3>
+              <p class="text-gray-800 m-1 leading-4 tracking-tight">Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="w-3/6 my-4 md:w-5/12 bg-gray-200 mx-auto flex-col text-center">
+                <h3 class="pt-2 font-bold text-2xl">Provide Scholarships</h3>
+                <p class="text-gray-800 m-1 leading-4 tracking-tight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, atque! fdd dfdf dfd ddfdgh dgdg dgdgd dgdgdg dg</p>
+            </div>
+        </div>
+    </div>
+
+  </container>
+
+
+  <footer class="p-4 bg-gray-200  rounded-lg shadow  md:py-6 md:pb-20 border" id="contact">
+
+    <div class="flex flex-col-reverse md:flex-row sm:items-center sm:justify-between lg:mx-20">
+      <div>
+        <ul
+          class="flex justify-center text-center md:text-left  flex-wrap md:grid md::grid-cols-1 items-center my-6 text-xl leading-8 font-semibold text-gray-500 sm:mb-0 ">
+          <li>
+            <a href="#donate" class="mr-4 hover:underline md:mr-6 ">Donate</a>
+          </li>
+          <li>
+            <a href="#notedAlumni" class="mr-4 hover:underline md:mr-6">Noted Alumni</a>
+          </li>
+          <li>
+            <a href="#About" class="mr-4 hover:underline md:mr-6">About</a>
+          </li>
+          <li>
+            <a href="#Services" class="mr-4 hover:underline md:mr-6">Services</a>
+          </li>
+
+          <li>
+            <a href="#Events" class="hover:underline">Events</a>
+          </li>
+          <li>
+            <a href="#Mentorship" class="mr-4 hover:underline md:mr-6 ">Mentorship</a>
+          </li>
+
+        </ul>
+
+      </div>
+      <div class="bg-white rounded-lg md:w-1/2 lg:w-max shadow-lg ">
+        <div class="py-3 lg:py-5 px-4 w-full lg:w-[600px]">
+          <h2 class="mb-2 text-4xl w-full tracking-tight font-extrabold text-center text-gray-900 ">Contact Us</h2>
+          <form action="#" class="space-y-3">
+            <div>
+              <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Your email</label>
+              <input type="email" id="email"
+                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5    "
+                placeholder="name@flowbite.com" required>
+            </div>
+            <div>
+              <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 ">Subject</label>
+              <input type="text" id="subject"
+                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500    "
+                placeholder="Let us know how we can help you" required>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="message" class="block mb-2 text-sm font-medium text-gray-900 ">Your message</label>
+              <textarea id="message" rows="3"
+                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500   "
+                placeholder="Leave a comment..."></textarea>
+            </div>
+            <button type="submit"
+              class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-gray-700 sm:w-fit  focus:ring-4 focus:outline-none focus:ring-primary-300 ">Send
+              message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p class="text-sm text-center my-2 text-gray-500 ">© 2023 All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="../script.js"></script>
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+
+</body>
+
+</html>
