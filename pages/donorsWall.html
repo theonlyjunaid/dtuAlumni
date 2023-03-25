@@ -73,9 +73,9 @@
                     <a href="./donate.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Donate Now</a>
                   </li>
                 </ul>
-                <div class="py-1">
+                <!-- <div class="py-1">
                   <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign out</a>
-                </div>
+                </div> -->
             </div>
         </li>
 
@@ -88,7 +88,7 @@
     </div>
   </nav>
 
-  <section class="w-full h-56">
+  <!-- <section class="w-full h-56">
      <img
       src="../public/img/donorsWallWide.jpg"
       class="object-fill w-full h-full hidden lg:block"
@@ -99,8 +99,46 @@
       class="object-fill w-full h-full lg:hidden"
       alt="Image alt text"
     />
-  </section>
+  </section> -->
+<div class="h-56 w-full bg-gray-50 bg-o">
+  <div class="w-full  justify-center mx-auto container h-56 grid md:grid-cols-2 lg:px-20 items-center">
+    <!-- <img
+      src="../public/img/donateWide.jpg"
+      class="object-fill w-full h-full hidden lg:block"
+      alt="Image alt text"
+    />
+    <img
+      src="../public/img/donate.jpg"
+      class="object-fill w-full h-full lg:hidden"
+      alt="Image alt text"
+    /> -->
+    <!-- <div class="absolute left-1/2 right-1/2 top-1/4 w-full">
+            <h3 class="">why donate</h3>
+    </div> -->
 
+    <div class="text-5xl  font-bold w-1/2  mr-auto">
+Donor Wall
+    </div>
+    <div class="text-3xl  ">
+Express your dedication to the institution by providing philanthropic assistance.
+
+
+
+
+
+   </div>
+    
+  </div>
+  </div>
+  <div class="min-h-screen h-max container mx-auto py-5">
+<div class="container lg:px-10">
+  <h2 class="text-4xl text-center font-bold">
+    University Donation & Contribution Fund
+  </h2>
+  <p class="w-3/5 text-center mx-auto text-xl my-4">
+    University Donation & Contribution Fund is a program that allows individuals and organizations to donate money to universities to support academic programs, research, scholarships, and other important initiatives. These contributions help DTU to provide an excellent education and make a positive impact on society.
+  </p>
+</div>
   <section id="topDonors">
 
     <div x-data="{swiper: null}" x-init="swiper = new Swiper($refs.container, {
@@ -108,7 +146,7 @@
       slidesPerView: 1,
       spaceBetween: 0,
    pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-pagination1',
     clickable: true,
   },
    autoplay: {
@@ -219,7 +257,7 @@
 
         </div>
       </div>
-      <div class="swiper-pagination absolute -bottom-6 flex gap-1 "></div>
+      <div class="swiper-pagination1 absolute -bottom-6 flex gap-1 "></div>
       <div class="absolute  -bottom-15 right-16 z-10 flex items-center">
         <button @click="swiper.slidePrev()"
           class="bg-white m-2  flex justify-center items-center w-10 h-10 rounded-full shadow shadow-lg focus:outline-none">
@@ -242,8 +280,8 @@
       </div>
     </div>
   </section>
-
-  <section class="bg-white " id="donate">
+</div>
+  <!-- <section class="bg-white " id="donate">
     <div class="max-w-screen-xl px-4 py-8 mx-auto text-center -mt-8 lg:py-16 lg:px-6 bg-gray-200 rounded-full">
       <dl class="grid max-w-screen-lg gap-8 mx-auto text-gray-900 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 ">  
         <div class="flex flex-col items-center justify-center">
@@ -260,21 +298,31 @@
         </div>
         <div class="flex flex-col items-center justify-center">
             <dt class="mb-2 text-3xl md:text-3xl font-extrabold">...and more counting</dt>
-            <!-- <dd class="font-light text-gray-500 ">Donation pledge</dd> -->
+
         </div>
       </dl>
     </div>
-  </section>
-
-  <section id="otherDonors w-full items-center">
-    <div class="flex flex-col md:flex-row">
-        <div id="scholarshipFunds" class=" mx-auto w-full md:w-5/12">
+  </section> -->
+<div class="w-full bg-slate-100">
+  <div class="min-h-screen lg:flex container  mx-auto items-center ">
+<div class="lg:w-2/5 px-10">
+  <h2 class="text-4xl font-bold">
+    University Corpus Fund
+  </h2>
+  <p class="text-xl leading-8 my-5">
+    The University Corpus Fund is a corpus fund that is created by the University to support the University’s
+    academic and research activities. The corpus fund is created by the University by investing the donations
+    received from the alumni, industry, and other sources. The corpus fund is invested in the market and the
+    returns from the corpus fund are used to support the University’s academic and research activities.
+  </p>
+</div>
+        <div id="scholarshipFunds" class=" mx-auto w-full md:w-1/2">
             <div x-data="{swiper: null}" x-init="swiper = new Swiper($refs.container, {
                 loop: true,
                 slidesPerView: 1,
                 spaceBetween: 0,
              pagination: {
-              el: '.swiper-pagination',
+              el: '.swiper-pagination2',
               clickable: true,
             },
              autoplay: {
@@ -295,7 +343,9 @@
                   },
                 },
               })" class="relative w-12/12 mx-auto my-5 mb-28 px-10">
-                <p class="text-3xl font-bold py-2">Scholarship Fund</p>
+                <p class="text-3xl font-bold py-2">
+                  Corpus Donor
+                </p>
           
                 <div class="swiper-container" x-ref="container">
                   <div class="swiper-wrapper" id="alumnicarousel">
@@ -381,7 +431,7 @@
           
                   </div>
                 </div>
-                <div class="swiper-pagination absolute -bottom-6 flex gap-1 "></div>
+                <div class="swiper-pagination2 absolute -bottom-6 flex gap-1 "></div>
                 <div class="absolute  -bottom-15 right-16 z-10 flex items-center">
                   <button @click="swiper.slidePrev()"
                     class="bg-white m-2  flex justify-center items-center w-10 h-10 rounded-full shadow shadow-lg focus:outline-none">
@@ -404,14 +454,26 @@
                 </div>
               </div>
         </div>
+  </div>
+  </div>
+<div class="w-full ">
+  <div class="min-h-screen lg:flex flex-row-reverse container  mx-auto items-center ">
+<div class="lg:w-2/5 text-center lg:text-start px-5 lg:pr-10">
+  <h2 class="text-4xl font-bold">
+DTU Medals & Scholarships
 
-        <div id="infrastructureFunds" class="mx-auto w-full md:w-5/12">
+  </h2>
+  <p class="text-xl leading-8 my-5">
+    DTU Medals and Scholarships are academic honors and financial awards that recognize outstanding achievements of students in various fields of study. DTU awards these medals and scholarships to support and encourage academic excellence, research, innovation, and leadership skills among its students. The university offers a range of scholarships and medals, including merit-based scholarships, PhD scholarships, innovation scholarships, and more, to support deserving students in their academic pursuits.
+  </p>
+</div>
+        <div id="scholarshipFunds" class=" mx-auto w-full md:w-1/2">
             <div x-data="{swiper: null}" x-init="swiper = new Swiper($refs.container, {
                 loop: true,
                 slidesPerView: 1,
                 spaceBetween: 0,
              pagination: {
-              el: '.swiper-pagination',
+              el: '.swiper-pagination3',
               clickable: true,
             },
              autoplay: {
@@ -432,7 +494,9 @@
                   },
                 },
               })" class="relative w-12/12 mx-auto my-5 mb-28 px-10">
-                <p class="text-3xl font-bold py-2">Infrastructure Fund</p>
+                <p class="text-3xl font-bold py-2">
+                  top Donor
+                </p>
           
                 <div class="swiper-container" x-ref="container">
                   <div class="swiper-wrapper" id="alumnicarousel">
@@ -518,7 +582,7 @@
           
                   </div>
                 </div>
-                <div class="swiper-pagination absolute -bottom-6 flex gap-1 "></div>
+                <div class="swiper-pagination3 absolute -bottom-6 flex gap-1 "></div>
                 <div class="absolute  -bottom-15 right-16 z-10 flex items-center">
                   <button @click="swiper.slidePrev()"
                     class="bg-white m-2  flex justify-center items-center w-10 h-10 rounded-full shadow shadow-lg focus:outline-none">
@@ -539,9 +603,10 @@
                     </svg>
                   </button>
                 </div>
+              </div>
         </div>
-    </div>
-  </section>
+  </div>
+  </div>
 
 
   <footer class="p-4 bg-gray-200  rounded-lg shadow  md:py-6 md:pb-20 border" id="contact">

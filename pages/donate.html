@@ -15,15 +15,15 @@
 
 <body>
 
-  <nav class="bg-white border-gray-200 px-2 lg:px-4 py-2.5 bg-gray-900">
-    <div class="container flex flex-wrap items-center justify-between mx-auto">
+  <nav class="bg-white border-gray-200 px-2 lg:px-4 shadow-md py-2.5 bg-gray-900">
+    <div class="container flex flex-wrap items-center justify-between lg:px-20 mx-auto">
       <a href="../index.html" class="flex items-center">
 
         <span class="self-center text-2xl lg:text-3xl font-semibold whitespace-nowrap ">Dtu Alum</span>
       </a>
       <div class="flex md:order-2">
-       <a href="./donate.html"><button type="button"
-          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 ">Donate</button></a>
+        <a href="./donate.html"><button type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 ">Donate</button></a>
         <button data-collapse-toggle="navbar-cta" type="button"
           class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
           aria-controls="navbar-cta" aria-expanded="false">
@@ -59,25 +59,39 @@
           </li>
 
           <li>
-            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full mr-4 rounded md:mr-3 md:border-0 md:p-0 md:w-auto active:border-0 hover:underline">Donations <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+              class="flex items-center justify-between w-full mr-4 rounded md:mr-3 md:border-0 md:p-0 md:w-auto active:border-0 hover:underline">Donations
+              <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg></button>
             <!-- Dropdown menu -->
-            <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                <ul class="py-2 text-sm dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                  <li>
-                    <a href="./donorsWall.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Donors Wall</a>
-                  </li>
-                  <li>
-                    <a href="./donate.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Why Donate?</a>
-                  </li>
-                  <li>
-                    <a href="./donate.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Donate Now</a>
-                  </li>
-                </ul>
-                <div class="py-1">
+            <div id="dropdownNavbar"
+              class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+              <ul class="py-2 text-sm dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="./donorsWall.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Donors
+                    Wall</a>
+                </li>
+                <li>
+                  <a href="./donate.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Why
+                    Donate?</a>
+                </li>
+                <li>
+                  <a href="./donate.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Donate
+                    Now</a>
+                </li>
+              </ul>
+              <!-- <div class="py-1">
                   <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign out</a>
-                </div>
+                </div> -->
             </div>
-        </li>
+          </li>
 
           <li>
             <a href="#contact" class="mr-4 hover:underline md:mr-3 ">Contact us</a>
@@ -87,58 +101,51 @@
       </div>
     </div>
   </nav>
+  <div  class="  py-9 pb-20">
+        <h2 class="text-center text-3xl md:text-5xl font-bold py-5">Donate Through</h2>
+        <div class="container px-3 md:px-10 h-full mt-5  md:mt-20">
+          <div class="flex flex-wrap gap-5 mx-auto justify-center h-max py-5 my-5">
+            <div class="w-[400px] border min-h-[350px] rounded-md bg-slate-100 text-center py-5  ">
 
+                <span class="text-2xl font-semibold">By Bank Transfer </span>
+                <p>(IMPS/NEFT/RTGS)</p>
+                <div class="text-lg md:leading-10 my-5">
+                    
+                  <p>Account Number: 36423599642</p>
+                  <p>IFSC Code: SBlN0010446</p>
+                  <p>Branch Name: <br> Delhi College of Engineering Branch </p>
 
-  <div class="w-full h-56 ">
-    <img
-      src="../public/img/donateWide.jpg"
-      class="object-fill w-full h-full hidden lg:block"
-      alt="Image alt text"
-    />
-    <img
-      src="../public/img/donate.jpg"
-      class="object-fill w-full h-full lg:hidden"
-      alt="Image alt text"
-    />
-    <!-- <div class="absolute left-1/2 right-1/2 top-1/4 w-full">
-            <h3 class="">why donate</h3>
-    </div> -->
-  </div>
-  
-  <container id="whyDonate" class="flex-col m-8">
+                  
+                </div>
+                <!-- <a href="donation1.html" class="pricetable-btn">Query</a> -->
 
-    <p class="text-3xl font-bold py-2 text-center">Your Donation Will Help Provide...</p>
-    <div class="w-9/12 mx-auto">
-        <div class="flex flex-col md:w-full md:flex-row md:h-48">
-            <div class="w-3/6 my-4 content-center md:w-3/12 bg-gray-200 mx-auto flex-col text-center">
-                      <h3 class="pt-2 font-bold text-2xl">Scholarships</h3>
-                      <p class="text-gray-800 m-1 leading-4 tracking-tight">financial aid for meritorious students</p>
             </div>
-            <div class="w-3/6 my-4 md:w-3/12 bg-gray-200 mx-auto flex-col text-center">
-                <h3 class="pt-2 font-bold text-2xl">Infrastructure</h3>
-                <p class="text-gray-800 m-1 leading-4 tracking-tight">establishment of modern laboratories and research infrasructure</p>
+ <div class="w-[400px] border min-h-[350px] rounded-md bg-slate-100 text-center pt-5  ">
+
+                <span class="text-2xl font-semibold">By Cheque</span>
+                <div style="padding: 0px 20px;">
+                  <p class="text-lg md:leading-10"  >Cheque Should be made out in favour of, "Registrar, Delhi Technological University"</p>
+                  <p class="text-lg md:leading-10">Cheque should be mailed to Dean Alumni Affairs Office, Civil Department, DTU, Bawana Road, Shabad Dairy, Rohini, New Delhi, 110042, New Delhi</p>
+                 
+                  
+
+                <!-- <a href="donation2.html" class="pricetable-btn">Query</a> -->
+              </div>
             </div>
-            <div class="w-3/6 my-4 md:w-3/12 bg-gray-200 mx-auto flex-col text-center">
-                <h3 class="pt-2 font-bold text-2xl">Reseach Funding</h3>
-                <p class="text-gray-800 m-1 leading-4 tracking-tight">funding research projects, innovation, patents</p>
+ <div class="w-[400px] border min-h-[350px] rounded-md bg-slate-100 text-center pt-5  ">
+
+                <span  class="text-2xl font-semibold">Recurring Donation</span>
+                <div  style="padding: 0px 20px; ">
+                  <p class="text-lg md:leading-10">If you considering donating in installments of monthly, Quarterly basis, most welcome.</p>
+                  <p class="text-lg md:leading-10">To register yourself please reach out us on deanalumniaffairs@dtu.ac.in</p>
+                  
+
+                <!-- <a href="#" class="pricetable-btn">Query</a> -->
+              </div>
             </div>
-              
+          </div>
         </div>
-    
-        <div class="flex flex-col md:w-full md:flex-row md:h-48">
-            <div class="w-3/6 my-4 md:w-5/12 bg-gray-200 mx-auto flex-col text-center">
-              <h3 class="pt-2 font-bold text-2xl">Provide Scholarships</h3>
-              <p class="text-gray-800 m-1 leading-4 tracking-tight">Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="w-3/6 my-4 md:w-5/12 bg-gray-200 mx-auto flex-col text-center">
-                <h3 class="pt-2 font-bold text-2xl">Provide Scholarships</h3>
-                <p class="text-gray-800 m-1 leading-4 tracking-tight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, atque! fdd dfdf dfd ddfdgh dgdg dgdgd dgdgdg dg</p>
-            </div>
-        </div>
-    </div>
-
-  </container>
-
+      </div>
 
   <footer class="p-4 bg-gray-200  rounded-lg shadow  md:py-6 md:pb-20 border" id="contact">
 
@@ -208,7 +215,5 @@
   <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
-
 </body>
-
 </html>
