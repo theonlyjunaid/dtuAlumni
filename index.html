@@ -10,7 +10,11 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.7.3/tailwind.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <!-- required to be in head only -->
+  <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
 </head>
 
 <body>
@@ -352,7 +356,7 @@
     </div>
   </section>
   <section id="About">
-    <div class="px-20   py-10">
+    <div class="px-20 py-10" data-aos="fade-down">
       <h3 class="text-4xl text-center font-medium">Welcome back to the place where your dreams began and your future took shape - your alma mater.</h3>
       <!-- <p>Education is not just about acquiring knowledge, it's about transforming oneself and leaving an indelible mark on the world. As alumni, we carry the legacy of our university and have the power to make a positive impact in every sphere of our lives.</p> -->
     </div>
@@ -362,11 +366,11 @@
   <!-- 3 boxes -->
   <section class="body-font block" id="Services">
     <div class="container px-16 py-24 mx-auto">
-      <div class="flex gap-4 flex-wrap content-center -m-4">
+      <div class="flex gap-4 flex-wrap justify-center content-center -m-4">
 
         <div class="p-4 md:w-[30%] border rounded hover:shadow-lg cursor-pointer flex flex-wrap">
           <div class="w-4/5 inline-block mx-auto">
-            <div class="h-full overflow-hidden">
+            <div class="h-full overflow-hidden" data-aos="zoom-in-up" data-aos-duration="1000">
               <img class=" h-48 md:h-36 lg:h-48  w-full object-cover object-center" src="public/img/connect.jpg"
                 alt="joinus">
               <div class="bg-[#65350f] mx-4 relative bottom-6">
@@ -381,7 +385,7 @@
 
         <div class="p-4 md:w-[30%] flex flex-wrap border rounded hover:shadow-lg cursor-pointer">
           <div class="w-4/5 inline-block mx-auto">
-            <div class="h-full overflow-hidden">
+            <div class="h-full overflow-hidden" data-aos="zoom-in-up" data-aos-duration="1000">
               <img class=" h-48 md:h-36 lg:h-48  w-full object-cover object-center" src="public/img/donation.jpg"
                 alt="donate">
               <div class="bg-[#65350f] mx-4 relative bottom-6">
@@ -397,7 +401,7 @@
 
         <div class="p-4 md:w-[30%] flex flex-wrap border rounded hover:shadow-lg cursor-pointer">
           <div class="w-4/5 inline-block mx-auto">
-            <div class="h-full overflow-hidden">
+            <div class="h-full overflow-hidden" data-aos="zoom-in-up" data-aos-duration="1000">
               <img class=" h-48 md:h-36 lg:h-48  w-full object-cover object-center" src="public/img/mentor.jpg"
                 alt="mentor">
               <div class="bg-[#65350f] mx-4 relative bottom-6">
@@ -415,134 +419,52 @@
     </div>
   </section>
 
-<section id="Events">
+  <section id="Events">
 
-  <p class="text-3xl font-bold py-2 lg:mx-10 lg:px-5 lg:text-left text-center">Events</p>
-  <div class="text-gray-600 body-font lg:flex relative">
-  <!-- events carousel -->
-  <div x-data="{swiper: null}"
-  x-init="swiper = new Swiper($refs.container, {
-      loop: true,
-      slidesPerView: 1,
-      spaceBetween: 0,
-        pagination: {
-  el: '.swiper-pagination-2',
-  clickable: true,
-  },
-   autoplay: {
-    delay: 9000,
-  },
-      breakpoints: {
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 0,
-        },
-        768: {
-          slidesPerView: 1,
-          spaceBetween: 0,
-        },
-        1024: {
-          slidesPerView: 1,
-          spaceBetween: 0,
-        },
-      },
-    })"
-  class="relative overflow-hidden w-12/12 lg:w-4/12 mx-auto flex flex-row"
-  > 
+    <!-- The Modal -->
+    <div id="modal"
+    class="hidden fixed top-0 left-0 z-80 w-screen h-screen bg-black/70 flex justify-center items-center">
   
-  <div class="swiper-container" x-ref="container">
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide ">
-        <div class="flex relative flex-col  shadow overflow-hidden" onmouseenter="show(this)"
-        onmouseleave="hide(this)">
-          <div class="flex-shrink-0">
-            <img class="h-[50vh] md:h-[70vh] w-full object-cover" src="https://dcedtualumni.org/images/AlumniMeet2020/slider-images/silver-jubilee-slide3.jpg" alt="">
-          </div>
-  <!-- <div class=" relative text-center lg:text-left pt-5 pb-10 lg:p-0  text-black lg:absolute  lg:top-10 lg:left-10 text-[20px] sm:text-[30px] lg:text-[50px] lg:text-white w-full px-5 sm:px-10 lg:p-0 lg:max-w-[500px] text">
-  Annual Association Meet 2022 for the batch of 1996-2000 will be held on 27th and 28th August 2022 at the campus.
-  </div> -->
-        </div>
-      </div>
-              
-      <div class="swiper-slide ">
-        <div class="flex relative flex-col  shadow overflow-hidden" onmouseenter="show(this)"
-        onmouseleave="hide(this)">
-          <div class="flex-shrink-0">
-            <img class="h-[50vh] md:h-[70vh] w-full object-cover" src="https://dcedtualumni.org/images/AlumniMeet2020/slider-images/Golden-jubilee-slide2.jpg" alt="">
-          </div>
-          <!-- <div class=" relative text-center lg:text-left pt-5 pb-10 lg:p-0  text-black lg:absolute  lg:top-10 lg:left-10 text-[20px] sm:text-[30px] lg:text-[50px] lg:text-white w-full px-5 sm:px-10 lg:p-0 lg:max-w-[500px] text">
-  Annual Association Meet 2022 for the batch of 1996-2000 will be held on 27th and 28th August 2022 at the campus.
-  </div> -->
-        </div>
-      </div>               
-    </div>
+    <!-- The close button -->
+    <a class="fixed z-90 top-6 right-8 text-white text-5xl font-bold" href="javascript:void(0)"
+        onclick="closeModal()">&times;</a>
+  
+    <!-- A big image will be displayed here -->
+    <img id="modal-img" class="max-w-[800px] max-h-[600px] object-cover" />
   </div>
   
+    <p class="text-3xl font-bold py-2 w-10/12 mx-auto lg:w-8/12">Events</p>
   
-  <div class="absolute  md:m-2 md:left-4 bottom-2 z-10 w-full justify-center md:w-max flex items-center">
-    <button @click="swiper.slidePrev()" 
-           class="bg-white m-2 hidden  md:flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">
-     <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left w-6 h-6"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-   </button>
-    <div class="swiper-pagination-2   flex md:bg-black md:bg-opacity-25 p-2 px-3 rounded-full gap-2 z-10 "></div>
-    <button @click="swiper.slideNext()" 
-            class="bg-white hidden md:flex m-2 justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">
-      <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right w-6 h-6"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-    </button>
-  </div>
-  </div>
+     <!-- events list -->
+     <div class="mx-auto w-10/12 max-h-[500px] overflow-y-scroll lg:w-8/12 bg-gray-200 text-white md:rounded-md">
   
-  <!-- events list -->
-    <div class="mx-auto w-12/12 lg:w-6/12 bg-gray-300 text-white py-5 md:rounded-md">
-  
-      <div class="inline-flex w-4/5 mx-[10%]  rounded-md shadow-sm">
-        <p  class="cursor-pointer px-4 py-2 text-sm w-1/2 font-medium text-center text-white bg-black  rounded-l-lg focus:z-10" onclick="events('upcoming')" id="upcoming_button">
-          Upcoming
-        </p>
-        <p class="cursor-pointer px-4 py-2 text-sm font-medium text-black w-1/2 text-center bg-white  rounded-r-md focus:z-10   " onclick="events('past')" id="past_button">
-          Past
-        </p>
-      </div>
-      
-      <ul class="w-4/5 mx-[10%] my-1 max-h-[300px] overflow-y-scroll" id="upcoming_events">
-        <li>
-          <a href="#" class="block px-4 py-2 text-sm font-[600] text-black hover:bg-gray-600 rounded-lg hover:bg-opacity-50 hover:text-white ease-in-out duration-300 truncate"> Reunion of Batch of 1995
-            <p class="text-black font-[350]">2.3.2023</p>
-          </a>
-        </li>
-      </ul>
-      <ul class="w-4/5 mx-[10%] my-1 max-h-[300px] overflow-y-scroll" id="past_events">
-        <li>
-          <a href="#" class="block px-4 py-2 text-sm font-[600] text-black hover:bg-gray-600 rounded-lg hover:bg-opacity-50 hover:text-white ease-in-out duration-300 truncate">Raj Soin Hall inaugration by Raj Soin
-            <p class="text-black font-[350]">20.3.2023</p>
-          </a>
-        </li>
-      </ul>
+      <ul id="events_list" class=" divide-y divide-gray-500 mx-4 ">
+         
+        </ul>
       
         </div>
-  </div>
-
-</section>
-
- 
+  
+  </section>
+  
+  
+  
   <section class="bg-white " id="donate">
     <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
       <dl class="grid max-w-screen-lg gap-8 mx-auto text-gray-900 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 ">
         <div class="flex flex-col items-center justify-center">
-          <dt class="mb-2 text-3xl md:text-4xl font-extrabold">60K+</dt>
+          <dt class="mb-2 text-3xl md:text-4xl font-extrabold"><p class="inline counter">60000</p>+</dt>
           <dd class="font-light text-gray-500 ">Alumni</dd>
         </div>
         <div class="flex flex-col items-center justify-center">
-          <dt class="mb-2 text-3xl md:text-4xl font-extrabold">2k+</dt>
+          <dt class="mb-2 text-3xl md:text-4xl font-extrabold"><p class="inline counter">2000</p>+</dt>
           <dd class="font-light text-gray-500 ">contributors</dd>
         </div>
         <div class="flex flex-col items-center justify-center">
-          <dt class="mb-2 text-3xl md:text-4xl font-extrabold">50cr+</dt>
+          <dt class="mb-2 text-3xl md:text-4xl font-extrabold"><p class="inline counter">50</p>cr+</dt>
           <dd class="font-light text-gray-500 ">donations recieved</dd>
         </div>
         <div class="flex flex-col items-center justify-center">
-          <dt class="mb-2 text-3xl md:text-4xl font-extrabold">100Cr+</dt>
+          <dt class="mb-2 text-3xl md:text-4xl font-extrabold"><p class="inline counter">100</p>cr+</dt>
           <dd class="font-light text-gray-500 ">Donation pledge</dd>
         </div>
       </dl>
@@ -618,7 +540,10 @@
   <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
