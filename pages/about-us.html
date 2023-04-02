@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.7.3/tailwind.min.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+  <nav class="bg-white border-gray-200 px-2 lg:px-4 shadow-md py-2.5">
+    <div class="container flex flex-wrap items-center justify-between lg:px-20 mx-auto">
+      <a href="../index.html" class="flex items-center">
+
+        <span class="self-center text-2xl lg:text-3xl font-semibold whitespace-nowrap ">Dtu Alum</span>
+      </a>
+      <div class="flex md:order-2">
+        <a href="./donate.html"><button type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 ">Donate</button></a>
+        <button data-collapse-toggle="navbar-cta" type="button"
+          class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+          aria-controls="navbar-cta" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+      <div
+        class="items-center absolute z-20 top-10 md:top-0  md:relative justify-between hidden w-full md:flex md:w-auto md:order-1"
+        id="navbar-cta">
+        <ul
+          class="flex flex-col lg:p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 sm:text-base md:font-medium md:border-0 md:bg-white  lg:text-xl leading-8 font-semibold text-gray-600">
+
+          <li>
+            <a href="/" class="mr-4 md:hidden hover:underline md:mr-3 ">Home</a>
+          </li>
+          <li>
+            <a href="/#notedAlumni" class="mr-4 hover:underline md:mr-3">Noted Alumni</a>
+          </li>
+          <li>
+            <a href="/#About" class="mr-4 hover:underline md:mr-3">About</a>
+          </li>
+          <li>
+            <a href="/#Services" class="mr-4 hover:underline md:mr-3">Services</a>
+          </li>
+          <li>
+            <a href="/#Events" class="mr-4 hover:underline md:mr-3">Events</a>
+          </li>
+
+          <li>
+            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+              class="flex items-center justify-between w-full mr-4 rounded md:mr-3 md:border-0 md:p-0 md:w-auto active:border-0 hover:underline">Donations
+              <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg></button>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbar"
+              class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+              <ul class="py-2 text-sm dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="./donorsWall.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Donors
+                    Wall</a>
+                </li>
+                <li>
+                  <a href="./whydonate.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Why
+                    Donate?</a>
+                </li>
+                <li>
+                  <a href="./donate.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Donate
+                    Now</a>
+                </li>
+              </ul>
+              <!-- <div class="py-1">
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign out</a>
+                </div> -->
+            </div>
+          </li>
+
+          <li>
+            <a href="#contact" class="mr-4 hover:underline md:mr-3 ">Contact us</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <section class="p-12 lg:px-20">
+    <div class="flex flex-col justify-between gap-4 lg:items-center lg:flex-row">
+        <h1 class="text-4xl font-bold lg:text-5xl">About Us</h1>
+        <h3 class="text-gray-500 text-lg lg:pr-10">Welcome to the Alumni Affairs Portal of Delhi Technological University</h3>
+    </div>
+    
+    <img src="./dtu-upscaled.jpg" alt="" class="w-full lg:h-[450px] object-cover">
+    <p class="text-gray-600 p-6 bg-gray-100">Our key objective is to nurture and strengthen the Institute’s bond with its alumni community, business corporations and philanthropists. These groups are the key stakeholders in DTU’s journey of excellence. We encourage the involvement and participation of these entities in the Institute’s strategic initiatives. These include setting up world class research and academics in emerging areas of science and technology, building world class infrastructure, improving faculty value proposition, strengthening the entrepreneurship ecosystem, and contributing to the society.</p>
+       
+    <div class="my-12 gap-4 flex flex-col items-center justify-between lg:py-10 lg:flex-row">
+        <h1 data-aos="fade-up"data-aos-anchor-placement="top-bottom"  class="text-4xl font-bold leading-none tracking-tight text-gray-900 lg:text-5xl lg:w-full">Our Vision</h1>
+        <p  data-aos="fade-up"data-aos-anchor-placement="center-bottom" class="text-center text-xl text-gray-600 lg:text-left">Help DTU rank among the top engineering and technology institutes worldwide by fostering strong relationships with its alumni, corporations and philanthropists.</p>
+    </div>
+    <hr class="pb-4">
+
+    <h1 class="text-4xl font-bold leading-none tracking-tight text-gray-900 my-10 text-center lg:text-start lg:text-5xl"  data-aos="fade-up"data-aos-anchor-placement="bottom-bottom" >Vice Chancellor's Message</h1>
+    <section class="flex flex-col justify-center gap-3 md:flex-row md:justify-between">
+        <div class="flex gap-10 mx-auto flex-col-reverse md:justify-end lg:flex-row lg:justify-between">
+            <div class="text-gray-500 lg:justify-end lg:flex lg:flex-col" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                <h3 class="text-gray-700 font-semibold"> Prof. Jai Prakash Saini</h3>
+                <h3>Vice Chancellor</h3>
+                <h3>Delhi Technological University</h3>
+            </div>
+            <img class="w-[200px] h-[200px] object-cover rounded-lg lg:w-[300px] lg:h-[300px]" src="https://dtutimes.dtu.ac.in/static/media/VC.e82194ca.jpg"  data-aos="zoom-in"data-aos-anchor-placement="center-bottom" >
+        </div>
+        
+        <blockquote class="md:w-1/2 text-md italic font-light text-gray-900" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+            <svg aria-hidden="true" class="w-10 h-10 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"></path></svg>
+            <p class="">The Delhi Technological University (Erstwhile Delhi College of Engineering) has a glorious past of more than 74 years and has been widely acclaimed for its excellence in education, research and training. A special emphasis is laid on total personality development along with the quality education and technical training of the students. Delhi Technological University is fully networked with industry, as well as with academic/scientific community. It has active collaborations with leading universities and industries in India and abroad. Delhi Technological University is the alma mater of highly distinguished world class engineers and technologists, which include the father of Pentium Chip Vinod Dham, Promod Haque, the world's known venture capitalist, Raj Soin, the avionics wizards of US and a top ranking techno entrepreneur of Ohio, Durgadas Agrawal, the renowned techno-entrepreneur of Houston.</p>
+            <a id="read-more-btn-vc" class="text-blue-800 cursor-pointer inline-flex flex-row items-center">
+                <p class="inline">Read More</p>
+                <span class="material-symbols-outlined">
+                    arrow_right_alt
+                    </span>
+            </a> 
+        </blockquote>
+    </section>
+    <hr class="my-16">
+
+    <h1 class="text-4xl font-bold leading-none tracking-tight text-gray-900 my-10 text-center lg:text-start lg:text-5xl" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Dean's Message</h1>
+    <section class="flex flex-col justify-center gap-3 md:flex-row md:justify-between">
+        <div class="flex gap-10 mx-auto flex-col-reverse md:justify-end lg:flex-row lg:justify-between">
+            <div class="text-gray-500 lg:justify-end lg:flex lg:flex-col" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                <h3 class="text-gray-700 font-semibold"> Dr. Rajesh Rohilla</h3>
+                <h3>Dean</h3>
+                <h3>Alumni Affairs</h3>
+                <h3>Delhi Technological University</h3>
+            </div>
+            <img class="w-[200px] h-[200px] object-cover rounded-lg lg:w-[300px] lg:h-[300px]" src="http://tnp.dtu.ac.in/images/rajesh_sir2.jpg" data-aos="zoom-in" data-aos-anchor-placement="center-bottom">
+        </div>
+        
+        <blockquote class="md:w-1/2 text-md italic font-light text-gray-900" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+            <svg aria-hidden="true" class="w-10 h-10 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"></path></svg>
+            <p class="">Delhi Technological University, has incessantly been acting as a rostrum for providing quality technical education with a mission of developing technocrats having potential to the greatest degree. In congruence with this mission, Delhi Technological University has perpetuated an admirable record for academic contribution towards achieving excellence in building enviable organizations & a stupendous society.
+
+                <br> The programs here have been designed to instil & inculcate spirits of innovation, leadership & team work. Employing of latest technologies for effective delivery & a practice oriented curriculum has been emphasized upon.</p>
+            <a id="read-more-btn-dean" class="text-blue-800 cursor-pointer inline-flex flex-row items-center">
+                <p class="inline">Read More</p>
+                <span class="material-symbols-outlined">
+                    arrow_right_alt
+                    </span>
+            </a>    
+        </blockquote>
+    </section>
+
+    
+  </section>
+
+  <footer class="p-4 bg-gray-200 rounded-lg shadow  md:py-6 md:pb-20 border" id="contact">
+
+    <div class="flex flex-col-reverse md:flex-row sm:items-center sm:justify-between lg:mx-20">
+      <div>
+        <ul
+          class="flex justify-center text-center md:text-left  flex-wrap md:grid md::grid-cols-1 items-center my-6 text-xl leading-8 font-semibold text-gray-500 sm:mb-0 ">
+          <li>
+            <a href="#donate" class="mr-4 hover:underline md:mr-6 ">Donate</a>
+          </li>
+          <li>
+            <a href="#notedAlumni" class="mr-4 hover:underline md:mr-6">Noted Alumni</a>
+          </li>
+          <li>
+            <a href="#About" class="mr-4 hover:underline md:mr-6">About</a>
+          </li>
+          <li>
+            <a href="#Services" class="mr-4 hover:underline md:mr-6">Services</a>
+          </li>
+
+          <li>
+            <a href="#Events" class="hover:underline">Events</a>
+          </li>
+          <li>
+            <a href="#Mentorship" class="mr-4 hover:underline md:mr-6 ">Mentorship</a>
+          </li>
+
+        </ul>
+
+      </div>
+      <div class="bg-white rounded-lg md:w-1/2 lg:w-max shadow-lg ">
+        <div class="py-3 lg:py-5 px-4 w-full lg:w-[600px]">
+          <h2 class="mb-2 text-4xl w-full tracking-tight font-extrabold text-center text-gray-900 ">Contact Us</h2>
+          <form action="#" class="space-y-3">
+            <div>
+              <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Your email</label>
+              <input type="email" id="email"
+                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5    "
+                placeholder="name@flowbite.com" required>
+            </div>
+            <div>
+              <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 ">Subject</label>
+              <input type="text" id="subject"
+                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500    "
+                placeholder="Let us know how we can help you" required>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="message" class="block mb-2 text-sm font-medium text-gray-900 ">Your message</label>
+              <textarea id="message" rows="3"
+                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500   "
+                placeholder="Leave a comment..."></textarea>
+            </div>
+            <button type="submit"
+              class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-gray-700 sm:w-fit  focus:ring-4 focus:outline-none focus:ring-primary-300 ">Send
+              message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p class="text-sm text-center my-2 text-gray-500 ">© 2023 All rights reserved.</p>
+    </div>
+  </footer>
+
+<!-- popups -->
+<section id="side-popup-dean" class="hidden">
+      <div class="fixed top-0 z-30 right-0 h-[100vh] w-[100vw] bg-black bg-opacity-50"></div>
+      <div id="read-more" class="fixed top-0 z-40 right-0 h-[100vh] w-[100vw] lg:w-[50vw] bg-gray-50 flex flex-col gap-4 p-8">
+        <span id="close-popup-dean" class="material-symbols-outlined place-self-end cursor-pointer">
+            cancel
+        </span>
+        <h3 class="text-2xl font-semibold">Dean's Message</h3>
+        <p class="text-lg text-gray-700 overflow-y-auto">Delhi Technological University, has incessantly been acting as a rostrum for providing quality technical education with a mission of developing technocrats having potential to the greatest degree. In congruence with this mission, Delhi Technological University has perpetuated an admirable record for academic contribution towards achieving excellence in building enviable organizations & a stupendous society.
+
+        <br><br>  The programs here have been designed to instil & inculcate spirits of innovation, leadership & team work. Employing of latest technologies for effective delivery & a practice oriented curriculum has been emphasized upon. The graduates & post-graduates of Delhi Technological University, by the virtue of the exposure provided, have gained tremendous technological superiority & a better overall understanding of the world and thus, been recruited in several International Conglomerates along with Indian Corporations. This, in turn, has created an extensive & ever-growing network of alumni eager to return back to the institution. We enjoy highly valued partnerships with all our recruiters & remain committed to make their recruiting experience productive & positive along with helping students in order to find the best match between their needs & capabilities.</p>
+      </div>
+</section>
+<section id="side-popup-vc" class="hidden">
+    <div class="fixed top-0 z-30 right-0 h-[100vh] w-[100vw] bg-black bg-opacity-50"></div>
+    <div id="read-more" class="fixed top-0 z-40 right-0 h-[100vh] w-[100vw] lg:w-[50vw] bg-gray-50 flex flex-col gap-4 p-8">
+      <span id="close-popup-vc" class="material-symbols-outlined place-self-end cursor-pointer">
+          cancel
+      </span>
+      <h3 class="text-2xl font-semibold">Vice Chancellor's Message</h3>
+      <p class="text-lg text-gray-700 overflow-y-auto">
+        The Delhi Technological University (Erstwhile Delhi College of Engineering) has a glorious past of more than 74 years and has been widely acclaimed for its excellence in education, research and training. A special emphasis is laid on total personality development along with the quality education and technical training of the students. Delhi Technological University is fully networked with industry, as well as with academic/scientific community. It has active collaborations with leading universities and industries in India and abroad. Delhi Technological University is the alma mater of highly distinguished world class engineers and technologists, which include the father of Pentium Chip Vinod Dham, Promod Haque, the world's known venture capitalist, Raj Soin, the avionics wizards of US and a top ranking techno entrepreneur of Ohio, Durgadas Agrawal, the renowned techno-entrepreneur of Houston, to name a few.
+        <br><br>
+        Delhi Technological University has kept the quality of education and research as its main focus of academic and professional activities and this has earned a high reputation in the country and abroad as is evident from DTU figuring several times among the top ten engineering institutions in the country along with the IITs. Alumni, Staff, students and supporters take pride in having contributed to the Delhi Technological University reputation as India's flagship, research-led university, known for the excellence of its teaching, research, and service to its local, national and international communities. Our challenge for the future is to build on this strong base to establish ourselves firmly among the world's leading universities. I hope our outstanding students will support us in this endeavour and in turn emerge themselves, as pioneers of an exemplary society.
+      </p>
+    </div>
+</section>
+
+<script>
+     //Dean's Message
+     function showPopups (popupId){
+      document.getElementById(`${popupId}`).classList.remove("hidden");
+    }
+    function closePopups (popupId){
+      document.getElementById(`${popupId}`).classList.add("hidden");
+    }
+    document.getElementById('close-popup-dean').addEventListener('click',()=>closePopups('side-popup-dean'))
+    document.getElementById('read-more-btn-dean').addEventListener('click',()=>showPopups('side-popup-dean'))
+    document.getElementById('close-popup-vc').addEventListener('click',()=>closePopups('side-popup-vc'))
+    document.getElementById('read-more-btn-vc').addEventListener('click',()=>showPopups('side-popup-vc'))
+</script>
+
+  <!-- <script src="../script.js"></script> -->
+  <!-- <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

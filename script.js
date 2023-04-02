@@ -183,3 +183,6 @@ fetch("/data/news.json").then(response => response.json())
     const el = document.querySelectorAll( '.counter' )[i]
     IO.observe( el )
     }  
+
+
+   
