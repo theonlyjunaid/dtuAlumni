@@ -185,4 +185,62 @@ fetch("/data/news.json").then(response => response.json())
     }  
 
 
-   
+fetch('./data/alumnicarousel.json')
+  .then((r) => r.json())
+  .then((d) => {
+    document.querySelectorAll('.imageAlum').forEach((el, i) => {
+      el.src = d[i].image;
+    });
+    document.querySelectorAll('.nameAlum').forEach((el, i) => {
+      el.innerHTML = d[i].name;
+    });
+    document.querySelectorAll('.classAlum').forEach((el, i) => {
+      el.innerHTML = d[i].class;
+    });
+    document.querySelectorAll('.textAlum').forEach((el, i) => {
+      el.innerHTML = d[i].text;
+    });
+
+    initCarousel();
+  });
+
+
+function initCarousel() {
+
+  const swiper = new Swiper('.swiper-container-alumni', {
+    cssMode: true,
+    loop: true,
+    slidesPerView:1,
+    spaceBetween: 30,
+    stopOnLastSlide: false,
+    autoplay: {
+      delay: 1000,
+      pauseOnMouseEnter: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
+
+  });
+
+}

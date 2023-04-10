@@ -216,37 +216,12 @@
   </section>
   <section id="notedAlumni">
 
-    <div x-data="{swiper: null}" x-init="swiper = new Swiper($refs.container, {
-      loop: true,
-      slidesPerView: 1,
-      spaceBetween: 0,
-   pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-   autoplay: {
-      delay: 2000,
-    },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-        },
-        1024: {
-          slidesPerView: 4,
-          spaceBetween: 20,
-        },
-      },
-    })" class="relative w-12/12 mx-auto my-10 mb-28 px-10">
+    <div  class="relative w-12/12 mx-auto my-10 mb-28 px-10">
       <p class="text-3xl font-bold py-2">Noted Alumni</p>
 
-      <div class="swiper-container" x-ref="container">
-        <div class="swiper-wrapper" id="alumnicarousel">
-          <!-- Slides -->
+      <div class="swiper-container-alumni" x-ref="container">
+        <!-- <div class="swiper-wrapper" id="alumnicarousel">
+
           <div class="swiper-slide  ">
             <div class="flex flex-col rounded shadow overflow-hidden">
               <div class="flex-shrink-0 relative alumni" onmouseover="show(this)" onmouseleave="hide(this)"
@@ -330,13 +305,93 @@
 
 
 
+        </div> -->
+      
+      <div class="swiper-wrapper" id="alumnicarousel">
+          <!-- Slides -->
+          <div class="swiper-slide  ">
+            <div class="flex flex-col rounded shadow overflow-hidden">
+              <div class="flex-shrink-0 relative alumni" onmouseover="show(this)" onmouseleave="hide(this)"
+                onclick="show(this)">
+                <img class="h-[50vh] w-full object-cover imageAlum"
+                  src=""
+                  alt="">
+                <div class="absolute bottom-0 p-6  z-50 alumni-content text-white">
+                  <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum "></p>
+                  <p class="classAlum"></p>
+                </div>
+                <div
+                  class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum ">
+          
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class="flex flex-col rounded shadow overflow-hidden">
+              <div class="flex-shrink-0 relative alumni" onmouseover="show(this)" onmouseleave="hide(this)"
+                onclick="show(this)">
+                <img class="h-[50vh] w-full object-cover imageAlum"
+                  src=""
+                  alt="">
+                <div class="absolute bottom-0 p-6  z-50 alumni-content text-white">
+                  <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum "></p>
+                  <p class="classAlum"></p>
+                </div>
+                <div
+                  class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum ">
+          
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class="flex flex-col rounded shadow overflow-hidden">
+              <div class="flex-shrink-0 relative alumni" onmouseover="show(this)" onmouseleave="hide(this)"
+                onclick="show(this)">
+                <img class="h-[50vh] w-full object-cover imageAlum"
+                  src=""
+                  alt="">
+                <div class="absolute bottom-0 p-6  z-50 alumni-content text-white">
+                  <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum "></p>
+                  <p class="classAlum"></p>
+                </div>
+                <div
+                  class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum ">
+          
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide  ">
+            <div class="flex flex-col rounded shadow overflow-hidden">
+              <div class="flex-shrink-0 relative alumni" onmouseover="show(this)" onmouseleave="hide(this)"
+                onclick="show(this)">
+                <img class="h-[50vh] w-full object-cover imageAlum"
+                  src=""
+                  alt="">
+                <div class="absolute bottom-0 p-6  z-50 alumni-content text-white">
+                  <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum "></p>
+                  <p class="classAlum"></p>
+                </div>
+                <div
+                  class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum ">
+          
+                </div>
+              </div>
+            </div>
+          </div>
+       
+
+
+
         </div>
       </div>
       <div class="swiper-pagination absolute -bottom-6 flex gap-1 "></div>
       <div class="absolute  -bottom-15 right-16 z-10 flex items-center">
-        <button @click="swiper.slidePrev()"
-          class="bg-white m-2  flex justify-center items-center w-10 h-10 rounded-full shadow shadow-lg focus:outline-none">
-          <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left w-6 h-6">
+        <button 
+          class="bg-white m-2 swiper-button-prev  flex justify-center items-center w-10 h-10 rounded-full shadow shadow-lg focus:outline-none">
+          <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left hidden w-6 h-6">
             <path fill-rule="evenodd"
               d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
               clip-rule="evenodd"></path>
@@ -344,9 +399,9 @@
         </button>
       </div>
       <div class="absolute  m-2 -bottom-15 right-5 z-10 flex items-center">
-        <button @click="swiper.slideNext()"
-          class="bg-white flex justify-center items-center w-10 h-10 rounded-full shadow shadow-lg focus:outline-none">
-          <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right w-6 h-6">
+        <button 
+          class="bg-white flex swiper-button-next justify-center items-center w-10 h-10 rounded-full shadow shadow-lg focus:outline-none">
+          <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right hidden w-6 h-6">
             <path fill-rule="evenodd"
               d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
               clip-rule="evenodd"></path>
@@ -430,7 +485,7 @@
         onclick="closeModal()">&times;</a>
   
     <!-- A big image will be displayed here -->
-    <img id="modal-img" class="max-w-[800px] max-h-[600px] object-cover" />
+    <img id="modal-img" class="max-w-[800px] max-h-[600px] object-cover" alt=""/>
   </div>
   
     <p class="text-3xl font-bold py-2 w-10/12 mx-auto lg:w-9/12">Events</p>
