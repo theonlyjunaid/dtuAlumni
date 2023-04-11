@@ -23,10 +23,10 @@
     <div class="container flex flex-wrap items-center justify-between mx-auto">
       <a href="/" class="flex items-center">
 
-        <span class="self-center text-2xl lg:text-3xl font-semibold whitespace-nowrap ">Dtu Alum</span>
+        <span class="self-center text-2xl lg:text-3xl font-semibold whitespace-nowrap ">Dtu Alumni</span>
       </a>
       <div class="flex md:order-2">
-       <a href="pages/whydonate.html"><button type="button"
+       <a href="/pages/whydonate.html"><button type="button"
           class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 ">Donate</button></a>
         <button data-collapse-toggle="navbar-cta" type="button"
           class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
@@ -50,31 +50,24 @@
             <a href="/" class="mr-4 md:hidden hover:underline md:mr-3 ">Home</a>
           </li>
           <li>
-            <a href="#notedAlumni" class="mr-4 hover:underline md:mr-3">Noted Alumni</a>
+            <a href="/pages/about-us.html" class="mr-4 hover:underline md:mr-3">About</a>
           </li>
           <li>
-            <a href="./pages/about-us.html" class="mr-4 hover:underline md:mr-3">About</a>
+            <a href="/pages/notable-alumni.html" class="mr-4 hover:underline md:mr-3">Notable Alumni</a>
           </li>
-          <li>
-            <a href="./pages/mentorship-main.html" class="mr-4 hover:underline md:mr-3">Mentorship</a>
-          </li>
-          <li>
-            <a href="#Events" class="mr-4 hover:underline md:mr-3">Events</a>
-          </li>
-
           <li>
             <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-auto mr-4 rounded md:mr-3 md:border-0 md:p-0 md:w-auto active:border-0 hover:underline">Donations <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
             <!-- Dropdown menu -->
             <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:uselessclassbg-gray-700 dark:uselessclassdivide-gray-600">
                 <ul class="py-2 text-sm dark:uselessclasstext-gray-400" aria-labelledby="dropdownLargeButton">
                   <li>
-                    <a href="./pages/donorsWall.html" class="block px-4 py-2 hover:bg-gray-100 dark:uselessclasshover:bg-gray-600 dark:uselessclasshover:text-white">Donors Wall</a>
+                    <a href="/pages/donorsWall.html" class="block px-4 py-2 hover:bg-gray-100 dark:uselessclasshover:bg-gray-600 dark:uselessclasshover:text-white">Donor Wall</a>
                   </li>
                   <li>
-                    <a href="./pages/whydonate.html" class="block px-4 py-2 hover:bg-gray-100 dark:uselessclasshover:bg-gray-600 dark:uselessclasshover:text-white">Why Donate?</a>
+                    <a href="/pages/whydonate.html" class="block px-4 py-2 hover:bg-gray-100 dark:uselessclasshover:bg-gray-600 dark:uselessclasshover:text-white">Why Donate?</a>
                   </li>
                   <li>
-                    <a href="./pages/donate.html" class="block px-4 py-2 hover:bg-gray-100 dark:uselessclasshover:bg-gray-600 dark:uselessclasshover:text-white">Donate Now</a>
+                    <a href="/pages/donate.html" class="block px-4 py-2 hover:bg-gray-100 dark:uselessclasshover:bg-gray-600 dark:uselessclasshover:text-white">Donate Now</a>
                   </li>
                 </ul>
                 <!-- <div class="py-1">
@@ -82,10 +75,16 @@
                 </div> -->
             </div>
         </li>
-
+        <li>
+          <a href="#" class="mr-4 hover:underline md:mr-3 ">Memories</a>
+        </li>
+        <li>
+          <a href="/#Events" class="mr-4 hover:underline md:mr-3">Events</a>
+        </li>
           <li>
-            <a href="#contact" class="mr-4 hover:underline md:mr-3 ">Memories</a>
+            <a href="/pages/mentorship-main.html" class="mr-4 hover:underline md:mr-3">Alumni Initiatives</a>
           </li>
+
         </ul>
       </div>
     </div>
@@ -124,8 +123,7 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide ">
-            <div class="flex flex-col relative  shadow overflow-hidden" onmouseenter="show(this)"
-              onmouseleave="hide(this)">
+            <div class="flex flex-col relative  shadow overflow-hidden" >
               <div class="flex-shrink-0">
                 <img class="h-[50vh] md:h-[70vh] w-full object-cover"
                   src="https://dcedtualumni.org/images/AlumniMeet2020/slider-images/silver-jubilee-slide3.jpg" alt="">
@@ -139,8 +137,7 @@
           </div>
 
           <div class="swiper-slide ">
-            <div class="flex relative flex-col  shadow overflow-hidden" onmouseenter="show(this)"
-              onmouseleave="hide(this)">
+            <div class="flex relative flex-col  shadow overflow-hidden">
               <div class="flex-shrink-0">
                 <img class="h-[50vh] md:h-[70vh] w-full object-cover"
                   src="https://dcedtualumni.org/images/AlumniMeet2020/slider-images/Golden-jubilee-slide2.jpg" alt="">
@@ -181,7 +178,7 @@
 
     </div>
     <div
-      class="z-20 md:absolute top-20  right-12 md:w-[28%] md:max-h-[500px] md:max-w-[500px] bg-black bg-opacity-50 text-white py-5 md:rounded-md">
+      class="z-20 md:absolute top-0  right-0 md:w-[28%] md:h-full bg-black bg-opacity-50 text-white py-5 md:rounded-md">
 
       <div class="inline-flex w-4/5 mx-[10%]  rounded-md shadow-sm">
         <p class="cursor-pointer px-4 py-2 text-sm w-1/2 font-medium text-center text-black  bg-white  rounded-l-lg hover:ring-2 focus:z-10"
@@ -195,14 +192,14 @@
       </div>
 
 
-      <ul class="w-4/5 mx-[10%] my-1 max-h-[300px] overflow-y-scroll" id="donation_news">
+      <ul class="w-4/5 mx-[10%] my-1 max-h-[400px] overflow-y-auto" id="donation_news">
         <!-- <li>
     <a href="#" class="block px-4 py-2 text-sm font-[500] text-white hover:bg-gray-600 rounded-lg hover:bg-opacity-50 hover:text-blue-200 ease-in-out duration-300 truncate"> 5 Cr Recieved from Raj Soin for Raj Soin Hall 
       <p class="text-white font-[350]">2.3.2023</p>
     </a>
   </li> -->
       </ul>
-      <ul class="w-4/5 mx-[10%] my-1 max-h-[300px] overflow-y-scroll" id="news_news">
+      <ul class="w-4/5 mx-[10%] my-1 max-h-[300px] overflow-y-auto" id="news_news">
         <!-- <li>
     <a href="#" class="block px-4 py-2 text-sm font-[500] text-white hover:bg-gray-600 rounded-lg hover:bg-opacity-50 hover:text-blue-200 ease-in-out duration-300 truncate">Raj Soin Hall enagration by Raj Soin
       <p class="text-white font-[350]">20.3.2023</p>
@@ -216,211 +213,146 @@
   </section>
   <section id="notedAlumni">
 
-    <div  class="relative w-12/12 mx-auto my-10 mb-28 px-10">
-      <p class="text-3xl font-bold py-2">Noted Alumni</p>
+    <div class="relative w-12/12 mx-auto px-10 py-8">
+      <p class="text-3xl font-bold py-2">Notable Alumni</p>
 
       <div class="swiper-container-alumni" x-ref="container">
-        <!-- <div class="swiper-wrapper" id="alumnicarousel">
-
-          <div class="swiper-slide  ">
-            <div class="flex flex-col rounded shadow overflow-hidden">
-              <div class="flex-shrink-0 relative alumni" onmouseover="show(this)" onmouseleave="hide(this)"
-                onclick="show(this)">
-                <img class="h-[50vh] w-full object-cover"
-                  src="https://images.squarespace-cdn.com/content/v1/5cdcc14ad86cc91b80cdbf65/1558486905146-N2NCK3RXK9ZJ1PLRMEDN/Raj+Headshot+2-2019.jpg?format=750w"
-                  alt="">
-                <div class="absolute bottom-0 p-6  z-50 alumni-content text-white">
-                  <p class="text-xl md:text-2xl  lg:text-3xl font-semibold">Raj soin</p>
-                  <p>Class 1969</p>
-                </div>
-                <div
-                  class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl  ">
-                  Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now chairman and CEO of Soin
-                  LLC at Ohio in the US, donated the amount Rs 5 crore for the construction of a multipurpose hall at
-                  his alma mater Delhi Technological University
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide  ">
-            <div class="flex flex-col rounded shadow overflow-hidden">
-              <div class="flex-shrink-0 relative alumni" onmouseover="show(this)" onmouseleave="hide(this)"
-                onclick="show(this)">
-                <img class="h-[50vh] w-full object-cover"
-                  src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcT8xQMR7KOxGyMcjeRxEf-c9yDrR2Jr5EEseSg_0xKodBeUhxhqqtSgaztN5gQZ90y-Dy6uz9C2FRgn3zs"
-                  alt="">
-                <div class="absolute bottom-0 p-6  z-50 alumni-content text-white">
-                  <p class="text-xl md:text-2xl  lg:text-3xl font-semibold">Raj soin</p>
-                  <p>Class 1965</p>
-                </div>
-                <div
-                  class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl  ">
-                  Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now chairman and CEO of Soin
-                  LLC at Ohio in the US, donated the amount Rs 5 crore for the construction of a multipurpose hall at
-                  his alma mater Delhi Technological University
+          <div class="swiper-wrapper" id="alumnicarousel">
+            <!-- Slides -->
+            <div class="swiper-slide  ">
+              <div class="flex flex-col rounded shadow overflow-hidden">
+                <div class="flex-shrink-0 relative alumni" onclick="showPopups('side-popup-alumni')" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                >
+                <img class="h-[40vh] w-full object-cover imageAlum"
+                    src=""
+                    alt="">
+                  <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                    <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum "></p>
+                    <p class="classAlum"></p>
+                  </div>
+                  <div
+                    class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum ">
+  
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide  ">
-            <div class="flex flex-col rounded shadow overflow-hidden">
-              <div class="flex-shrink-0 relative alumni" onmouseover="show(this)" onmouseleave="hide(this)"
-                onclick="show(this)">
-                <img class="h-[50vh] w-full object-cover"
-                  src="https://images.squarespace-cdn.com/content/v1/5cdcc14ad86cc91b80cdbf65/1558486905146-N2NCK3RXK9ZJ1PLRMEDN/Raj+Headshot+2-2019.jpg?format=750w"
-                  alt="">
-                <div class="absolute bottom-0 p-6  z-50 alumni-content text-white">
-                  <p class="text-xl md:text-2xl  lg:text-3xl font-semibold">Raj soin</p>
-                  <p>Class 1967</p>
-                </div>
-                <div
-                  class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl   ">
-                  Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now chairman and CEO of Soin
-                  LLC at Ohio in the US, donated the amount Rs 5 crore for the construction of a multipurpose hall at
-                  his alma mater Delhi Technological University
+            <div class="swiper-slide  ">
+              <div class="flex flex-col rounded shadow overflow-hidden">
+                <div class="flex-shrink-0 relative alumni" onclick="showPopups('side-popup-alumni')" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                >
+                <img class="h-[40vh] w-full object-cover imageAlum"
+                    src=""
+                    alt="">
+                  <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                    <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum "></p>
+                    <p class="classAlum"></p>
+                  </div>
+                  <div
+                    class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum ">
+  
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide  ">
-            <div class="flex flex-col rounded shadow overflow-hidden">
-              <div class="flex-shrink-0 relative alumni" onmouseover="show(this)" onmouseleave="hide(this)"
-                onclick="show(this)">
-                <img class="h-[50vh] w-full object-cover"
-                  src="https://images.squarespace-cdn.com/content/v1/5cdcc14ad86cc91b80cdbf65/1558486905146-N2NCK3RXK9ZJ1PLRMEDN/Raj+Headshot+2-2019.jpg?format=750w"
-                  alt="">
-                <div class="absolute bottom-0 p-6  z-50 alumni-content text-white">
-                  <p class="text-xl md:text-2xl  lg:text-3xl font-semibold">Raj soin</p>
-                  <p>Class 1968</p>
-                </div>
-                <div
-                  class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl   ">
-                  Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now chairman and CEO of Soin
-                  LLC at Ohio in the US, donated the amount Rs 5 crore for the construction of a multipurpose hall at
-                  his alma mater Delhi Technological University
+            <div class="swiper-slide  ">
+              <div class="flex flex-col rounded shadow overflow-hidden">
+                <div class="flex-shrink-0 relative alumni" onclick="showPopups('side-popup-alumni')" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                >
+                <img class="h-[40vh] w-full object-cover imageAlum"
+                    src=""
+                    alt="">
+                  <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                    <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum "></p>
+                    <p class="classAlum"></p>
+                  </div>
+                  <div
+                    class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum ">
+  
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-
-
-        </div> -->
-      
-      <div class="swiper-wrapper" id="alumnicarousel">
-          <!-- Slides -->
-          <div class="swiper-slide  ">
-            <div class="flex flex-col rounded shadow overflow-hidden">
-              <div class="flex-shrink-0 relative alumni" onmouseover="show(this)" onmouseleave="hide(this)"
-                onclick="show(this)">
-                <img class="h-[50vh] w-full object-cover imageAlum"
-                  src=""
-                  alt="">
-                <div class="absolute bottom-0 p-6  z-50 alumni-content text-white">
-                  <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum "></p>
-                  <p class="classAlum"></p>
-                </div>
-                <div
-                  class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum ">
-          
+            <div class="swiper-slide  ">
+              <div class="flex flex-col rounded shadow overflow-hidden">
+                <div class="flex-shrink-0 relative alumni" onclick="showPopups('side-popup-alumni')" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                >
+                <img class="h-[40vh] w-full object-cover imageAlum"
+                    src=""
+                    alt="">
+                  <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                    <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum "></p>
+                    <p class="classAlum"></p>
+                  </div>
+                  <div
+                    class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum ">
+  
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide  ">
-            <div class="flex flex-col rounded shadow overflow-hidden">
-              <div class="flex-shrink-0 relative alumni" onmouseover="show(this)" onmouseleave="hide(this)"
-                onclick="show(this)">
-                <img class="h-[50vh] w-full object-cover imageAlum"
-                  src=""
-                  alt="">
-                <div class="absolute bottom-0 p-6  z-50 alumni-content text-white">
-                  <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum "></p>
-                  <p class="classAlum"></p>
-                </div>
-                <div
-                  class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum ">
-          
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide  ">
-            <div class="flex flex-col rounded shadow overflow-hidden">
-              <div class="flex-shrink-0 relative alumni" onmouseover="show(this)" onmouseleave="hide(this)"
-                onclick="show(this)">
-                <img class="h-[50vh] w-full object-cover imageAlum"
-                  src=""
-                  alt="">
-                <div class="absolute bottom-0 p-6  z-50 alumni-content text-white">
-                  <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum "></p>
-                  <p class="classAlum"></p>
-                </div>
-                <div
-                  class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum ">
-          
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide  ">
-            <div class="flex flex-col rounded shadow overflow-hidden">
-              <div class="flex-shrink-0 relative alumni" onmouseover="show(this)" onmouseleave="hide(this)"
-                onclick="show(this)">
-                <img class="h-[50vh] w-full object-cover imageAlum"
-                  src=""
-                  alt="">
-                <div class="absolute bottom-0 p-6  z-50 alumni-content text-white">
-                  <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum "></p>
-                  <p class="classAlum"></p>
-                </div>
-                <div
-                  class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum ">
-          
-                </div>
-              </div>
-            </div>
-          </div>
-       
-
-
-
         </div>
       </div>
       <div class="swiper-pagination absolute -bottom-6 flex gap-1 "></div>
-      <div class="absolute  -bottom-15 right-16 z-10 flex items-center">
-        <button 
-          class="bg-white m-2 swiper-button-prev  flex justify-center items-center w-10 h-10 rounded-full shadow shadow-lg focus:outline-none">
-          <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left hidden w-6 h-6">
-            <path fill-rule="evenodd"
-              d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-              clip-rule="evenodd"></path>
-          </svg>
+      <div class="flex items-center">
+        <button
+          class="swiper-button-prev pr-2 text-gray-600 flex justify-center items-center w-10 h-10  focus:outline-none">         
         </button>
       </div>
-      <div class="absolute  m-2 -bottom-15 right-5 z-10 flex items-center">
-        <button 
-          class="bg-white flex swiper-button-next justify-center items-center w-10 h-10 rounded-full shadow shadow-lg focus:outline-none">
-          <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right hidden w-6 h-6">
-            <path fill-rule="evenodd"
-              d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-              clip-rule="evenodd"></path>
-          </svg>
+      <div class=" z-10 flex items-center">
+        <button
+          class="swiper-button-next pl-2 text-gray-600 flex justify-center items-center w-10 h-10 focus:outline-none">          
         </button>
       </div>
     </div>
+    <!-- Alumni details SideNav -->
+    <section id="side-popup-alumni" class="hidden">
+      <div class="fixed top-0 z-30 right-0 h-[100vh] w-[100vw] bg-black bg-opacity-50"></div>
+      <div id="read-more" class="fixed top-0 z-40 right-0 h-[100vh] w-[100vw] lg:w-[50vw] bg-gray-50 flex flex-col gap-4 p-8">
+        <span id="close-popup-alumni" class="material-symbols-outlined place-self-end cursor-pointer">
+            cancel
+        </span>
+        <h3 id="side-popup-alumni-head" class="text-2xl font-semibold">Raj Soin</h3>
+        <p id="side-popup-alumni-paragraph" class="text-lg text-gray-700 overflow-y-auto">Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now chairman and CEO of Soin
+          LLC at Ohio in the US, donated the amount Rs 5 crore for the construction of a multipurpose hall at
+          his alma mater Delhi Technological University</p>
+      </div>
+    </section>
   </section>
+
   <section id="About">
-    <div class="px-20 py-10" data-aos="fade-down">
+    <div class="px-20 mt-6" data-aos="fade-down">
       <h3 class="text-4xl text-center font-medium">Welcome back to the place where your dreams began and your future took shape - your alma mater.</h3>
-      <!-- <p>Education is not just about acquiring knowledge, it's about transforming oneself and leaving an indelible mark on the world. As alumni, we carry the legacy of our university and have the power to make a positive impact in every sphere of our lives.</p> -->
+      </div>
+  </section>
+
+  <section class="bg-white " id="donate">
+    <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+      <dl class="grid max-w-screen-lg gap-8 mx-auto text-gray-900 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 ">
+        <div class="flex flex-col items-center justify-center">
+          <dt class="mb-2 text-3xl md:text-4xl font-extrabold"><p class="inline counter">30000</p>+</dt>
+          <dd class="font-light text-gray-500 ">Alumni</dd>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <dt class="mb-2 text-3xl md:text-4xl font-extrabold"><p class="inline counter">500</p>+</dt>
+          <dd class="font-light text-gray-500 ">Contributors</dd>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <dt class="mb-2 text-3xl md:text-4xl font-extrabold"><p class="inline counter">7</p>cr+</dt>
+          <dd class="font-light text-gray-500 ">Donations recieved</dd>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <dt class="mb-2 text-3xl md:text-4xl font-extrabold"><p class="inline counter">3</p>cr+</dt>
+          <dd class="font-light text-gray-500 ">Donations pledge</dd>
+        </div>
+      </dl>
     </div>
   </section>
 
 
   <!-- 3 boxes -->
   <section class="body-font block" id="Services">
-    <div class="container px-16 py-24 mx-auto">
+    <div class="container px-16 py-8 mx-auto">
       <div class="flex gap-4 flex-wrap justify-center content-center -m-4">
 
         <div class="p-4 md:w-[30%] border rounded hover:shadow-lg cursor-pointer flex flex-wrap">
@@ -474,7 +406,7 @@
     </div>
   </section>
 
-  <section id="Events">
+  <section id="Events" class="py-10">
 
     <!-- The Modal -->
     <div id="modal"
@@ -503,28 +435,7 @@
   
   
   
-  <section class="bg-white " id="donate">
-    <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-      <dl class="grid max-w-screen-lg gap-8 mx-auto text-gray-900 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 ">
-        <div class="flex flex-col items-center justify-center">
-          <dt class="mb-2 text-3xl md:text-4xl font-extrabold"><p class="inline counter">60000</p>+</dt>
-          <dd class="font-light text-gray-500 ">Alumni</dd>
-        </div>
-        <div class="flex flex-col items-center justify-center">
-          <dt class="mb-2 text-3xl md:text-4xl font-extrabold"><p class="inline counter">2000</p>+</dt>
-          <dd class="font-light text-gray-500 ">contributors</dd>
-        </div>
-        <div class="flex flex-col items-center justify-center">
-          <dt class="mb-2 text-3xl md:text-4xl font-extrabold"><p class="inline counter">50</p>cr+</dt>
-          <dd class="font-light text-gray-500 ">donations recieved</dd>
-        </div>
-        <div class="flex flex-col items-center justify-center">
-          <dt class="mb-2 text-3xl md:text-4xl font-extrabold"><p class="inline counter">100</p>cr+</dt>
-          <dd class="font-light text-gray-500 ">Donation pledge</dd>
-        </div>
-      </dl>
-    </div>
-  </section>
+  
 
 
   <footer class="p-4 bg-gray-200  rounded-lg shadow  md:py-6 md:pb-20 border" id="contact">
@@ -563,20 +474,20 @@
             <div>
               <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Your email</label>
               <input type="email" id="email"
-                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5    "
-                placeholder="name@flowbite.com" required>
+                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+                 required>
             </div>
             <div>
               <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 ">Subject</label>
               <input type="text" id="subject"
-                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500    "
-                placeholder="Let us know how we can help you" required>
+                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 "
+                required>
             </div>
             <div class="sm:col-span-2">
               <label for="message" class="block mb-2 text-sm font-medium text-gray-900 ">Your message</label>
               <textarea id="message" rows="3"
-                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500   "
-                placeholder="Leave a comment..."></textarea>
+                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
+                ></textarea>
             </div>
             <button type="submit"
               class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-gray-700 sm:w-fit  focus:ring-4 focus:outline-none focus:ring-primary-300 ">Send
@@ -586,7 +497,7 @@
       </div>
     </div>
     <div>
-      <p class="text-sm text-center my-2 text-gray-500 ">© 2023 All rights reserved.</p>
+      <!-- <p class="text-sm text-center my-2 text-gray-500 ">© 2023 All rights reserved.</p> -->
     </div>
   </footer>
 

@@ -6,6 +6,14 @@ function hide(x) {
   x.children[2].style.display = "none";
   // x.children[1].style.color = "black";
 }
+function alumHover(x) {
+  x.children[2].style.display = "block";
+  x.children[1].style.display = "none";
+}
+function alumHoverOut(x) {
+  x.children[2].style.display = "none";
+  x.children[1].style.display = "block";
+}
 function news(x) {
   if (x === 'donation') {
 
@@ -147,6 +155,199 @@ fetch("/data/news.json").then(response => response.json())
     
 
   
+    //notable alumni
+    // fetch("/data/alumnicarousel.json").then(response => response.json())
+    // .then(data => {
+    //     let dat = ``;
+    //     for(let item of data){
+    //         dat += ` 
+    //         <div class="swiper-slide  ">
+    //         <div class="flex flex-col rounded shadow overflow-hidden">
+    //           <div class="flex-shrink-0 relative alumni" onclick="showPopups('side-popup-alumni')"
+    //             onclick="show(this)">
+    //             <img class="h-[50vh] w-full object-cover"
+    //               src="https://images.squarespace-cdn.com/content/v1/5cdcc14ad86cc91b80cdbf65/1558486905146-N2NCK3RXK9ZJ1PLRMEDN/Raj+Headshot+2-2019.jpg?format=4000w"
+    //               alt="">
+    //             <div class="absolute bottom-0 p-6  z-50 alumni-content text-white">
+    //               <p class="text-xl md:text-2xl  lg:text-3xl font-semibold">${item.name}</p>
+    //               <p>Class of ${item.batch}</p>
+    //             </div>
+
+    //           </div>
+    //         </div>
+    //       </div>
+    //         `;
+
+    //     }
+    //     document.getElementById("alumnicarousel").innerHTML = dat;})
+    //     document.getElementById("notedAlumni").innerHTML = `
+    //     <div x-data="{swiper: null}" x-init="swiper = new Swiper($refs.container, {
+    //       loop: true,
+    //       slidesPerView: 1,
+    //       spaceBetween: 0,
+    //    pagination: {
+    //     el: '.swiper-pagination',
+    //     clickable: true,
+    //   },
+    //    autoplay: {
+    //       delay: 3000,
+    //     },
+    //       breakpoints: {
+    //         640: {
+    //           slidesPerView: 2,
+    //           spaceBetween: 20,
+    //           slidesPerGroup: 2,
+    //         },
+    //         768: {
+    //           slidesPerView: 3,
+    //           spaceBetween: 20,
+    //           slidesPerGroup: 3,
+    //         },
+    //         1024: {
+    //           slidesPerView: 4,
+    //           spaceBetween: 20,
+    //           slidesPerGroup: 4,
+    //         },
+    //       },
+    //     })" class="relative w-12/12 mx-auto my-10 mb-28 px-10">
+    //       <p class="text-3xl font-bold py-2">Notable Alumni</p>
+    
+    //       <div class="swiper-container" x-ref="container">
+    //         <div class="swiper-wrapper" id="alumnicarousel">
+    //         ${dat}
+    //         </div>
+    //         </div>
+    //         </div>
+
+    //         </div>
+    //         </div>
+    //         <div class="swiper-pagination absolute -bottom-6 flex gap-1 "></div>
+    //         <div class="absolute  -bottom-15 right-16 z-10 flex items-center">
+    //           <button @click="swiper.slidePrev()"
+    //             class="bg-white m-2  flex justify-center items-center w-10 h-10 rounded-full shadow shadow-lg focus:outline-none">
+    //             <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left w-6 h-6">
+    //               <path fill-rule="evenodd"
+    //                 d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+    //                 clip-rule="evenodd"></path>
+    //             </svg>
+    //           </button>
+    //         </div>
+    //         <div class="absolute  m-2 -bottom-15 right-5 z-10 flex items-center">
+    //           <button @click="swiper.slideNext()"
+    //             class="bg-white flex justify-center items-center w-10 h-10 rounded-full shadow shadow-lg focus:outline-none">
+    //             <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right w-6 h-6">
+    //               <path fill-rule="evenodd"
+    //                 d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+    //                 clip-rule="evenodd"></path>
+    //             </svg>
+    //           </button>
+    //         </div>
+    //       </div>
+    //       <!-- Alumni details SideNav -->
+    //       <section id="side-popup-alumni" class="hidden">
+    //         <div class="fixed top-0 z-30 right-0 h-[100vh] w-[100vw] bg-black bg-opacity-50"></div>
+    //         <div id="read-more" class="fixed top-0 z-40 right-0 h-[100vh] w-[100vw] lg:w-[50vw] bg-gray-50 flex flex-col gap-4 p-8">
+    //           <span id="close-popup-alumni" class="material-symbols-outlined place-self-end cursor-pointer">
+    //               cancel
+    //           </span>
+    //           <h3 id="side-popup-alumni-head" class="text-2xl font-semibold"></h3>
+    //           <p id="side-popup-alumni-paragraph" class="text-lg text-gray-700 overflow-y-auto"></p>
+    //         </div>
+    //       </section>
+    //     `
+    //     console.log(dat);
+    // });
+
+  //   document.getElementById('alumnicarousel').innerHTML = `<div class="swiper-slide ">
+  //   <div class="flex flex-col rounded shadow overflow-hidden">
+  //     <div class="flex-shrink-0 relative alumni" onclick="showPopups('side-popup-alumni')"
+  //       >
+  //       <img class="h-[50vh] w-full object-cover"
+  //         src="https://images.squarespace-cdn.com/content/v1/5cdcc14ad86cc91b80cdbf65/1558486905146-N2NCK3RXK9ZJ1PLRMEDN/Raj+Headshot+2-2019.jpg?format=750w"
+  //         alt="">
+  //       <div class="absolute bottom-0 p-6  z-50 alumni-content text-white">
+  //         <p class="text-xl md:text-2xl  lg:text-3xl font-semibold">Raj soin1</p>
+  //         <p>Class 1969</p>
+  //       </div>
+  //       <div
+  //         class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl  ">
+  //         Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now chairman and CEO of Soin
+  //         LLC at Ohio in the US, donated the amount Rs 5 crore for the construction of a multipurpose hall at
+  //         his alma mater Delhi Technological University
+  //       </div>
+  //     </div>
+  //   </div>
+  // </div>
+  // <div class="swiper-slide ">
+  //   <div class="flex flex-col rounded shadow overflow-hidden">
+  //     <div class="flex-shrink-0 relative alumni" onclick="showPopups('side-popup-alumni')"
+  //       >
+  //       <img class="h-[50vh] w-full object-cover"
+  //         src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcT8xQMR7KOxGyMcjeRxEf-c9yDrR2Jr5EEseSg_0xKodBeUhxhqqtSgaztN5gQZ90y-Dy6uz9C2FRgn3zs"
+  //         alt="">
+  //       <div class="absolute bottom-0 p-6  z-50 alumni-content text-white">
+  //         <p class="text-xl md:text-2xl  lg:text-3xl font-semibold">Raj soin2</p>
+  //         <p>Class 1965</p>
+  //       </div>
+  //       <div
+  //         class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl  ">
+  //         Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now chairman and CEO of Soin
+  //         LLC at Ohio in the US, donated the amount Rs 5 crore for the construction of a multipurpose hall at
+  //         his alma mater Delhi Technological University
+  //       </div>
+  //     </div>
+  //   </div>
+  // </div>
+  // <div class="swiper-slide ">
+  //   <div class="flex flex-col rounded shadow overflow-hidden">
+  //     <div class="flex-shrink-0 relative alumni" onclick="showPopups('side-popup-alumni')"
+  //       >
+  //       <img class="h-[50vh] w-full object-cover"
+  //         src="https://images.squarespace-cdn.com/content/v1/5cdcc14ad86cc91b80cdbf65/1558486905146-N2NCK3RXK9ZJ1PLRMEDN/Raj+Headshot+2-2019.jpg?format=750w"
+  //         alt="">
+  //       <div class="absolute bottom-0 p-6  z-50 alumni-content text-white">
+  //         <p class="text-xl md:text-2xl  lg:text-3xl font-semibold">Raj soin3</p>
+  //         <p>Class 1967</p>
+  //       </div>
+  //       <div
+  //         class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl   ">
+  //         Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now chairman and CEO of Soin
+  //         LLC at Ohio in the US, donated the amount Rs 5 crore for the construction of a multipurpose hall at
+  //         his alma mater Delhi Technological University
+  //       </div>
+  //     </div>
+  //   </div>
+  // </div>
+  // <div class="swiper-slide ">
+  //   <div class="flex flex-col rounded shadow overflow-hidden">
+  //     <div class="flex-shrink-0 relative alumni" onclick="showPopups('side-popup-alumni')"
+  //       >
+  //       <img class="h-[50vh] w-full object-cover"
+  //         src="https://images.squarespace-cdn.com/content/v1/5cdcc14ad86cc91b80cdbf65/1558486905146-N2NCK3RXK9ZJ1PLRMEDN/Raj+Headshot+2-2019.jpg?format=750w"
+  //         alt="">
+  //       <div class="absolute bottom-0 p-6  z-50 alumni-content text-white">
+  //         <p class="text-xl md:text-2xl  lg:text-3xl font-semibold">Raj soin4</p>
+  //         <p>Class 1968</p>
+  //       </div>
+  //       <div
+  //         class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl   ">
+  //         Dr Rajesh K Soin, an alumnus of 1969 batch of Mechanical Engineering and now chairman and CEO of Soin
+  //         LLC at Ohio in the US, donated the amount Rs 5 crore for the construction of a multipurpose hall at
+  //         his alma mater Delhi Technological University
+  //       </div>
+  //     </div>
+  //   </div>
+  // </div>`
+
+     //Alumni Sidenav
+     function showPopups (popupId){
+      document.getElementById(`${popupId}`).classList.remove("hidden");
+    }
+    function closePopups (popupId){
+      document.getElementById(`${popupId}`).classList.add("hidden");
+    }
+    document.getElementById('close-popup-alumni').addEventListener('click',()=>closePopups('side-popup-alumni'))
+  
 
     // Events section image modal
     var modal = document.getElementById("modal");
@@ -185,62 +386,68 @@ fetch("/data/news.json").then(response => response.json())
     }  
 
 
-fetch('./data/alumnicarousel.json')
-  .then((r) => r.json())
-  .then((d) => {
-    document.querySelectorAll('.imageAlum').forEach((el, i) => {
-      el.src = d[i].image;
+    fetch('./data/alumnicarousel.json')
+    .then((r) => r.json())
+    .then((d) => {
+      document.querySelectorAll('.imageAlum').forEach((el, i) => {
+        el.src = d[i].image;
+      });
+      document.querySelectorAll('.nameAlum').forEach((el, i) => {
+        el.innerHTML = d[i].name;
+      });
+      document.querySelectorAll('.classAlum').forEach((el, i) => {
+        el.innerHTML = d[i].class;
+      });
+      document.querySelectorAll('.textAlum').forEach((el, i) => {
+        el.innerHTML = d[i].text;
+      });
+  
+      initCarousel();
     });
-    document.querySelectorAll('.nameAlum').forEach((el, i) => {
-      el.innerHTML = d[i].name;
-    });
-    document.querySelectorAll('.classAlum').forEach((el, i) => {
-      el.innerHTML = d[i].class;
-    });
-    document.querySelectorAll('.textAlum').forEach((el, i) => {
-      el.innerHTML = d[i].text;
-    });
-
-    initCarousel();
-  });
-
-
-function initCarousel() {
-
-  const swiper = new Swiper('.swiper-container-alumni', {
-    cssMode: true,
-    loop: true,
-    slidesPerView:1,
-    spaceBetween: 30,
-    stopOnLastSlide: false,
-    autoplay: {
-      delay: 1000,
-      pauseOnMouseEnter: true,
-    },
-    breakpoints: {
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
+  
+  
+  function initCarousel() {
+  
+    const swiper = new Swiper('.swiper-container-alumni', {
+      cssMode: true,
+      loop: true,
+      slidesPerView:1,
+      spaceBetween: 30,
+      stopOnLastSlide: false,
+      autoplay: {
+        delay: 3000,
+        pauseOnMouseEnter: true,
+        disableOnInteraction: false,
       },
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 20,
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+          slidesPerGroup: 2,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+          slidesPerGroup: 3,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+          slidesPerGroup: 4,
+        },
       },
-      1024: {
-        slidesPerView: 4,
-        spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-    mousewheel: true,
-    keyboard: true,
-
-  });
-
-}
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+  
+    });
+  
+  }
+  
+   
