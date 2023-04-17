@@ -340,7 +340,9 @@ fetch("/data/news.json").then(response => response.json())
   // </div>`
 
      //Alumni Sidenav
-     function showPopups (popupId){
+     function showPopups (popupId, text, name){
+      document.getElementById(`${popupId}`).children[1].children[1].innerHTML = name;
+      document.getElementById(`${popupId}`).children[1].children[2].innerHTML = text;
       document.getElementById(`${popupId}`).classList.remove("hidden");
     }
     function closePopups (popupId){
@@ -386,24 +388,25 @@ fetch("/data/news.json").then(response => response.json())
     }  
 
 
-    fetch('./data/alumnicarousel.json')
-    .then((r) => r.json())
-    .then((d) => {
-      document.querySelectorAll('.imageAlum').forEach((el, i) => {
-        el.src = d[i].image;
-      });
-      document.querySelectorAll('.nameAlum').forEach((el, i) => {
-        el.innerHTML = d[i].name;
-      });
-      document.querySelectorAll('.classAlum').forEach((el, i) => {
-        el.innerHTML = d[i].class;
-      });
-      document.querySelectorAll('.textAlum').forEach((el, i) => {
-        el.innerHTML = d[i].text;
-      });
-  
-      initCarousel();
+    fetch('../data/alumnicarousel.json')
+  .then((r) => r.json())
+  .then((d) => {
+    document.querySelectorAll('.imageAlum').forEach((el, i) => {
+      el.src = `../public/img/alumni and donor photos/${d[i].name}.jpg`;
     });
+    document.querySelectorAll('.nameAlum').forEach((el, i) => {
+      el.innerHTML = d[i].name;
+    });
+    document.querySelectorAll('.classAlum').forEach((el, i) => {
+      el.innerHTML = d[i].class;
+    });
+    document.querySelectorAll('.textAlum').forEach((el, i) => {
+      el.innerHTML = d[i].text;
+    });
+
+    initCarousel();
+  });
+
   
   
   function initCarousel() {

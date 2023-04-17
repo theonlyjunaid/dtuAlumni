@@ -1,0 +1,50 @@
+[
+    {
+      "name": "Vinod Dham",
+      "class": 1971,
+      "branch": "Electrical engineering",
+      "text": "Engineer and venture capitalist who is known as the \"Father of the Pentium\" for his work in the Microprocessor Products group at Intel."
+    },
+    {
+      "name": "Dharendra Yogi Goswami",
+      "class": 1969,
+      "branch": "Mechanical engineering",
+      "text": "Distinguished university professor in chemical engineering and director of the Clean Energy Research Center at the University of South Florida. Founder of the air purifier company Molekule."
+    },
+    {
+      "name": "Ravi Grover",
+      "class": 1970,
+      "branch": "Mechanical engineering",
+      "text": "Nuclear engineer, former vice-chancellor of the Homi Bhabha National Institute and member of the Atomic Energy Commission of India. Received the Padma Shri, India's fourth highest civilian award, in 2014. Responsible for the successful negotiations in the India–United States Civil Nuclear Agreement."
+    },
+    {
+      "name": "Emani Kumar",
+      "class": 1991,
+      "branch": "Civil engineering",
+      "text": "Deputy secretary general of ICLEI and founding executive director of its South Asian arm."
+    },
+    {
+      "name": "Ishwar Puri",
+      "class": 1982,
+      "branch": "Mechanical engineering",
+      "text": "Vice President of Research at University of Southern California, former Dean of the McMaster Faculty of Engineering and former N. Waldo Harrison Professor at Virginia Tech."
+    },
+    {
+      "name": "Subhav Sinha",
+      "class": 2009,
+      "branch": "Electrical engineering",
+      "text": "Inventor of Mitra, a personalized battery-operated vehicle. Chosen as one of the \"International Climate Champions\" for the year 2010 by the British Council."
+    },
+    {
+      "name": "Rajinder Kumar (chemical engineer)",
+      "class": 1955,
+      "branch": "Masters in Chemical engineering",
+      "text": "Chemical engineer and a former professor at the Indian Institute of Science. Known for his work of mass transfer in multiphase systems. Received the third highest Indian civilian award Padma Bhushan in 2003 and the Lifetime Achievement Award by Indian Institute of Chemical Engineers in 2008."
+    },
+    {
+      "name": "Neeraj Jhanji",
+      "class": 1993,
+      "branch": "Electrical Engineering",
+      "text": "Developed world's first mobile social network based on status update & location ImaHima. Inventor of status updates & mobile check-in technology. Sold patents to Facebook"
+    }
+   ]

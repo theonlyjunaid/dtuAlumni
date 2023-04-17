@@ -110,19 +110,19 @@
 </div>
  <section id="TopDonors">
 
-    <div class="relative w-12/12 mx-auto px-10">
+    <div class="relative w-12/12 mx-auto px-10 pt-10">
       <p class="text-3xl font-bold py-2">Distinguished Alumni</p>
 
       <div class="swiper-container-alumni-1" x-ref="container">
           <div class="swiper-wrapper" id="">
-            <!-- Slides -->
+            <!--20 Slides -->
             <div class="swiper-slide  ">
               <div class="flex flex-col rounded shadow overflow-hidden">
-                <div class="flex-shrink-0 relative alumni" onclick="showPopups('side-popup-alumni')" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
                 >
                 <img class="h-[40vh] w-full object-cover imageAlum-1"
                     src=""
-                    alt="">
+                    onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
                   <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
                     <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-1 "></p>
                     <p class="classAlum-1"></p>
@@ -136,11 +136,11 @@
             </div>
             <div class="swiper-slide  ">
                 <div class="flex flex-col rounded shadow overflow-hidden">
-                  <div class="flex-shrink-0 relative alumni" onclick="showPopups('side-popup-alumni')" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                  <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
                   >
                   <img class="h-[40vh] w-full object-cover imageAlum-1"
                       src=""
-                      alt="">
+                      onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
                     <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
                       <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-1 "></p>
                       <p class="classAlum-1"></p>
@@ -154,11 +154,11 @@
               </div>
               <div class="swiper-slide  ">
                 <div class="flex flex-col rounded shadow overflow-hidden">
-                  <div class="flex-shrink-0 relative alumni" onclick="showPopups('side-popup-alumni')" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                  <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
                   >
                   <img class="h-[40vh] w-full object-cover imageAlum-1"
                       src=""
-                      alt="">
+                      onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
                     <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
                       <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-1 "></p>
                       <p class="classAlum-1"></p>
@@ -172,11 +172,300 @@
               </div>
               <div class="swiper-slide  ">
                 <div class="flex flex-col rounded shadow overflow-hidden">
-                  <div class="flex-shrink-0 relative alumni" onclick="showPopups('side-popup-alumni')" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                  <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
                   >
                   <img class="h-[40vh] w-full object-cover imageAlum-1"
                       src=""
-                      alt="">
+                      onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
+                    <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                      <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-1 "></p>
+                      <p class="classAlum-1"></p>
+                    </div>
+                    <div
+                      class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum-1 ">
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide  ">
+                <div class="flex flex-col rounded shadow overflow-hidden">
+                  <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                  >
+                  <img class="h-[40vh] w-full object-cover imageAlum-1"
+                      src=""
+                      onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
+                    <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                      <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-1 "></p>
+                      <p class="classAlum-1"></p>
+                    </div>
+                    <div
+                      class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum-1 ">
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide  ">
+                <div class="flex flex-col rounded shadow overflow-hidden">
+                  <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                  >
+                  <img class="h-[40vh] w-full object-cover imageAlum-1"
+                      src=""
+                      onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
+                    <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                      <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-1 "></p>
+                      <p class="classAlum-1"></p>
+                    </div>
+                    <div
+                      class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum-1 ">
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide  ">
+                <div class="flex flex-col rounded shadow overflow-hidden">
+                  <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                  >
+                  <img class="h-[40vh] w-full object-cover imageAlum-1"
+                      src=""
+                      onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
+                    <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                      <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-1 "></p>
+                      <p class="classAlum-1"></p>
+                    </div>
+                    <div
+                      class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum-1 ">
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide  ">
+                <div class="flex flex-col rounded shadow overflow-hidden">
+                  <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                  >
+                  <img class="h-[40vh] w-full object-cover imageAlum-1"
+                      src=""
+                      onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
+                    <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                      <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-1 "></p>
+                      <p class="classAlum-1"></p>
+                    </div>
+                    <div
+                      class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum-1 ">
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide  ">
+                <div class="flex flex-col rounded shadow overflow-hidden">
+                  <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                  >
+                  <img class="h-[40vh] w-full object-cover imageAlum-1"
+                      src=""
+                      onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
+                    <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                      <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-1 "></p>
+                      <p class="classAlum-1"></p>
+                    </div>
+                    <div
+                      class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum-1 ">
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide  ">
+                <div class="flex flex-col rounded shadow overflow-hidden">
+                  <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                  >
+                  <img class="h-[40vh] w-full object-cover imageAlum-1"
+                      src=""
+                      onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
+                    <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                      <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-1 "></p>
+                      <p class="classAlum-1"></p>
+                    </div>
+                    <div
+                      class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum-1 ">
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide  ">
+                <div class="flex flex-col rounded shadow overflow-hidden">
+                  <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                  >
+                  <img class="h-[40vh] w-full object-cover imageAlum-1"
+                      src=""
+                      onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
+                    <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                      <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-1 "></p>
+                      <p class="classAlum-1"></p>
+                    </div>
+                    <div
+                      class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum-1 ">
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide  ">
+                <div class="flex flex-col rounded shadow overflow-hidden">
+                  <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                  >
+                  <img class="h-[40vh] w-full object-cover imageAlum-1"
+                      src=""
+                      onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
+                    <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                      <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-1 "></p>
+                      <p class="classAlum-1"></p>
+                    </div>
+                    <div
+                      class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum-1 ">
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide  ">
+                <div class="flex flex-col rounded shadow overflow-hidden">
+                  <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                  >
+                  <img class="h-[40vh] w-full object-cover imageAlum-1"
+                      src=""
+                      onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
+                    <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                      <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-1 "></p>
+                      <p class="classAlum-1"></p>
+                    </div>
+                    <div
+                      class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum-1 ">
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide  ">
+                <div class="flex flex-col rounded shadow overflow-hidden">
+                  <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                  >
+                  <img class="h-[40vh] w-full object-cover imageAlum-1"
+                      src=""
+                      onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
+                    <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                      <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-1 "></p>
+                      <p class="classAlum-1"></p>
+                    </div>
+                    <div
+                      class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum-1 ">
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide  ">
+                <div class="flex flex-col rounded shadow overflow-hidden">
+                  <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                  >
+                  <img class="h-[40vh] w-full object-cover imageAlum-1"
+                      src=""
+                      onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
+                    <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                      <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-1 "></p>
+                      <p class="classAlum-1"></p>
+                    </div>
+                    <div
+                      class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum-1 ">
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide  ">
+                <div class="flex flex-col rounded shadow overflow-hidden">
+                  <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                  >
+                  <img class="h-[40vh] w-full object-cover imageAlum-1"
+                      src=""
+                      onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
+                    <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                      <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-1 "></p>
+                      <p class="classAlum-1"></p>
+                    </div>
+                    <div
+                      class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum-1 ">
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide  ">
+                <div class="flex flex-col rounded shadow overflow-hidden">
+                  <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                  >
+                  <img class="h-[40vh] w-full object-cover imageAlum-1"
+                      src=""
+                      onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
+                    <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                      <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-1 "></p>
+                      <p class="classAlum-1"></p>
+                    </div>
+                    <div
+                      class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum-1 ">
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            <div class="swiper-slide  ">
+                <div class="flex flex-col rounded shadow overflow-hidden">
+                  <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                  >
+                  <img class="h-[40vh] w-full object-cover imageAlum-1"
+                      src=""
+                      onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
+                    <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                      <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-1 "></p>
+                      <p class="classAlum-1"></p>
+                    </div>
+                    <div
+                      class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum-1 ">
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide  ">
+                <div class="flex flex-col rounded shadow overflow-hidden">
+                  <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                  >
+                  <img class="h-[40vh] w-full object-cover imageAlum-1"
+                      src=""
+                      onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
+                    <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                      <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-1 "></p>
+                      <p class="classAlum-1"></p>
+                    </div>
+                    <div
+                      class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum-1 ">
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide  ">
+                <div class="flex flex-col rounded shadow overflow-hidden">
+                  <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                  >
+                  <img class="h-[40vh] w-full object-cover imageAlum-1"
+                      src=""
+                      onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
                     <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
                       <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-1 "></p>
                       <p class="classAlum-1"></p>
@@ -239,11 +528,11 @@
                     <!-- Slides -->
                     <div class="swiper-slide  ">
                       <div class="flex flex-col rounded shadow overflow-hidden">
-                        <div class="flex-shrink-0 relative alumni" onclick="showPopups('side-popup-alumni')" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                        <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
                         >
                         <img class="h-[40vh] w-full object-cover imageAlum-2"
                             src=""
-                            alt="">
+                            onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
                           <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
                             <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-2 "></p>
                             <p class="classAlum-2"></p>
@@ -257,11 +546,11 @@
                     </div>
                     <div class="swiper-slide  ">
                         <div class="flex flex-col rounded shadow overflow-hidden">
-                          <div class="flex-shrink-0 relative alumni" onclick="showPopups('side-popup-alumni')" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                          <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
                           >
                           <img class="h-[40vh] w-full object-cover imageAlum-2"
                               src=""
-                              alt="">
+                              onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
                             <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
                               <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-2 "></p>
                               <p class="classAlum-2"></p>
@@ -275,11 +564,11 @@
                       </div>
                       <div class="swiper-slide  ">
                         <div class="flex flex-col rounded shadow overflow-hidden">
-                          <div class="flex-shrink-0 relative alumni" onclick="showPopups('side-popup-alumni')" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                          <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
                           >
                           <img class="h-[40vh] w-full object-cover imageAlum-2"
                               src=""
-                              alt="">
+                              onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
                             <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
                               <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-2 "></p>
                               <p class="classAlum-2"></p>
@@ -293,11 +582,11 @@
                       </div>
                       <div class="swiper-slide  ">
                         <div class="flex flex-col rounded shadow overflow-hidden">
-                          <div class="flex-shrink-0 relative alumni" onclick="showPopups('side-popup-alumni')" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                          <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
                           >
                           <img class="h-[40vh] w-full object-cover imageAlum-2"
                               src=""
-                              alt="">
+                              onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
                             <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
                               <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-2 "></p>
                               <p class="classAlum-2"></p>
@@ -349,11 +638,11 @@
             <!-- Slides -->
             <div class="swiper-slide  ">
               <div class="flex flex-col rounded shadow overflow-hidden">
-                <div class="flex-shrink-0 relative alumni" onclick="showPopups('side-popup-alumni')" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
                 >
                 <img class="h-[40vh] w-full object-cover imageAlum-3"
                     src=""
-                    alt="">
+                    onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
                   <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
                     <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-3"></p>
                     <p class="classAlum-3"></p>
@@ -367,11 +656,11 @@
             </div>
             <div class="swiper-slide  ">
                 <div class="flex flex-col rounded shadow overflow-hidden">
-                  <div class="flex-shrink-0 relative alumni" onclick="showPopups('side-popup-alumni')" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                  <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
                   >
                   <img class="h-[40vh] w-full object-cover imageAlum-3"
                       src=""
-                      alt="">
+                      onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
                     <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
                       <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-3"></p>
                       <p class="classAlum-3"></p>
@@ -384,11 +673,11 @@
                 </div>
               </div> <div class="swiper-slide  ">
                 <div class="flex flex-col rounded shadow overflow-hidden">
-                  <div class="flex-shrink-0 relative alumni" onclick="showPopups('side-popup-alumni')" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                  <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
                   >
                   <img class="h-[40vh] w-full object-cover imageAlum-3"
                       src=""
-                      alt="">
+                      onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
                     <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
                       <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-3"></p>
                       <p class="classAlum-3"></p>
@@ -401,11 +690,11 @@
                 </div>
               </div> <div class="swiper-slide  ">
                 <div class="flex flex-col rounded shadow overflow-hidden">
-                  <div class="flex-shrink-0 relative alumni" onclick="showPopups('side-popup-alumni')" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                  <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
                   >
                   <img class="h-[40vh] w-full object-cover imageAlum-3"
                       src=""
-                      alt="">
+                      onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
                     <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
                       <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-3"></p>
                       <p class="classAlum-3"></p>
@@ -455,11 +744,11 @@
                         <!-- Slides -->
                         <div class="swiper-slide  ">
                             <div class="flex flex-col rounded shadow overflow-hidden">
-                              <div class="flex-shrink-0 relative alumni" onclick="showPopups('side-popup-alumni')" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                              <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
                               >
                               <img class="h-[40vh] w-full object-cover imageAlum-4"
                                   src=""
-                                  alt="">
+                                  onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
                                 <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
                                   <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-4"></p>
                                   <p class="classAlum-4"></p>
@@ -473,11 +762,11 @@
                           </div>
                           <div class="swiper-slide  ">
                             <div class="flex flex-col rounded shadow overflow-hidden">
-                              <div class="flex-shrink-0 relative alumni" onclick="showPopups('side-popup-alumni')" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                              <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
                               >
                               <img class="h-[40vh] w-full object-cover imageAlum-4"
                                   src=""
-                                  alt="">
+                                  onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
                                 <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
                                   <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-4"></p>
                                   <p class="classAlum-4"></p>
@@ -490,11 +779,11 @@
                             </div>
                           </div><div class="swiper-slide  ">
                             <div class="flex flex-col rounded shadow overflow-hidden">
-                              <div class="flex-shrink-0 relative alumni" onclick="showPopups('side-popup-alumni')" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                              <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
                               >
                               <img class="h-[40vh] w-full object-cover imageAlum-4"
                                   src=""
-                                  alt="">
+                                  onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
                                 <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
                                   <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-4"></p>
                                   <p class="classAlum-4"></p>
@@ -507,11 +796,11 @@
                             </div>
                           </div><div class="swiper-slide  ">
                             <div class="flex flex-col rounded shadow overflow-hidden">
-                              <div class="flex-shrink-0 relative alumni" onclick="showPopups('side-popup-alumni')" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                              <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
                               >
                               <img class="h-[40vh] w-full object-cover imageAlum-4"
                                   src=""
-                                  alt="">
+                                  onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
                                 <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
                                   <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-4"></p>
                                   <p class="classAlum-4"></p>
@@ -560,14 +849,14 @@
       
           <div class="swiper-container-alumni-5" x-ref="container">
               <div class="swiper-wrapper" id="scholarshipcarousel">
-                <!-- Slides -->
+                <!-- 15 Slides -->
                 <div class="swiper-slide  ">
                     <div class="flex flex-col rounded shadow overflow-hidden">
-                      <div class="flex-shrink-0 relative alumni" onclick="showPopups('side-popup-alumni')" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                      <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
                       >
                       <img class="h-[40vh] w-full object-cover imageAlum-5"
                           src=""
-                          alt="">
+                          onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
                         <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
                           <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-5"></p>
                           <p class="classAlum-5"></p>
@@ -581,11 +870,199 @@
                   </div>
                   <div class="swiper-slide  ">
                     <div class="flex flex-col rounded shadow overflow-hidden">
-                      <div class="flex-shrink-0 relative alumni" onclick="showPopups('side-popup-alumni')" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                      <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
                       >
                       <img class="h-[40vh] w-full object-cover imageAlum-5"
                           src=""
-                          alt="">
+                          onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
+                        <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                          <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-5"></p>
+                          <p class="classAlum-5"></p>
+                        </div>
+                        <div
+                          class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum-5">
+        
+                        </div>
+                      </div>
+                    </div>
+                  </div> <div class="swiper-slide  ">
+                    <div class="flex flex-col rounded shadow overflow-hidden">
+                      <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                      >
+                      <img class="h-[40vh] w-full object-cover imageAlum-5"
+                          src=""
+                          onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
+                        <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                          <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-5"></p>
+                          <p class="classAlum-5"></p>
+                        </div>
+                        <div
+                          class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum-5">
+        
+                        </div>
+                      </div>
+                    </div>
+                  </div> <div class="swiper-slide  ">
+                    <div class="flex flex-col rounded shadow overflow-hidden">
+                      <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                      >
+                      <img class="h-[40vh] w-full object-cover imageAlum-5"
+                          src=""
+                          onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
+                        <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                          <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-5"></p>
+                          <p class="classAlum-5"></p>
+                        </div>
+                        <div
+                          class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum-5">
+        
+                        </div>
+                      </div>
+                    </div>
+                  </div> <div class="swiper-slide  ">
+                    <div class="flex flex-col rounded shadow overflow-hidden">
+                      <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                      >
+                      <img class="h-[40vh] w-full object-cover imageAlum-5"
+                          src=""
+                          onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
+                        <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                          <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-5"></p>
+                          <p class="classAlum-5"></p>
+                        </div>
+                        <div
+                          class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum-5">
+        
+                        </div>
+                      </div>
+                    </div>
+                  </div> <div class="swiper-slide  ">
+                    <div class="flex flex-col rounded shadow overflow-hidden">
+                      <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                      >
+                      <img class="h-[40vh] w-full object-cover imageAlum-5"
+                          src=""
+                          onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
+                        <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                          <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-5"></p>
+                          <p class="classAlum-5"></p>
+                        </div>
+                        <div
+                          class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum-5">
+        
+                        </div>
+                      </div>
+                    </div>
+                  </div> <div class="swiper-slide  ">
+                    <div class="flex flex-col rounded shadow overflow-hidden">
+                      <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                      >
+                      <img class="h-[40vh] w-full object-cover imageAlum-5"
+                          src=""
+                          onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
+                        <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                          <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-5"></p>
+                          <p class="classAlum-5"></p>
+                        </div>
+                        <div
+                          class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum-5">
+        
+                        </div>
+                      </div>
+                    </div>
+                  </div> <div class="swiper-slide  ">
+                    <div class="flex flex-col rounded shadow overflow-hidden">
+                      <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                      >
+                      <img class="h-[40vh] w-full object-cover imageAlum-5"
+                          src=""
+                          onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
+                        <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                          <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-5"></p>
+                          <p class="classAlum-5"></p>
+                        </div>
+                        <div
+                          class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum-5">
+        
+                        </div>
+                      </div>
+                    </div>
+                  </div> <div class="swiper-slide  ">
+                    <div class="flex flex-col rounded shadow overflow-hidden">
+                      <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                      >
+                      <img class="h-[40vh] w-full object-cover imageAlum-5"
+                          src=""
+                          onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
+                        <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                          <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-5"></p>
+                          <p class="classAlum-5"></p>
+                        </div>
+                        <div
+                          class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum-5">
+        
+                        </div>
+                      </div>
+                    </div>
+                  </div> <div class="swiper-slide  ">
+                    <div class="flex flex-col rounded shadow overflow-hidden">
+                      <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                      >
+                      <img class="h-[40vh] w-full object-cover imageAlum-5"
+                          src=""
+                          onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
+                        <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                          <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-5"></p>
+                          <p class="classAlum-5"></p>
+                        </div>
+                        <div
+                          class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum-5">
+        
+                        </div>
+                      </div>
+                    </div>
+                  </div> <div class="swiper-slide  ">
+                    <div class="flex flex-col rounded shadow overflow-hidden">
+                      <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                      >
+                      <img class="h-[40vh] w-full object-cover imageAlum-5"
+                          src=""
+                          onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
+                        <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                          <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-5"></p>
+                          <p class="classAlum-5"></p>
+                        </div>
+                        <div
+                          class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum-5">
+        
+                        </div>
+                      </div>
+                    </div>
+                  </div> <div class="swiper-slide  ">
+                    <div class="flex flex-col rounded shadow overflow-hidden">
+                      <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                      >
+                      <img class="h-[40vh] w-full object-cover imageAlum-5"
+                          src=""
+                          onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
+                        <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
+                          <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-5"></p>
+                          <p class="classAlum-5"></p>
+                        </div>
+                        <div
+                          class="absolute z-40 top-0 bg-black bg-opacity-75 h-full alumni-text ease-in-out duration-300 p-6 text-white text-md md:text-lg lg:text-xl textAlum-5">
+        
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide  ">
+                    <div class="flex flex-col rounded shadow overflow-hidden">
+                      <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                      >
+                      <img class="h-[40vh] w-full object-cover imageAlum-5"
+                          src=""
+                          onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
                         <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
                           <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-5"></p>
                           <p class="classAlum-5"></p>
@@ -598,11 +1075,11 @@
                     </div>
                   </div><div class="swiper-slide  ">
                     <div class="flex flex-col rounded shadow overflow-hidden">
-                      <div class="flex-shrink-0 relative alumni" onclick="showPopups('side-popup-alumni')" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                      <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
                       >
                       <img class="h-[40vh] w-full object-cover imageAlum-5"
                           src=""
-                          alt="">
+                          onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
                         <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
                           <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-5"></p>
                           <p class="classAlum-5"></p>
@@ -615,11 +1092,11 @@
                     </div>
                   </div><div class="swiper-slide  ">
                     <div class="flex flex-col rounded shadow overflow-hidden">
-                      <div class="flex-shrink-0 relative alumni" onclick="showPopups('side-popup-alumni')" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
+                      <div class="flex-shrink-0 relative alumni cursor-pointer" onclick="showPopups('side-popup-alumni', this.children[2].innerHTML, this.children[1].children[0].innerHTML)" onmouseover="alumHover(this)" onmouseleave="alumHoverOut(this)"
                       >
                       <img class="h-[40vh] w-full object-cover imageAlum-5"
                           src=""
-                          alt="">
+                          onerror="this.src='../public/img/blank-profile-picture.png'" alt="">
                         <div class="absolute bottom-0 p-6  z-50 alumni-content text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
                           <p class="text-xl md:text-2xl  lg:text-3xl font-semibold nameAlum-5"></p>
                           <p class="classAlum-5"></p>
