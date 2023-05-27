@@ -35,13 +35,18 @@ function showPopups (popupId, text, name){
   }
   document.getElementById('close-popup-alumni').addEventListener('click',()=>closePopups('side-popup-alumni'))
 
-
+  function truncateText(text){
+    if (text.length > 185){
+      return text.slice(0,180) + "...Read More"
+    }
+    return text
+  }
 
 
 
   
 
-  fetch('../data/alumnicarousel.json')
+  fetch('../data/contributoryFund.json')
   .then((r) => r.json())
   .then((d) => {
     document.querySelectorAll('.imageAlum').forEach((el, i) => {
@@ -51,17 +56,17 @@ function showPopups (popupId, text, name){
       el.innerHTML = d[i].name;
     });
     document.querySelectorAll('.classAlum').forEach((el, i) => {
-      el.innerHTML = d[i].class;
+      el.innerHTML = d[i].amount;
     });
     document.querySelectorAll('.textAlum').forEach((el, i) => {
-      el.innerHTML = d[i].text;
+      el.innerHTML = d[i].purpose??`${d[i].name} donated ${d[i].amount} towards the University's Contributory Fund`;
     });
 
     initCarousel();
   });
 
 
-  fetch('../data/alumnicarousel.json')
+  fetch('../data/ScholarshipsAndMedals.json')
   .then((r) => r.json())
   .then((d) => {
     document.querySelectorAll('.imageScholarshipAndMedal').forEach((el, i) => {
@@ -71,10 +76,10 @@ function showPopups (popupId, text, name){
       el.innerHTML = d[i].name;
     });
     document.querySelectorAll('.classScholarshipAndMedal').forEach((el, i) => {
-      el.innerHTML = d[i].class;
+      el.innerHTML = d[i].amount;
     });
     document.querySelectorAll('.textScholarshipAndMedal').forEach((el, i) => {
-      el.innerHTML = d[i].text;
+      el.innerHTML = truncateText(d[i].criteria_for_scholarship);
     });
 
     initCarouselScholarship();
@@ -93,7 +98,7 @@ function showPopups (popupId, text, name){
       el.innerHTML = d[i].class;
     });
     document.querySelectorAll('.textCorpus').forEach((el, i) => {
-      el.innerHTML = d[i].text;
+      el.innerHTML = truncateText(d[i].text);
     });
 
     initCarouselCorpus();
@@ -117,17 +122,17 @@ function initCarousel() {
       640: {
         slidesPerView: 2,
         spaceBetween: 20,
-        slidesPerGroup: 2,
+        slidesPerGroup: 1,
       },
       768: {
         slidesPerView: 3,
         spaceBetween: 20,
-        slidesPerGroup: 3,
+        slidesPerGroup: 1,
       },
       1024: {
         slidesPerView: 4,
         spaceBetween: 20,
-        slidesPerGroup: 4,
+        slidesPerGroup: 1,
       },
     },
     navigation: {
@@ -162,17 +167,17 @@ function initCarouselScholarship() {
       640: {
         slidesPerView: 2,
         spaceBetween: 20,
-        slidesPerGroup: 2,
+        slidesPerGroup: 1,
       },
       768: {
         slidesPerView: 2,
         spaceBetween: 20,
-        slidesPerGroup: 2,
+        slidesPerGroup: 1,
       },
       1024: {
         slidesPerView: 2,
         spaceBetween: 20,
-        slidesPerGroup: 2,
+        slidesPerGroup: 1,
       },
     },
     navigation: {
@@ -206,17 +211,17 @@ function initCarouselCorpus() {
       640: {
         slidesPerView: 2,
         spaceBetween: 20,
-        slidesPerGroup: 2,
+        slidesPerGroup: 1,
       },
       768: {
         slidesPerView: 2,
         spaceBetween: 20,
-        slidesPerGroup: 2,
+        slidesPerGroup: 1,
       },
       1024: {
         slidesPerView: 2,
         spaceBetween: 20,
-        slidesPerGroup: 2,
+        slidesPerGroup: 1,
       },
     },
     navigation: {
@@ -249,7 +254,7 @@ fetch('../data/alumnicarousel.json')
       el.innerHTML = d[i].class;
     });
     document.querySelectorAll('.textAlum-1').forEach((el, i) => {
-      el.innerHTML = d[i].text;
+      el.innerHTML = truncateText(d[i].text);
     });
 
     initCarouselAlumni1();
@@ -273,17 +278,17 @@ fetch('../data/alumnicarousel.json')
         640: {
           slidesPerView: 2,
           spaceBetween: 20,
-          slidesPerGroup: 2,
+          slidesPerGroup: 1,
         },
         768: {
           slidesPerView: 3,
           spaceBetween: 20,
-          slidesPerGroup: 3,
+          slidesPerGroup: 1,
         },
         1024: {
           slidesPerView: 4,
           spaceBetween: 20,
-          slidesPerGroup: 4,
+          slidesPerGroup: 1,
         },
       },
       navigation: {
@@ -313,7 +318,7 @@ fetch('../data/alumnicarousel.json')
       el.innerHTML = d[i].class;
     });
     document.querySelectorAll('.textAlum-2').forEach((el, i) => {
-      el.innerHTML = d[i].text;
+      el.innerHTML = truncateText(d[i].text);
     });
 
     initCarouselAlumni2();
@@ -336,17 +341,17 @@ fetch('../data/alumnicarousel.json')
         640: {
           slidesPerView: 2,
           spaceBetween: 20,
-          slidesPerGroup: 2,
+          slidesPerGroup: 1,
         },
         768: {
           slidesPerView: 2,
           spaceBetween: 20,
-          slidesPerGroup: 2,
+          slidesPerGroup: 1,
         },
         1024: {
           slidesPerView: 2,
           spaceBetween: 20,
-          slidesPerGroup: 2,
+          slidesPerGroup: 1,
         },
       },
       navigation: {
@@ -376,7 +381,7 @@ fetch('../data/alumnicarousel.json')
       el.innerHTML = d[i].class;
     });
     document.querySelectorAll('.textAlum-3').forEach((el, i) => {
-      el.innerHTML = d[i].text;
+      el.innerHTML = truncateText(d[i].text);
     });
 
     initCarouselAlumni3();
@@ -400,17 +405,17 @@ fetch('../data/alumnicarousel.json')
         640: {
           slidesPerView: 2,
           spaceBetween: 20,
-          slidesPerGroup: 2,
+          slidesPerGroup: 1,
         },
         768: {
           slidesPerView: 2,
           spaceBetween: 20,
-          slidesPerGroup: 2,
+          slidesPerGroup: 1,
         },
         1024: {
           slidesPerView: 2,
           spaceBetween: 20,
-          slidesPerGroup: 2,
+          slidesPerGroup: 1,
         },
       },
       navigation: {
@@ -440,7 +445,7 @@ fetch('../data/alumnicarousel.json')
       el.innerHTML = d[i].class;
     });
     document.querySelectorAll('.textAlum-4').forEach((el, i) => {
-      el.innerHTML = d[i].text;
+      el.innerHTML = truncateText(d[i].text);
     });
 
     initCarouselAlumni4();
@@ -464,17 +469,17 @@ fetch('../data/alumnicarousel.json')
         640: {
           slidesPerView: 2,
           spaceBetween: 20,
-          slidesPerGroup: 2,
+          slidesPerGroup: 1,
         },
         768: {
           slidesPerView: 2,
           spaceBetween: 20,
-          slidesPerGroup: 2,
+          slidesPerGroup: 1,
         },
         1024: {
           slidesPerView: 2,
           spaceBetween: 20,
-          slidesPerGroup: 2,
+          slidesPerGroup: 1,
         },
       },
       navigation: {
@@ -505,7 +510,7 @@ fetch('../data/alumnicarousel.json')
       el.innerHTML = d[i].class;
     });
     document.querySelectorAll('.textAlum-5').forEach((el, i) => {
-      el.innerHTML = d[i].text;
+      el.innerHTML = truncateText(d[i].text);
     });
 
     initCarouselAlumni5();
@@ -529,17 +534,17 @@ fetch('../data/alumnicarousel.json')
         640: {
           slidesPerView: 2,
           spaceBetween: 20,
-          slidesPerGroup: 2,
+          slidesPerGroup: 1,
         },
         768: {
           slidesPerView: 2,
           spaceBetween: 20,
-          slidesPerGroup: 2,
+          slidesPerGroup: 1,
         },
         1024: {
           slidesPerView: 2,
           spaceBetween: 20,
-          slidesPerGroup: 2,
+          slidesPerGroup: 1,
         },
       },
       navigation: {

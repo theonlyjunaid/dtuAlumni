@@ -350,9 +350,36 @@
   </section>
 
 
+  <section id="Events" class="pb-10">
+
+    <!-- The Modal -->
+    <div id="modal"
+    class="hidden fixed top-0 left-0 z-80 w-screen h-screen bg-black/70 flex justify-center items-center">
+  
+    <!-- The close button -->
+    <a class="fixed z-90 top-6 right-8 text-white text-5xl font-bold" href="javascript:void(0)"
+        onclick="closeModal()">&times;</a>
+  
+    <!-- A big image will be displayed here -->
+    <img id="modal-img" class="max-w-[800px] max-h-[600px] object-cover" alt=""/>
+  </div>
+  
+    <p class="text-3xl font-bold py-2 w-10/12 mx-auto lg:w-9/12">Events</p>
+  
+     <!-- events list -->
+     <div class="mx-auto w-10/12 max-h-[500px] overflow-y-scroll lg:w-9/12 bg-gray-200 text-white md:rounded-md">
+  
+      <ul id="events_list" class=" divide-y divide-gray-500 mx-4 ">
+         
+        </ul>
+      
+        </div>
+  
+  </section>
+  
   <!-- 3 boxes -->
   <section class="body-font block" id="Services">
-    <div class="container px-16 py-8 mx-auto">
+    <div class="container py-8 px-8 mb-8 w-10/12 lg:w-10/12 mx-auto">
       <div class="flex gap-4 flex-wrap justify-center content-center -m-4">
 
         <div class="p-4 md:w-[30%] border rounded hover:shadow-lg cursor-pointer flex flex-wrap" onclick="window.location='/pages/notable-alumni.html'">
@@ -405,35 +432,6 @@
       </div>
     </div>
   </section>
-
-  <section id="Events" class="py-10">
-
-    <!-- The Modal -->
-    <div id="modal"
-    class="hidden fixed top-0 left-0 z-80 w-screen h-screen bg-black/70 flex justify-center items-center">
-  
-    <!-- The close button -->
-    <a class="fixed z-90 top-6 right-8 text-white text-5xl font-bold" href="javascript:void(0)"
-        onclick="closeModal()">&times;</a>
-  
-    <!-- A big image will be displayed here -->
-    <img id="modal-img" class="max-w-[800px] max-h-[600px] object-cover" alt=""/>
-  </div>
-  
-    <p class="text-3xl font-bold py-2 w-10/12 mx-auto lg:w-9/12">Events</p>
-  
-     <!-- events list -->
-     <div class="mx-auto w-10/12 max-h-[500px] overflow-y-scroll lg:w-9/12 bg-gray-200 text-white md:rounded-md">
-  
-      <ul id="events_list" class=" divide-y divide-gray-500 mx-4 ">
-         
-        </ul>
-      
-        </div>
-  
-  </section>
-  
-  
   
   
 
@@ -497,7 +495,7 @@
       </div>
     </div>
     <div>
-      <!-- <p class="text-sm text-center my-2 text-gray-500 ">© 2023 All rights reserved.</p> -->
+      <p class="text-sm text-center mt-8 mb-2 text-gray-500 ">© 2023 All rights reserved.</p>
     </div>
   </footer>
 
