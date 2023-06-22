@@ -14,6 +14,10 @@
 //   ],
 // }
 
+function scrollPageUp(element){
+  element.scrollIntoView()
+}
+
 function alumHover(x) {
     x.children[2].style.display = "block";
     x.children[1].style.display = "none";
@@ -114,7 +118,7 @@ function initCarousel() {
     spaceBetween: 30,
     stopOnLastSlide: false,
     autoplay: {
-      delay: 3000,
+      delay: 2000,
       pauseOnMouseEnter: true,
         disableOnInteraction: false,
     },
@@ -159,7 +163,7 @@ function initCarouselScholarship() {
     spaceBetween: 30,
     stopOnLastSlide: false,
     autoplay: {
-      delay: 3000,
+      delay: 2000,
       pauseOnMouseEnter: true,
         disableOnInteraction: false,
     },
@@ -203,7 +207,7 @@ function initCarouselCorpus() {
     spaceBetween: 30,
     stopOnLastSlide: false,
     autoplay: {
-      delay: 3000,
+      delay: 2000,
       pauseOnMouseEnter: true,
         disableOnInteraction: false,
     },
@@ -269,7 +273,7 @@ fetch('../data/alumnicarousel.json')
       spaceBetween: 30,
       stopOnLastSlide: false,
       autoplay: {
-        delay: 3000,
+        delay: 2000,
         pauseOnMouseEnter: true,
         disableOnInteraction: false,
         disableOnInteraction: false,
@@ -333,7 +337,7 @@ fetch('../data/alumnicarousel.json')
       spaceBetween: 30,
       stopOnLastSlide: false,
       autoplay: {
-        delay: 3000,
+        delay: 2000,
         pauseOnMouseEnter: true,
         disableOnInteraction: false,
       },
@@ -396,7 +400,7 @@ fetch('../data/alumnicarousel.json')
       spaceBetween: 30,
       stopOnLastSlide: false,
       autoplay: {
-        delay: 3000,
+        delay: 2000,
         pauseOnMouseEnter: true,
         disableOnInteraction: false,
         disableOnInteraction: false,
@@ -460,7 +464,7 @@ fetch('../data/alumnicarousel.json')
       spaceBetween: 30,
       stopOnLastSlide: false,
       autoplay: {
-        delay: 3000,
+        delay: 2000,
         pauseOnMouseEnter: true,
         disableOnInteraction: false,
         disableOnInteraction: false,
@@ -525,7 +529,7 @@ fetch('../data/alumnicarousel.json')
       spaceBetween: 30,
       stopOnLastSlide: false,
       autoplay: {
-        delay: 3000,
+        delay: 2000,
         pauseOnMouseEnter: true,
         disableOnInteraction: false,
         disableOnInteraction: false,
