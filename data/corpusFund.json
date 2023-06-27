@@ -1,0 +1,48 @@
+[{
+    "serial": "1",
+    "name": "Prof. Yogesh Singh",
+    "amount": "25,000/-",
+    "date": "10.12.2019"
+  },
+  {
+    "serial": "2",
+    "name": "Prof. Suresh Garg",
+    "amount": "10,000/-",
+    "date": "11.12.2019"
+  },
+  {
+    "serial": "3",
+    "name": "Prof. Samsher",
+    "amount": "10,000/-",
+    "date": "12.12.2019"
+  },
+  {
+    "serial": "4",
+    "name": "Prof. Pragati Kumar",
+    "amount": "25,000/-",
+    "date": "12.12.2019"
+  },
+  {
+    "serial": "5",
+    "name": "Prof. S. Indu",
+    "amount": "10,000/-",
+    "date": "12.12.2019"
+  },
+  {
+    "serial": "6",
+    "name": "Prof. Rachana Garg",
+    "amount": "10,000/-",
+    "date": "12.12.2019"
+  },
+  {
+    "serial": "7",
+    "name": "Mr. R.P. Tulsian / Ms. Meena Tulsian",
+    "amount": "11,000/-",
+    "date": "12.12.2019"
+  },
+  {
+    "serial": "8",
+    "name": "Prof. S. K. Garg",
+    "amount": "21,000/-",
+    "date": "17.06.2020"
+  }]

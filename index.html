@@ -181,28 +181,28 @@
       class="z-20 md:absolute top-0  right-0 md:w-[28%] md:h-full bg-black bg-opacity-50 text-white py-5 md:rounded-md">
 
       <div class="inline-flex w-4/5 mx-[10%]  rounded-md shadow-sm">
-        <p class="cursor-pointer px-4 py-2 text-sm w-1/2 font-medium text-center text-black  bg-white  rounded-l-lg hover:ring-2 focus:z-10"
-          onclick="news('donation')" id="donation_button">
-          Donation
-        </p>
-        <p class="cursor-pointer px-4 py-2 text-sm font-medium text-white w-1/2 text-center bg-black  rounded-r-md hover:ring-2 focus:z-10   "
-          onclick="news('news')" id="news_button">
-          News
-        </p>
+        <p class="cursor-pointer px-4 py-2 text-sm w-1/2 font-medium text-center text-black  bg-white  rounded-l-lg hover:ring-2 focus:z-10 "
+        onclick="news('news')" id="news_button">
+        News
+      </p>
+      <p class="cursor-pointer px-4 py-2 text-sm font-medium text-white w-1/2 text-center bg-black  rounded-r-md hover:ring-2 focus:z-10 "
+        onclick="news('donation')" id="donation_button">
+        Donation
+      </p>
       </div>
 
 
+      <ul class="w-4/5 mx-[10%] my-1 max-h-[300px] overflow-y-auto" id="news_news">
+        <!-- <li>
+          <a href="#" class="block px-4 py-2 text-sm font-[500] text-white hover:bg-gray-600 rounded-lg hover:bg-opacity-50 hover:text-blue-200 ease-in-out duration-300 truncate">Raj Soin Hall enagration by Raj Soin
+            <p class="text-white font-[350]">20.3.2023</p>
+          </a>
+        </li> -->
+      </ul>
       <ul class="w-4/5 mx-[10%] my-1 max-h-[400px] overflow-y-auto" id="donation_news">
         <!-- <li>
     <a href="#" class="block px-4 py-2 text-sm font-[500] text-white hover:bg-gray-600 rounded-lg hover:bg-opacity-50 hover:text-blue-200 ease-in-out duration-300 truncate"> 5 Cr Recieved from Raj Soin for Raj Soin Hall 
       <p class="text-white font-[350]">2.3.2023</p>
-    </a>
-  </li> -->
-      </ul>
-      <ul class="w-4/5 mx-[10%] my-1 max-h-[300px] overflow-y-auto" id="news_news">
-        <!-- <li>
-    <a href="#" class="block px-4 py-2 text-sm font-[500] text-white hover:bg-gray-600 rounded-lg hover:bg-opacity-50 hover:text-blue-200 ease-in-out duration-300 truncate">Raj Soin Hall enagration by Raj Soin
-      <p class="text-white font-[350]">20.3.2023</p>
     </a>
   </li> -->
       </ul>
@@ -214,7 +214,7 @@
   <section id="notedAlumni">
 
     <div class="relative w-12/12 mx-auto px-10 py-8">
-      <p class="text-3xl font-bold py-2">Notable Alumni</p>
+      <p class="text-3xl font-bold py-2">Distinguished Alumni</p>
 
       <div class="swiper-container-alumni" x-ref="container">
           <div class="swiper-wrapper" id="alumnicarousel">

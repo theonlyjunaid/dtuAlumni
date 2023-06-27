@@ -54,6 +54,19 @@ function events(x) {
 
 
 
+fetch("/data/news.json").then(response => response.json())
+    .then(data => {
+        let dat = ``;
+        for(let item of data){
+            dat += ` <li>
+    <a href="#" class="block px-4 py-2 text-sm font-[500] text-white hover:bg-gray-600 rounded-lg hover:bg-opacity-50 hover:text-blue-200 ease-in-out duration-300 truncate">${item.title}  <p class="text-white font-[350]">${item.date}</p>
+    </a>
+  </li>`;
+
+        }
+        document.getElementById("news_news").innerHTML += dat;
+        console.log(dat);
+    });
 fetch("/data/donations.json").then(response => response.json())
     .then(data => {
         let dat = ``;
@@ -65,18 +78,6 @@ fetch("/data/donations.json").then(response => response.json())
 
         }
         document.getElementById("donation_news").innerHTML += dat;
-        console.log(dat);
-    });
-fetch("/data/news.json").then(response => response.json())
-    .then(data => {
-        let dat = ``;
-        for(let item of data){
-            dat += ` <li>
-    <a href="#" class="block px-4 py-2 text-sm font-[500] text-white hover:bg-gray-600 rounded-lg hover:bg-opacity-50 hover:text-blue-200 ease-in-out duration-300 truncate">${item.title}  <p class="text-white font-[350]">${item.date}</p>
-    </a>
-  </li>`;
-
-        }
         document.getElementById("news_news").innerHTML += dat;
         console.log(dat);
     });

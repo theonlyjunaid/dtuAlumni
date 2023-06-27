@@ -10,13 +10,11 @@
       font-family: 'Tilt Neon', cursive;
     }
 
-    #news_news {
+    #donation_news {
       display: none;
     }
 
-    #past_events{
-    display: none;
-  }
+   
 
     .swiper-slide:hover .craus-text {
       display: block;

@@ -89,7 +89,7 @@ function showPopups (popupId, text, name){
     initCarouselScholarship();
   });
 
-  fetch('../data/alumnicarousel.json')
+  fetch('../data/corpusFund.json')
   .then((r) => r.json())
   .then((d) => {
     document.querySelectorAll('.imageCorpus').forEach((el, i) => {
@@ -99,11 +99,11 @@ function showPopups (popupId, text, name){
       el.innerHTML = d[i].name;
     });
     document.querySelectorAll('.classCorpus').forEach((el, i) => {
-      el.innerHTML = d[i].class;
+      el.innerHTML = d[i].amount;
     });
-    document.querySelectorAll('.textCorpus').forEach((el, i) => {
-      el.innerHTML = truncateText(d[i].text);
-    });
+    // document.querySelectorAll('.textCorpus').forEach((el, i) => {
+    //   el.innerHTML = truncateText(d[i].text);
+    // });
 
     initCarouselCorpus();
   });
