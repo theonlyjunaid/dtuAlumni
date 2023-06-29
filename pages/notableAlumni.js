@@ -135,7 +135,7 @@ function initCarousel() {
       },
       1024: {
         slidesPerView: 4,
-        spaceBetween: 20,
+        spaceBetween: 30,
         slidesPerGroup: 1,
       },
     },
@@ -291,7 +291,7 @@ fetch('../data/alumnicarousel.json')
         },
         1024: {
           slidesPerView: 4,
-          spaceBetween: 20,
+          spaceBetween: 30,
           slidesPerGroup: 1,
         },
       },

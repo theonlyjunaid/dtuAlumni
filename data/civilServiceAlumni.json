@@ -1,38 +1,44 @@
 [
-    {
+  {
+      "serial": 1,
       "name": "Arvind Saxena",
       "class": 1976,
       "branch": "Civil Engineering",
-      "text": "Chairman of the Union Public Service Commission and former Research and Analysis Wing(RAW) Officer."
-    },
-    {
+      "text": "Chairman of the Union Public Service Commission and former Research and Analysis Wing (RAW) Officer."
+  },
+  {
+      "serial": 2,
       "name": "B. V. R. Subrahmanyam",
       "class": 1983,
       "branch": "Mechanical Engineering",
-      "text": "Chief Executive Officer of NITI Aayog and former Indian Administrative Service(IAS) Officer."
-    },
-    {
+      "text": "Chief Executive Officer of NITI Aayog and former Indian Administrative Service (IAS) Officer."
+  },
+  {
+      "serial": 3,
       "name": "Karnal Singh",
       "class": 1979,
       "branch": "Electrical & Electronics Engineering",
-      "text": "Former Chief of Enforcement Directorate (ED) and Former Indian Police Service(IPS) Officer."
-    },
-    {
+      "text": "Former Chief of Enforcement Directorate (ED) and Former Indian Police Service (IPS) Officer."
+  },
+  {
+      "serial": 4,
       "name": "Arun Goyal",
       "class": 1980,
       "branch": "Electrical Engineering",
-      "text": "Former Secretary to Prime Minister's Office and Former Indian Administrative Service(IAS) Officer."
-    },
-    {
+      "text": "Former Secretary to Prime Minister's Office and Former Indian Administrative Service (IAS) Officer."
+  },
+  {
+      "serial": 5,
       "name": "Muktesh Chander",
       "class": 1983,
       "branch": "Electronics & Communication Engineering",
-      "text": "Special Commissioner of Delhi Police & Former Indian Police Service(IPS) Officer."
-    },
-    {
+      "text": "Special Commissioner of Delhi Police & Former Indian Police Service (IPS) Officer."
+  },
+  {
+      "serial": 6,
       "name": "Ankita Jain",
       "class": 2014,
       "branch": "Computer Engineering",
       "text": "AIR-3 in Union Public Service Commission Civil Services Exam 2020 and AIR-1 in Graduate Aptitude Test in Engineering GATE 2016 (Computer Science)."
-    }
-   ]
+  }
+]

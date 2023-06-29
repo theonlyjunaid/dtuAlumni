@@ -14,6 +14,18 @@ function alumHoverOut(x) {
   x.children[2].style.display = "none";
   x.children[1].style.display = "block";
 }
+
+// fetch('../data/homeMainCarousel.json')
+//   .then((r) => r.json())
+//   .then((d) => {
+//     document.querySelectorAll('.imageHomeCarousel').forEach((el, i) => {
+//       el.src = `../public/img/alumni and donor photos/${d[i].name}.jpg`;
+//     });
+
+//     initCarousel();
+//   });
+
+
 function news(x) {
   if (x === 'donation') {
 
@@ -389,37 +401,40 @@ fetch("/data/donations.json").then(response => response.json())
     }  
 
 
-    fetch('../data/alumnicarousel.json')
+   
+
+
+//homepage alumni carousel
+  fetch('../data/alumnicarousel.json')
   .then((r) => r.json())
   .then((d) => {
-    document.querySelectorAll('.imageAlum').forEach((el, i) => {
+    document.querySelectorAll('.imageAlum-1').forEach((el, i) => {
       el.src = `../public/img/alumni and donor photos/${d[i].name}.jpg`;
     });
-    document.querySelectorAll('.nameAlum').forEach((el, i) => {
+    document.querySelectorAll('.nameAlum-1').forEach((el, i) => {
       el.innerHTML = d[i].name;
     });
-    document.querySelectorAll('.classAlum').forEach((el, i) => {
+    document.querySelectorAll('.classAlum-1').forEach((el, i) => {
       el.innerHTML = d[i].class;
     });
-    document.querySelectorAll('.textAlum').forEach((el, i) => {
+    document.querySelectorAll('.textAlum-1').forEach((el, i) => {
       el.innerHTML = d[i].text;
     });
 
-    initCarousel();
+    initCarousel1();
   });
-
+ 
   
+  function initCarousel1() {
   
-  function initCarousel() {
-  
-    const swiper = new Swiper('.swiper-container-alumni', {
+    const swiper = new Swiper('.swiper-container-alumni-1', {
       cssMode: true,
       loop: true,
       slidesPerView:1,
       spaceBetween: 30,
       stopOnLastSlide: false,
       autoplay: {
-        delay: 3000,
+        delay: 2000,
         pauseOnMouseEnter: true,
         disableOnInteraction: false,
       },
@@ -437,7 +452,7 @@ fetch("/data/donations.json").then(response => response.json())
         1024: {
           slidesPerView: 4,
           spaceBetween: 20,
-          slidesPerGroup: 4,
+          slidesPerGroup: 1,
         },
       },
       navigation: {
@@ -454,4 +469,54 @@ fetch("/data/donations.json").then(response => response.json())
   
   }
   
-   
+   //big carousel of home page
+  fetch('../data/homeMainCarousel.json')
+  .then((r) => r.json())
+  .then((d) => {
+    document.querySelectorAll('.imageMainCarousel').forEach((el, i) => {
+      el.src = d[i].image;
+    });
+
+    initMainCarousel();
+  });
+
+  function initMainCarousel() {
+  
+    const swiper = new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-pagination-1',
+      clickable: true,
+    },
+    // cssMode: true,
+    loop: true,
+    slidesPerView:1,
+    spaceBetween: 0,
+    allowTouchMove: false,
+    noSwiping: true,
+    noSwipingClass: 'swiper-slide',
+    stopOnLastSlide: false,
+    // autoplay: {
+    //   delay: 5000,
+    //   pauseOnMouseEnter: true,
+    //   disableOnInteraction: false,
+    // },
+    navigation: {
+      nextEl: ".swiper-button-next-main",
+      prevEl: ".swiper-button-prev-main",
+    },
+          breakpoints: {
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 0,
+            },
+            768: {
+              slidesPerView: 1,
+              spaceBetween: 0,
+            },
+            1024: {
+              slidesPerView: 1,
+              spaceBetween: 0,
+            },
+          },
+    });
+  }

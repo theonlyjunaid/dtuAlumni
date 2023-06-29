@@ -1,22 +1,27 @@
 [
   {
+    "serial": 1,
     "title": "Alumni Meetup 2023",
-    "date": "25 Apr 2023",
+    "date": "25 Jul 2023",
     "image": "https://dcedtualumni.org/images/AlumniMeet2020/slider-images/silver-jubilee-slide3.jpg"
   },
   {
+    "serial": 2,
     "title": "DST-STUTI Training Program",
     "date": "15 Apr 2023",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUNUsrH2eOgNgpYKhQRFfDwT-HrTE0NMDR79qkv0_Q0XXHc9wjOMcQGGx4FzDGM__QuJRKzdYi7-4&usqp=CAU&ec=48665698"
   },{
+    "serial": 3,
     "title": "Golden Pride Function",
     "date": "20 Jan 2023",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT88dJ3zeZ9OKp7jwwi6vXFPUs04iqQStej-YhbDSV5g&usqp=CAU&ec=48665698"
   },{
+    "serial": 4,
     "title": "Annual Convocation",
     "date": "20 Dec 2022",
     "image": "https://mba.ind.in/img/c/Delhi-College-of-Engineering-Alumni-Meet-1.jpg"
   },{
+    "serial": 5,
     "title": "Alumni Meetup 2022",
     "date": "25 Jun 2022",
     "image": "https://dcedtualumni.org/images/AlumniMeet2020/slider-images/Golden-jubilee-slide2.jpg"
