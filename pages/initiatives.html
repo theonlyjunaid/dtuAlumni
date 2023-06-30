@@ -19,7 +19,7 @@
     <div class="container flex flex-wrap items-center justify-between mx-auto">
       <a href="/" class="flex items-center">
 
-        <span class="self-center text-2xl lg:text-3xl font-semibold whitespace-nowrap ">Dtu Alumni</span>
+        <span class="flex gap-2 self-center text-2xl lg:text-3xl font-semibold whitespace-nowrap "><span><img class="h-10 w-10" src="/public/img/dtu-logo.png" alt=""></span>Alumni Affairs</span>
       </a>
       <div class="flex md:order-2">
        <a href="/pages/whydonate.html"><button type="button"
@@ -196,30 +196,30 @@
   </section>
 
 
-  <footer class="p-4 bg-gray-200 rounded-lg shadow  md:py-6 md:pb-20 border" id="contact">
+  <footer class="p-4 bg-gray-200  rounded-lg shadow  md:py-6 md:pb-20 border" id="contact">
 
     <div class="flex flex-col-reverse md:flex-row sm:items-center sm:justify-between lg:mx-20">
       <div>
         <ul
           class="flex justify-center text-center md:text-left  flex-wrap md:grid md::grid-cols-1 items-center my-6 text-xl leading-8 font-semibold text-gray-500 sm:mb-0 ">
           <li>
-            <a href="#donate" class="mr-4 hover:underline md:mr-6 ">Donate</a>
+            <a href="pages/whydonate.html" class="mr-4 hover:underline md:mr-6 ">Donate</a>
           </li>
           <li>
-            <a href="#notedAlumni" class="mr-4 hover:underline md:mr-6">Noted Alumni</a>
+            <a href="pages/notable-alumni.html" class="mr-4 hover:underline md:mr-6">Notable Alumni</a>
           </li>
           <li>
-            <a href="#About" class="mr-4 hover:underline md:mr-6">About</a>
+            <a href="pages/about-us.html" class="mr-4 hover:underline md:mr-6">About</a>
+          </li>
+          
+          <li>
+            <a href="pages/memories.html" class="hover:underline">Memories</a>
           </li>
           <li>
-            <a href="#Services" class="mr-4 hover:underline md:mr-6">Services</a>
-          </li>
-
-          <li>
-            <a href="#Events" class="hover:underline">Events</a>
+            <a href="/#Events" class="mr-4 hover:underline md:mr-6">Events</a>
           </li>
           <li>
-            <a href="#Mentorship" class="mr-4 hover:underline md:mr-6 ">Mentorship</a>
+            <a href="/pages/initiatives.html" class="mr-4 hover:underline md:mr-6 ">Alumni Initiatives</a>
           </li>
 
         </ul>
@@ -228,24 +228,31 @@
       <div class="bg-white rounded-lg md:w-1/2 lg:w-max shadow-lg ">
         <div class="py-3 lg:py-5 px-4 w-full lg:w-[600px]">
           <h2 class="mb-2 text-4xl w-full tracking-tight font-extrabold text-center text-gray-900 ">Contact Us</h2>
-          <form action="#" class="space-y-3">
+            
+          <form action="mailto:deanalumniaffairs@dtu.ac.in" method="post" enctype="text/plain" class="space-y-3">
             <div>
-              <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Your email</label>
-              <input type="email" id="email"
-                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5    "
-                placeholder="" required>
+              <label class="block mb-2 text-sm font-medium text-gray-900 ">Your name</label>
+              <input name="name" type="text" id="name"
+                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+                 required>
+            </div>
+            <div>
+              <label for="email"  class="block mb-2 text-sm font-medium text-gray-900 ">Your email</label>
+              <input type="email" id="email" name="mail"
+                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+                 required>
             </div>
             <div>
               <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 ">Subject</label>
-              <input type="text" id="subject"
-                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500    "
-                placeholder="Let us know how we can help you" required>
+              <input type="text" id="subject" name="subject"
+                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 "
+                required>
             </div>
             <div class="sm:col-span-2">
               <label for="message" class="block mb-2 text-sm font-medium text-gray-900 ">Your message</label>
-              <textarea id="message" rows="3"
-                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500   "
-                placeholder="Leave a comment..."></textarea>
+              <textarea id="message" rows="3" type="text" name="message"
+                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
+                ></textarea>
             </div>
             <button type="submit"
               class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-gray-700 sm:w-fit  focus:ring-4 focus:outline-none focus:ring-primary-300 ">Send
@@ -254,7 +261,10 @@
         </div>
       </div>
     </div>
-</footer>
+    <div>
+      <p class="text-sm text-center mt-8 mb-2 text-gray-500 ">© 2023, Delhi Technological University, Shahbad Daulatpur, Main Bawana Road, DL - 42, IN</p>
+    </div>
+  </footer>
 
 <!-- <script src="../script.js"></script> -->
 <!-- <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>

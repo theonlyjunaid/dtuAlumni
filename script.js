@@ -395,7 +395,7 @@ fetch("/data/donations.json").then(response => response.json())
     const IO = new IntersectionObserver( callback, { threshold: 1 } )
     
     //No. of iterations is equal to no. of stastistics that we are showing
-    for(i=0; i<4; i++){
+    for(i=0; i<3; i++){
     const el = document.querySelectorAll( '.counter' )[i]
     IO.observe( el )
     }  

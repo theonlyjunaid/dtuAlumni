@@ -19,7 +19,7 @@
     <div class="container flex flex-wrap items-center justify-between mx-auto">
       <a href="/" class="flex items-center">
 
-        <span class="self-center text-2xl lg:text-3xl font-semibold whitespace-nowrap ">Dtu Alumni</span>
+        <span class="flex gap-2 self-center text-2xl lg:text-3xl font-semibold whitespace-nowrap "><span><img class="h-10 w-10" src="/public/img/dtu-logo.png" alt=""></span>Alumni Affairs</span>
       </a>
       <div class="flex md:order-2">
        <a href="/pages/whydonate.html"><button type="button"
@@ -139,9 +139,11 @@
         
         <blockquote class="md:w-1/2 text-md italic font-light text-gray-900" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
             <svg aria-hidden="true" class="w-10 h-10 text-gray-400 dark:uselessclasstext-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"></path></svg>
-            <p class="">Delhi Technological University, has incessantly been acting as a rostrum for providing quality technical education with a mission of developing technocrats having potential to the greatest degree. In congruence with this mission, Delhi Technological University has perpetuated an admirable record for academic contribution towards achieving excellence in building enviable organizations & a stupendous society.
-
-                <br> The programs here have been designed to instil & inculcate spirits of innovation, leadership & team work. Employing of latest technologies for effective delivery & a practice oriented curriculum has been emphasized upon.</p>
+            <p class="">
+              Delhi Technological University (formerly Delhi College of Engineering) has an illustrious history spanning over 80 years. This prestigious institution is well known throughout the world for its world class education and student centric research & innovations. In this university the culture of research and innovations is inculcated right from the undergraduate level. We have brilliant faculty and highly distinguished alumni who have made a mark worldwide. It is a testament to the ability of the university in educating future leaders.
+DTU has active collaborations with leading universities and industries in India and abroad. Delhi Technological University is the alma mater of highly distinguished world class engineers and technologists, which include the father of Pentium Chip Vinod Dham, Promod Haque, the world's known venture capitalist, Raj Soin, the avionics wizards of US and a top ranking techno entrepreneur of Ohio, Durgadas Agrawal, the renowned techno-entrepreneur of Houston, to name a few.
+Alumni Engagement.
+            </p>
             <a id="read-more-btn-dean" class="text-blue-800 cursor-pointer inline-flex flex-row items-center">
                 <p class="inline">Read More</p>
                 <span class="material-symbols-outlined">
@@ -154,30 +156,30 @@
     
   </section>
 
-  <footer class="p-4 bg-gray-200 rounded-lg shadow  md:py-6 md:pb-20 border" id="contact">
+  <footer class="p-4 bg-gray-200  rounded-lg shadow  md:py-6 md:pb-20 border" id="contact">
 
     <div class="flex flex-col-reverse md:flex-row sm:items-center sm:justify-between lg:mx-20">
       <div>
         <ul
           class="flex justify-center text-center md:text-left  flex-wrap md:grid md::grid-cols-1 items-center my-6 text-xl leading-8 font-semibold text-gray-500 sm:mb-0 ">
           <li>
-            <a href="#donate" class="mr-4 hover:underline md:mr-6 ">Donate</a>
+            <a href="pages/whydonate.html" class="mr-4 hover:underline md:mr-6 ">Donate</a>
           </li>
           <li>
-            <a href="#notedAlumni" class="mr-4 hover:underline md:mr-6">Noted Alumni</a>
+            <a href="pages/notable-alumni.html" class="mr-4 hover:underline md:mr-6">Notable Alumni</a>
           </li>
           <li>
-            <a href="#About" class="mr-4 hover:underline md:mr-6">About</a>
+            <a href="pages/about-us.html" class="mr-4 hover:underline md:mr-6">About</a>
+          </li>
+          
+          <li>
+            <a href="pages/memories.html" class="hover:underline">Memories</a>
           </li>
           <li>
-            <a href="#Services" class="mr-4 hover:underline md:mr-6">Services</a>
-          </li>
-
-          <li>
-            <a href="#Events" class="hover:underline">Events</a>
+            <a href="/#Events" class="mr-4 hover:underline md:mr-6">Events</a>
           </li>
           <li>
-            <a href="#Mentorship" class="mr-4 hover:underline md:mr-6 ">Mentorship</a>
+            <a href="/pages/initiatives.html" class="mr-4 hover:underline md:mr-6 ">Alumni Initiatives</a>
           </li>
 
         </ul>
@@ -186,24 +188,31 @@
       <div class="bg-white rounded-lg md:w-1/2 lg:w-max shadow-lg ">
         <div class="py-3 lg:py-5 px-4 w-full lg:w-[600px]">
           <h2 class="mb-2 text-4xl w-full tracking-tight font-extrabold text-center text-gray-900 ">Contact Us</h2>
-          <form action="#" class="space-y-3">
+            
+          <form action="mailto:deanalumniaffairs@dtu.ac.in" method="post" enctype="text/plain" class="space-y-3">
             <div>
-              <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Your email</label>
-              <input type="email" id="email"
-                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5    "
-                placeholder="" required>
+              <label class="block mb-2 text-sm font-medium text-gray-900 ">Your name</label>
+              <input name="name" type="text" id="name"
+                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+                 required>
+            </div>
+            <div>
+              <label for="email"  class="block mb-2 text-sm font-medium text-gray-900 ">Your email</label>
+              <input type="email" id="email" name="mail"
+                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+                 required>
             </div>
             <div>
               <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 ">Subject</label>
-              <input type="text" id="subject"
-                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500    "
-                placeholder="Let us know how we can help you" required>
+              <input type="text" id="subject" name="subject"
+                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 "
+                required>
             </div>
             <div class="sm:col-span-2">
               <label for="message" class="block mb-2 text-sm font-medium text-gray-900 ">Your message</label>
-              <textarea id="message" rows="3"
-                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500   "
-                placeholder="Leave a comment..."></textarea>
+              <textarea id="message" rows="3" type="text" name="message"
+                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
+                ></textarea>
             </div>
             <button type="submit"
               class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-gray-700 sm:w-fit  focus:ring-4 focus:outline-none focus:ring-primary-300 ">Send
@@ -213,7 +222,7 @@
       </div>
     </div>
     <div>
-      <p class="text-sm text-center my-2 text-gray-500 ">© 2023 All rights reserved.</p>
+      <p class="text-sm text-center mt-8 mb-2 text-gray-500 ">© 2023, Delhi Technological University, Shahbad Daulatpur, Main Bawana Road, DL - 42, IN</p>
     </div>
   </footer>
 
@@ -225,9 +234,17 @@
             cancel
         </span>
         <h3 class="text-2xl font-semibold">Dean's Message</h3>
-        <p class="text-lg text-gray-700 overflow-y-auto">Delhi Technological University, has incessantly been acting as a rostrum for providing quality technical education with a mission of developing technocrats having potential to the greatest degree. In congruence with this mission, Delhi Technological University has perpetuated an admirable record for academic contribution towards achieving excellence in building enviable organizations & a stupendous society.
-
-        <br><br>  The programs here have been designed to instil & inculcate spirits of innovation, leadership & team work. Employing of latest technologies for effective delivery & a practice oriented curriculum has been emphasized upon. The graduates & post-graduates of Delhi Technological University, by the virtue of the exposure provided, have gained tremendous technological superiority & a better overall understanding of the world and thus, been recruited in several International Conglomerates along with Indian Corporations. This, in turn, has created an extensive & ever-growing network of alumni eager to return back to the institution. We enjoy highly valued partnerships with all our recruiters & remain committed to make their recruiting experience productive & positive along with helping students in order to find the best match between their needs & capabilities.</p>
+        <p class="text-lg text-gray-700 overflow-y-auto">
+          Delhi Technological University (formerly Delhi College of Engineering) has an illustrious history spanning over 80 years. This prestigious institution is well known throughout the world for its world class education and student centric research & innovations. In this university the culture of research and innovations is inculcated right from the undergraduate level. We have brilliant faculty and highly distinguished alumni who have made a mark worldwide. It is a testament to the ability of the university in educating future leaders.
+DTU has active collaborations with leading universities and industries in India and abroad. Delhi Technological University is the alma mater of highly distinguished world class engineers and technologists, which include the father of Pentium Chip Vinod Dham, Promod Haque, the world's known venture capitalist, Raj Soin, the avionics wizards of US and a top ranking techno entrepreneur of Ohio, Durgadas Agrawal, the renowned techno-entrepreneur of Houston, to name a few.
+Alumni Engagement
+<br><br>
+•	Three annual programs are held every year for engagement and bonding of Alumni to DTU’s family. Particularly, Home Coming meeting has attracted and bonded the alumni with Diamond, Golden & Silver jubilee batches to DTU with a different level of branding. The Annual Alumni meet hosts discussion and strategic planning for activities by Alumni for DTU is done. One of such program is organized by our Alumnus for teachers of the University on Teachers day.
+<br>
+•	On a regular basis the Alumnus of the University are communicating through email. Particularly, the Alumni from abroad are often apprised the program and accomplishments of the University and are consulted for betterment so that the University have scale even greater heights.
+<br>
+•	On all occasions when students’ activities/program, are involved, convocations on any University level programs are involved alumni are called to serve the occasions and students are allowed to interact with them to learn about different other prospects for jobs and contribution to society.
+        </p>
       </div>
 </section>
 <section id="side-popup-vc" class="hidden">
