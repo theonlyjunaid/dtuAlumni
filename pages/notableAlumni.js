@@ -13,6 +13,8 @@
 //     // ...
 //   ],
 // }
+  
+
 
 function scrollPageUp(element){
   element.scrollIntoView()
@@ -54,7 +56,7 @@ function showPopups (popupId, text, name){
   .then((r) => r.json())
   .then((d) => {
     document.querySelectorAll('.imageAlum').forEach((el, i) => {
-      el.src = `../public/img/alumni and donor photos/${d[i].name}.jpg`;
+      el.src = d[i].image;
     });
     document.querySelectorAll('.nameAlum').forEach((el, i) => {
       el.innerHTML = d[i].name;
@@ -74,7 +76,7 @@ function showPopups (popupId, text, name){
   .then((r) => r.json())
   .then((d) => {
     document.querySelectorAll('.imageScholarshipAndMedal').forEach((el, i) => {
-      el.src = `../public/img/alumni and donor photos/${d[i].name}.jpg`;
+      el.src = d[i].image;
     });
     document.querySelectorAll('.nameScholarshipAndMedal').forEach((el, i) => {
       el.innerHTML = d[i].name;
@@ -93,7 +95,7 @@ function showPopups (popupId, text, name){
   .then((r) => r.json())
   .then((d) => {
     document.querySelectorAll('.imageCorpus').forEach((el, i) => {
-      el.src = `../public/img/alumni and donor photos/${d[i].name}.jpg`;
+      el.src = d[i].image;
     });
     document.querySelectorAll('.nameCorpus').forEach((el, i) => {
       el.innerHTML = d[i].name;
@@ -247,7 +249,7 @@ fetch('../data/alumnicarousel.json')
   .then((r) => r.json())
   .then((d) => {
     document.querySelectorAll('.imageAlum-1').forEach((el, i) => {
-      el.src = `../public/img/alumni and donor photos/${d[i].name}.jpg`;
+      el.src = d[i].image;
       // el.onerror = function(){ el.src =`../public/img/alumni and donor photos/${d[i].name}.png`}
       // el.onerror = function(){ el.src =`../public/img/blank-profile-picture.png`}
     });
@@ -313,7 +315,7 @@ fetch('../data/alumnicarousel.json')
   .then((r) => r.json())
   .then((d) => {
     document.querySelectorAll('.imageAlum-2').forEach((el, i) => {
-      el.src = `../public/img/alumni and donor photos/${d[i].name}.jpg`;
+      el.src = d[i].image;
     });
     document.querySelectorAll('.nameAlum-2').forEach((el, i) => {
       el.innerHTML = d[i].name;
@@ -376,7 +378,7 @@ fetch('../data/alumnicarousel.json')
   .then((r) => r.json())
   .then((d) => {
     document.querySelectorAll('.imageAlum-3').forEach((el, i) => {
-      el.src = `../public/img/alumni and donor photos/${d[i].name}.jpg`;
+      el.src = d[i].image;
     });
     document.querySelectorAll('.nameAlum-3').forEach((el, i) => {
       el.innerHTML = d[i].name;
@@ -440,7 +442,7 @@ fetch('../data/alumnicarousel.json')
   .then((r) => r.json())
   .then((d) => {
     document.querySelectorAll('.imageAlum-4').forEach((el, i) => {
-      el.src = `../public/img/alumni and donor photos/${d[i].name}.jpg`;
+      el.src = d[i].image;
     });
     document.querySelectorAll('.nameAlum-4').forEach((el, i) => {
       el.innerHTML = d[i].name;
@@ -505,7 +507,7 @@ fetch('../data/alumnicarousel.json')
   .then((r) => r.json())
   .then((d) => {
     document.querySelectorAll('.imageAlum-5').forEach((el, i) => {
-      el.src = `../public/img/alumni and donor photos/${d[i].name}.jpg`;
+      el.src = d[i].image;
     });
     document.querySelectorAll('.nameAlum-5').forEach((el, i) => {
       el.innerHTML = d[i].name;

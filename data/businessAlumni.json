@@ -1,248 +1,284 @@
 [
-  {
-      "serial": 1,
-      "name": "Rohit Chadda",
-      "class": 2005,
-      "branch": "Computer engineering",
-      "text": "Co-founder of Foodpanda India"
-  },
-  {
-      "serial": 2,
-      "name": "Vijay Shekhar Sharma",
-      "class": 1998,
-      "branch": "Electronics and communication engineering",
-      "text": "Founder of Paytm"
-  },
-  {
-      "serial": 3,
-      "name": "Sanjay Gupta",
-      "class": 1981,
-      "branch": "Mechanical engineering",
-      "text": "Country Manager of Google India"
-  },
-  {
-      "serial": 4,
-      "name": "Surya Kant",
-      "class": 1976,
-      "branch": "Electrical engineering",
-      "text": "President of North America, UK, and Europe operations of Tata Consultancy Services"
-  },
-  {
-      "serial": 5,
-      "name": "Manish Khera",
-      "class": 1991,
-      "branch": "Electrical engineering",
-      "text": "Former CEO of Airtel Payments Bank"
-  },
-  {
-      "serial": 6,
-      "name": "Suhail Sameer",
-      "class": 2006,
-      "branch": "Electrical Engineering",
-      "text": "CEO of BharatPe"
-  },
-  {
-      "serial": 7,
-      "name": "Akshant Goyal",
-      "class": 2005,
-      "branch": "Computer Engineering",
-      "text": "CFO of Zomato"
-  },
-  {
-      "serial": 8,
-      "name": "Raman CV",
-      "class": 1982,
-      "branch": "Mechanical Engineering",
-      "text": "CTO of Maruti Suzuki India"
-  },
-  {
-      "serial": 9,
-      "name": "Nipun Aggarwal",
-      "class": 1994,
-      "branch": "Electrical Engineering",
-      "text": "Chief Commercial Officer of Air India"
-  },
-  {
-      "serial": 10,
-      "name": "Praveen Sinha",
-      "class": 2001,
-      "branch": "Electrical Engineering",
-      "text": "Founder of Jabong.com"
-  },
-  {
-      "serial": 11,
-      "name": "Supam Maheshwari",
-      "class": 1995,
-      "branch": "Mechanical Engineering",
-      "text": "First & only Indian Founder to build 3 unicorn startups FirstCry, Xpressbees, Globalbees"
-  },
-  {
-      "serial": 12,
-      "name": "Ambareesh Murty",
-      "class": 1994,
-      "branch": "Civil Engineering",
-      "text": "Founder of Pepperfry, India's largest online furniture store"
-  },
-  {
-      "serial": 13,
-      "name": "Varun Alagh",
-      "class": 2005,
-      "branch": "Electrical Engineering",
-      "text": "Founder of MamaEarth (unicorn startup)"
-  },
-        {
-            "serial": 14,
-            "name": "Piyush Shah",
-            "class": 2001,
-            "branch": "Production & Industrial Engineering",
-            "text": "Founder of Glance (company) & Co-Founder of InMobi (unicorn startups)"
-        },
-        {
-            "serial": 15,
-            "name": "Raghav Joshi",
-            "class": 2007,
-            "branch": "Electronics & Communication Engineering",
-            "text": "Co-Founder of Rebel Foods, previously Faasos (unicorn startup)"
-        },
-        {
-            "serial": 16,
-            "name": "Saurabh Nigam",
-            "class": 2000,
-            "branch": "Civil Engineering",
-            "text": "Founder of ElasticRun (unicorn startup)"
-        },
-        {
-            "serial": 17,
-            "name": "Aakash Sinha",
-            "class": 2001,
-            "branch": "Electrical Engineering",
-            "text": "Founder of Omnipresent Robot Tech, developed 3D image models for Chandrayaan-2 rover"
-        },
-        {
-            "serial": 18,
-            "name": "Uday Reddy",
-            "class": 1993,
-            "branch": "Electronics & Communication Engineering",
-            "text": "Founder of YuppTV, World's #1 Internet Pay TV provider & one of the leading OTT player for South Asian content abroad"
-        },
-        {
-            "serial": 19,
-            "name": "Raj Soin",
-            "class": 1969,
-            "branch": "Mechanical Engineering",
-            "text": "Founder of Soin International LLC, USA"
-        },
-        {
-            "serial": 20,
-            "name": "Rashmi Daga",
-            "class": 2001,
-            "branch": "Electrical Engineering",
-            "text": "Founder of FreshMenu, Top 10 Women Entrepreneurs In India (2021)"
-        },
-        {
-            "serial": 21,
-            "name": "Promod Haque",
-            "class": 1969,
-            "branch": "Electrical Engineering",
-            "text": "World's No.1 Venture Capitalist in 2004, Appeared on Annual Forbes Midas List for 13 years"
-        },
-        {
-            "serial": 22,
-            "name": "Avinash Pant",
-            "class": 1995,
-            "branch": "Electrical Engineering",
-            "text": "Marketing Head of Facebook India"
-        },
-        {
-            "serial": 23,
-            "name": "Navtez Bal",
-            "class": 1997,
-            "branch": "Electrical Engineering",
-            "text": "Executive Director of Microsoft India"
-        },
-        {
-            "serial": 24,
-            "name": "Manish Gulyani",
-            "class": 1990,
-            "branch": "Electronics & Communication Engineering",
-            "text": "Vice President and General Manager of Nokia Deepfield"
-        },
-        {
-            "serial": 25,
-            "name": "Himanshu Bajaj",
-            "class": 2000,
-            "branch": "Civil Engineering",
-            "text": "Business Head of BYJU'S"
-        },
+    {
+        "serial": 1,
+        "name": "Rohit Chadda",
+        "class": 2005,
+        "branch": "Computer engineering",
+        "text": "Co-founder of Foodpanda India",
+        "image": "https://drive.google.com/uc?export=view&id=1EL2UZYm3VMe7sWuyrxwO0CZ7s9rLBDZA"
+    },
+    {
+        "serial": 2,
+        "name": "Vijay Shekhar Sharma",
+        "class": 1998,
+        "branch": "Electronics and communication engineering",
+        "text": "Founder of Paytm",
+        "image": "https://drive.google.com/uc?export=view&id=1_yUoZL7_-waspVoGF4ek6BjgxVoDO5RR"
+    },
+    {
+        "serial": 3,
+        "name": "Sanjay Gupta",
+        "class": 1981,
+        "branch": "Mechanical engineering",
+        "text": "Country Manager of Google India",
+        "image": "https://drive.google.com/uc?export=view&id=1yXem2Ch0JoNGR3yAKmBwexikI6iuR4gv"
+    },
+    {
+        "serial": 4,
+        "name": "Surya Kant",
+        "class": 1976,
+        "branch": "Electrical engineering",
+        "text": "President of North America, UK, and Europe operations of Tata Consultancy Services",
+        "image": "https://drive.google.com/uc?export=view&id=1eciPEu-JIbI6joivX0vcvTCgliETMCz1"
+    },
+    {
+        "serial": 5,
+        "name": "Manish Khera",
+        "class": 1991,
+        "branch": "Electrical engineering",
+        "text": "Former CEO of Airtel Payments Bank",
+        "image": "https://drive.google.com/uc?export=view&id=1j9JocTZYSOesX_TDrvy0iWvhicvpwtY3"
+    },
+    {
+        "serial": 6,
+        "name": "Suhail Sameer",
+        "class": 2006,
+        "branch": "Electrical Engineering",
+        "text": "CEO of BharatPe",
+        "image": "https://drive.google.com/uc?export=view&id=1_ZDrD_yhJtJP7OF6fy0XUab4pq58VSt6"
+    },
+    {
+        "serial": 7,
+        "name": "Akshant Goyal",
+        "class": 2005,
+        "branch": "Computer Engineering",
+        "text": "CFO of Zomato",
+        "image": ""
+    },
+    {
+        "serial": 8,
+        "name": "Raman CV",
+        "class": 1982,
+        "branch": "Mechanical Engineering",
+        "text": "CTO of Maruti Suzuki India",
+        "image": ""
+    },
+    {
+        "serial": 9,
+        "name": "Nipun Aggarwal",
+        "class": 1994,
+        "branch": "Electrical Engineering",
+        "text": "Chief Commercial Officer of Air India",
+        "image": ""
+    },
+    {
+        "serial": 10,
+        "name": "Praveen Sinha",
+        "class": 2001,
+        "branch": "Electrical Engineering",
+        "text": "Founder of Jabong.com",
+        "image": "https://drive.google.com/uc?export=view&id=1DNMCnyRbIoZg0xy-W8Ax-cLeuqRBhwkc"
+    },
+    {
+        "serial": 11,
+        "name": "Supam Maheshwari",
+        "class": 1995,
+        "branch": "Mechanical Engineering",
+        "text": "First & only Indian Founder to build 3 unicorn startups FirstCry, Xpressbees, Globalbees",
+        "image": "https://drive.google.com/uc?export=view&id=1s9x2GpI-1Q8Zoy0fOTB3dxUKoTT3A5I5"
+    },
+    {
+        "serial": 12,
+        "name": "Ambareesh Murty",
+        "class": 1994,
+        "branch": "Civil Engineering",
+        "text": "Founder of Pepperfry, India's largest online furniture store",
+        "image": "https://drive.google.com/uc?export=view&id=1QjhvKBNF7uoHuqLSXVNyetzRAdc48BWq"
+    },
+    {
+        "serial": 13,
+        "name": "Varun Alagh",
+        "class": 2005,
+        "branch": "Electrical Engineering",
+        "text": "Founder of MamaEarth (unicorn startup)",
+        "image": "https://drive.google.com/uc?export=view&id=1yIE4slzUipdaT5BjSZ-BcAarys58dshH"
+    },
           {
-              "serial": 26,
-              "name": "Sanjay Brahmawar",
-              "class": 1992,
-              "branch": "Civil Engineering",
-              "text": "CEO of Software AG & Top 100 Innovation CEOs Award - 2021"
-          },
-          {
-              "serial": 27,
-              "name": "Amit Singh",
-              "class": 1989,
-              "branch": "Electrical Engineering",
-              "text": "Board of Directors of Asana (software)"
-          },
-          {
-              "serial": 28,
-              "name": "Divya Garg",
-              "class": 2005,
-              "branch": "Computer Engineering",
-              "text": "Head of HR Uber India and South Asia region"
-          },
-          {
-              "serial": 29,
-              "name": "Sudhir Malhotra",
-              "class": 1990,
-              "branch": "Mechanical Engineering",
-              "text": "Vice President of Renault India"
-          },
-          {
-              "serial": 30,
-              "name": "Kumar Gaurav Gupta",
-              "class": 2005,
-              "branch": "Production & Industrial engineering",
-              "text": "VP & Country Manager of SAP Concur India"
-          },
-          {
-              "serial": 31,
-              "name": "Balaji Tamirisa",
-              "class": 1985,
-              "branch": "Electrical Engineering",
-              "text": "CTO of Dedrone, USA"
-          },
-          {
-              "serial": 32,
-              "name": "Aruna Singh",
-              "class": 1985,
-              "branch": "Electronics & Communication Engineering",
-              "text": "Chairman & Managing Director of RailTel"
-          },
-          {
-              "serial": 33,
-              "name": "Ravish Sharma",
-              "class": 2003,
-              "branch": "Electronics & Communication Engineering",
-              "text": "Vice President, Product Management of GreyOrange"
-          },
-          {
-              "serial": 34,
-              "name": "Gunjan Kedia",
-              "class": 1992,
-              "branch": "Electronics & Communication Engineering",
-              "text": "Vice Chairman of U.S. Bancorp (US Bank) and 100 Most Influential Women in US Finance"
-          },
-          {
-              "serial": 35,
-              "name": "Sukhvinder Singh",
-              "class": 1992,
+              "serial": 14,
+              "name": "Piyush Shah",
+              "class": 2001,
               "branch": "Production & Industrial Engineering",
-              "text": "Senior VP of Technology & Innovation of Lamar Advertising Company"
-          }
-      ]
-      
+              "text": "Founder of Glance (company) & Co-Founder of InMobi (unicorn startups)",
+              "image": "https://drive.google.com/uc?export=view&id=1NQrkL0eafG0De1UtRyMBx9zKQ8K6VLos"
+          },
+          {
+              "serial": 15,
+              "name": "Raghav Joshi",
+              "class": 2007,
+              "branch": "Electronics & Communication Engineering",
+              "text": "Co-Founder of Rebel Foods, previously Faasos (unicorn startup)",
+              "image": ""
+          },
+          {
+              "serial": 16,
+              "name": "Saurabh Nigam",
+              "class": 2000,
+              "branch": "Civil Engineering",
+              "text": "Founder of ElasticRun (unicorn startup)",
+              "image": ""
+          },
+          {
+              "serial": 17,
+              "name": "Aakash Sinha",
+              "class": 2001,
+              "branch": "Electrical Engineering",
+              "text": "Founder of Omnipresent Robot Tech, developed 3D image models for Chandrayaan-2 rover",
+              "image": ""
+          },
+          {
+              "serial": 18,
+              "name": "Uday Reddy",
+              "class": 1993,
+              "branch": "Electronics & Communication Engineering",
+              "text": "Founder of YuppTV, World's #1 Internet Pay TV provider & one of the leading OTT player for South Asian content abroad",
+              "image": ""
+          },
+          {
+              "serial": 19,
+              "name": "Raj Soin",
+              "class": 1969,
+              "branch": "Mechanical Engineering",
+              "text": "Founder of Soin International LLC, USA",
+              "image": "https://drive.google.com/uc?export=view&id=1GZcwfuWH3_YSc5UxD5GHRwJIblSBc3Xg"
+          },
+          {
+              "serial": 20,
+              "name": "Rashmi Daga",
+              "class": 2001,
+              "branch": "Electrical Engineering",
+              "text": "Founder of FreshMenu, Top 10 Women Entrepreneurs In India (2021)",
+              "image": ""
+          },
+          {
+              "serial": 21,
+              "name": "Promod Haque",
+              "class": 1969,
+              "branch": "Electrical Engineering",
+              "text": "World's No.1 Venture Capitalist in 2004, Appeared on Annual Forbes Midas List for 13 years",
+              "image": "https://drive.google.com/uc?export=view&id=1plPuL7ZfFzfL9OF8nNYSmgRLX406hstA"
+          },
+          {
+              "serial": 22,
+              "name": "Avinash Pant",
+              "class": 1995,
+              "branch": "Electrical Engineering",
+              "text": "Marketing Head of Facebook India",
+              "image": "https://drive.google.com/uc?export=view&id=1o17tbySt0bVtm20OGhgCTnsNDzYFXoxl"
+          },
+          {
+              "serial": 23,
+              "name": "Navtez Bal",
+              "class": 1997,
+              "branch": "Electrical Engineering",
+              "text": "Executive Director of Microsoft India",
+              "image": "https://drive.google.com/uc?export=view&id=1eYHWNKEEFL5_L4WaBHIdVYK7TDgEST0P"
+          },
+          {
+              "serial": 24,
+              "name": "Manish Gulyani",
+              "class": 1990,
+              "branch": "Electronics & Communication Engineering",
+              "text": "Vice President and General Manager of Nokia Deepfield",
+              "image": ""
+          },
+          {
+              "serial": 25,
+              "name": "Himanshu Bajaj",
+              "class": 2000,
+              "branch": "Civil Engineering",
+              "text": "Business Head of BYJU'S",
+              "image": ""
+          },
+            {
+                "serial": 26,
+                "name": "Sanjay Brahmawar",
+                "class": 1992,
+                "branch": "Civil Engineering",
+                "text": "CEO of Software AG & Top 100 Innovation CEOs Award - 2021",
+                "image": ""
+            },
+            {
+                "serial": 27,
+                "name": "Amit Singh",
+                "class": 1989,
+                "branch": "Electrical Engineering",
+                "text": "Board of Directors of Asana (software)",
+                "image": ""
+            },
+            {
+                "serial": 28,
+                "name": "Divya Garg",
+                "class": 2005,
+                "branch": "Computer Engineering",
+                "text": "Head of HR Uber India and South Asia region",
+                "image": ""
+            },
+            {
+                "serial": 29,
+                "name": "Sudhir Malhotra",
+                "class": 1990,
+                "branch": "Mechanical Engineering",
+                "text": "Vice President of Renault India",
+                "image": ""
+            },
+            {
+                "serial": 30,
+                "name": "Kumar Gaurav Gupta",
+                "class": 2005,
+                "branch": "Production & Industrial engineering",
+                "text": "VP & Country Manager of SAP Concur India",
+                "image": ""
+            },
+            {
+                "serial": 31,
+                "name": "Balaji Tamirisa",
+                "class": 1985,
+                "branch": "Electrical Engineering",
+                "text": "CTO of Dedrone, USA",
+                "image": ""
+            },
+            {
+                "serial": 32,
+                "name": "Aruna Singh",
+                "class": 1985,
+                "branch": "Electronics & Communication Engineering",
+                "text": "Chairman & Managing Director of RailTel",
+                "image": ""
+            },
+            {
+                "serial": 33,
+                "name": "Ravish Sharma",
+                "class": 2003,
+                "branch": "Electronics & Communication Engineering",
+                "text": "Vice President, Product Management of GreyOrange",
+                "image": ""
+            },
+            {
+                "serial": 34,
+                "name": "Gunjan Kedia",
+                "class": 1992,
+                "branch": "Electronics & Communication Engineering",
+                "text": "Vice Chairman of U.S. Bancorp (US Bank) and 100 Most Influential Women in US Finance",
+                "image": ""
+            },
+            {
+                "serial": 35,
+                "name": "Sukhveer Singh",
+                "class": 1992,
+                "branch": "Production & Industrial Engineering",
+                "text": "Senior VP of Technology & Innovation of Lamar Advertising Company",
+                "image": ""
+            }
+        ]
+        
+  

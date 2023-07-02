@@ -71,7 +71,7 @@ fetch("/data/news.json").then(response => response.json())
         let dat = ``;
         for(let item of data){
             dat += ` <li>
-    <a href="#" class="block px-4 py-2 text-sm font-[500] text-white hover:bg-gray-600 rounded-lg hover:bg-opacity-50 hover:text-blue-200 ease-in-out duration-300 truncate">${item.title}  <p class="text-white font-[350]">${item.date}</p>
+    <a onclick="showPopups('side-popup-alumni', '${item.info}', '${item.title}')" class=" cursor-pointer block px-4 py-2 text-sm font-[500] text-white hover:bg-gray-600 rounded-lg hover:bg-opacity-50 hover:text-blue-200 ease-in-out duration-300 truncate">${item.title}  <p class="text-white font-[350]">${item.date}</p>
     </a>
   </li>`;
 
@@ -84,7 +84,7 @@ fetch("/data/donations.json").then(response => response.json())
         let dat = ``;
         for(let item of data){
             dat += ` <li>
-    <a href="#" class="block px-4 py-2 text-sm font-[500] text-white hover:bg-gray-600 rounded-lg hover:bg-opacity-50 hover:text-blue-200 ease-in-out duration-300 truncate ">${item.title}  <p class="text-white font-[350]">${item.date}</p>
+    <a onclick="showPopups('side-popup-alumni', '${item.info}', '${item.title}')"  class="cursor-pointer block px-4 py-2 text-sm font-[500] text-white hover:bg-gray-600 rounded-lg hover:bg-opacity-50 hover:text-blue-200 ease-in-out duration-300 truncate ">${item.title}  <p class="text-white font-[350]">${item.date}</p>
     </a>
   </li>`;
 
@@ -409,7 +409,7 @@ fetch("/data/donations.json").then(response => response.json())
   .then((r) => r.json())
   .then((d) => {
     document.querySelectorAll('.imageAlum-1').forEach((el, i) => {
-      el.src = `../public/img/alumni and donor photos/${d[i].name}.jpg`;
+      el.src = d[i].image;
     });
     document.querySelectorAll('.nameAlum-1').forEach((el, i) => {
       el.innerHTML = d[i].name;
